@@ -16,6 +16,8 @@
 #import "UIScrollView+EmptyDataSet.h"
 #import "HexColors.h"
 
+const NSInteger kPHPhotoLoadLimit = 100;
+
 #ifdef NDEBUG
     #define PHPLog(...)
 #else
@@ -102,8 +104,11 @@
 }
 
 -(void)openSettings {
-    SettingsViewController *settings = [[SettingsViewController alloc] init];
-    [self presentViewController:settings animated:YES completion:nil];
+    SettingsViewController *settings = [[SettingsViewController alloc] initWithImage:[self currentScreenImage]];
+    UINavigationController *setNav = [[UINavigationController alloc] initWithRootViewController:settings];
+    setNav.navigationBarHidden = YES;
+    setNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:setNav animated:YES completion:nil];
 }
 
 - (void)viewDidLoad {
@@ -130,7 +135,7 @@
         [options setIncludeHiddenAssets:NO];
         [options setIncludeAllBurstAssets:YES];
         [options setIncludeAssetSourceTypes:PHAssetSourceTypeCloudShared | PHAssetSourceTypeUserLibrary | PHAssetSourceTypeiTunesSynced];
-        [options setFetchLimit:5];
+        [options setFetchLimit:kPHPhotoLoadLimit];
         _images = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:nil];
         for (int i = 0; i < _images.count; i++) {
             PHAsset *asset = _images[i];
@@ -142,10 +147,10 @@
                 NSString* creationDate = fullImage.properties[@"{TIFF}"][@"DateTime"];
                 PHPLog(@"CREATION DATE STRING: %@", creationDate);
                 NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self dateFormatter] dateFromString:creationDate]];
-                //NSDateComponents *todayDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self gmtFormatter] dateFromString:[[self gmtFormatter] stringFromDate:_today]]];
-                //if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
+                NSDateComponents *todayDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self gmtFormatter] dateFromString:[[self gmtFormatter] stringFromDate:_today]]];
+                if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
                     [_todayMedia addObject:@{@"media" : contentEditingInput.displaySizeImage, @"date" : [[self dateFormatter] dateFromString:creationDate], @"year" : @(creationDateComps.year)}];
-                //}
+                }
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if (i == _images.count - 1) {
                         [self.view addSubview:[self navTitleBar]];
@@ -159,6 +164,19 @@
             }];
         }
     });
+}
+
+-(UIImage*)currentScreenImage {
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    UIGraphicsBeginImageContext(screenRect.size);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    [[UIColor blackColor] set];
+    CGContextFillRect(ctx, screenRect);
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [window.layer renderInContext:ctx];
+    UIImage *screengrab = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return screengrab;
 }
 
 #pragma mark - DZNEmptyDataSetSource Methods

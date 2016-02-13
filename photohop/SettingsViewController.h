@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsViewController : UIViewController
-
+-(instancetype)initWithImage:(UIImage*)bImage;
 @end

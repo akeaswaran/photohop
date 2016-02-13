@@ -10,16 +10,22 @@
 #import "PWCirclesView.h"
 #import "HexColors.h"
 
-@import AbstractView;
 @import Photos;
 
 @interface SettingsViewController ()
-@property (nonatomic) IBOutlet PWCirclesView *circlesView;
+@property (strong, nonatomic) UIImage *backgroundImage;
 @property (nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic) IBOutlet UIVisualEffectView *visView;
 @end
 
 @implementation SettingsViewController
+
+-(instancetype)initWithImage:(UIImage*)bImage {
+    if (self = [super init]) {
+        _backgroundImage = bImage;
+    }
+    return self;
+}
 
 - (UIView*)navTitle {
     UILabel *label = [[UILabel alloc] init];
@@ -43,41 +49,31 @@
 }
 
 -(void)dismissVC {
+    self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusAuthorized) {
-        PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-        options.synchronous = YES;
-        PHFetchOptions *fetchOptions = [[PHFetchOptions alloc] init];
-        fetchOptions.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
-        
-        PHFetchResult *photos = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:fetchOptions];
-        if (photos) {
-            [[PHImageManager defaultManager] requestImageForAsset:[photos objectAtIndex:photos.count - 1] targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage *result, NSDictionary *info) {
-                _imageView = [[UIImageView alloc] initWithImage:result];
-                _imageView.contentMode = UIViewContentModeScaleAspectFill;
-                [self.view addSubview:_imageView];
-                _visView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
-                _visView.frame = self.view.bounds;
-                [self.view addSubview:_visView];
-            }];
-        } else {
-            self.circlesView = [[PWCirclesView alloc] initWithFrame:self.view.bounds];
-            [self.view addSubview:self.circlesView];
-        }
-    } else {
-        self.circlesView = [[PWCirclesView alloc] initWithFrame:self.view.bounds];
-        [self.view addSubview:self.circlesView];
-    }
+    _imageView = [[UIImageView alloc] initWithImage:_backgroundImage];
+    _imageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:_imageView];
+    _visView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
+    _visView.frame = self.view.bounds;
     
+    UILabel *constructionLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 150, 25)];
+    [constructionLabel setTextColor:[UIColor whiteColor]];
+    [constructionLabel setText:@"Nothing here yet!"];
+    [constructionLabel sizeToFit];
+    constructionLabel.center = _visView.center;
+    [_visView.contentView addSubview:constructionLabel];
+    
+    [self.view addSubview:_visView];
     [self.view addSubview:[self navTitle]];
     
     //photo load limit
     
-    //licenses/attribution
+    //licenses/attribution (all cocoapods, and Icons8)
     //dev website
     //dev email
 }

@@ -4,7 +4,6 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'photohop' do
-pod 'EZSwipeController'
 pod 'HexColors'
 pod 'SFFocusViewLayout', '~> 2.0'
 pod 'JGProgressHUD'
