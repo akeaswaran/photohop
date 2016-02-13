@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E39d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemoriesViewController">
+            <connections>
+                <outlet property="collectionView" destination="cyy-T3-pqW" id="O2U-ts-isR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="oEO-xb-CZq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cyy-T3-pqW">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <collectionViewLayout key="collectionViewLayout" id="AwY-70-fCQ" customClass="SFFocusViewLayout"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="RK2-5Z-Kap"/>
+                        <outlet property="delegate" destination="-1" id="yJS-QP-Who"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cyy-T3-pqW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5mE-D3-WnY"/>
+                <constraint firstAttribute="trailing" secondItem="cyy-T3-pqW" secondAttribute="trailing" id="Ngc-5J-7h0"/>
+                <constraint firstItem="cyy-T3-pqW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hNo-GY-xVY"/>
+                <constraint firstAttribute="bottom" secondItem="cyy-T3-pqW" secondAttribute="bottom" id="sDX-I5-1oa"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>

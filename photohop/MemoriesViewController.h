@@ -10,8 +10,8 @@
 
 @import Photos;
 
-@interface ViewController : UIViewController
-
-
+@interface MemoriesViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) NSMutableArray *todayMedia;
 @end
 

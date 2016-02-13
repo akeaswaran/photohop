@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F27F8971B102C4F8C2AF148 /* Pods_photohop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973E3E2B1EE2D1D10F52471C /* Pods_photohop.framework */; };
 		752C9F421C6CF0CC0060DE99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F411C6CF0CC0060DE99 /* main.m */; };
 		752C9F451C6CF0CC0060DE99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F441C6CF0CC0060DE99 /* AppDelegate.m */; };
-		752C9F481C6CF0CC0060DE99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F471C6CF0CC0060DE99 /* ViewController.m */; };
+		752C9F481C6CF0CC0060DE99 /* MemoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F471C6CF0CC0060DE99 /* MemoriesViewController.m */; };
 		752C9F4D1C6CF0CC0060DE99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752C9F4C1C6CF0CC0060DE99 /* Assets.xcassets */; };
 		752C9F501C6CF0CD0060DE99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752C9F4E1C6CF0CD0060DE99 /* LaunchScreen.storyboard */; };
+		753195BA1C6D2F9C00D7C39E /* MemoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753195B91C6D2F9C00D7C39E /* MemoriesViewController.xib */; };
+		753195BE1C6D303E00D7C39E /* PhotoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 753195BC1C6D303E00D7C39E /* PhotoViewCell.m */; };
+		753195BF1C6D303E00D7C39E /* PhotoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753195BD1C6D303E00D7C39E /* PhotoViewCell.xib */; };
+		7553B0671C6E55A00099E700 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7553B0661C6E55A00099E700 /* SettingsViewController.m */; };
+		7553B0721C6E6DA80099E700 /* PWBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7553B06C1C6E6DA80099E700 /* PWBlurView.m */; };
+		7553B0731C6E6DA80099E700 /* PWCirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7553B06E1C6E6DA80099E700 /* PWCirclesView.m */; };
+		7553B0741C6E6DA80099E700 /* PWCirclesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7553B0701C6E6DA80099E700 /* PWCirclesViewController.m */; };
+		7553B07F1C6E6E8B0099E700 /* emitter-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7553B07C1C6E6E8B0099E700 /* emitter-circle.png */; };
+		7553B0801C6E6E8B0099E700 /* emitter-circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7553B07D1C6E6E8B0099E700 /* emitter-circle@2x.png */; };
+		7553B0811C6E6E8B0099E700 /* emitter-circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7553B07E1C6E6E8B0099E700 /* emitter-circle@3x.png */; };
+		7553B0831C6E72800099E700 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7553B0821C6E72800099E700 /* SettingsViewController.xib */; };
+		756CCB2E1C6EEA9500E9A4B8 /* settingsImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 756CCB2C1C6EEA9500E9A4B8 /* settingsImg@2x.png */; };
+		756CCB2F1C6EEA9500E9A4B8 /* settingsImg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 756CCB2D1C6EEA9500E9A4B8 /* settingsImg@3x.png */; };
+		756CCB311C6F0A2000E9A4B8 /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 756CCB301C6F0A2000E9A4B8 /* close@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +34,33 @@
 		752C9F411C6CF0CC0060DE99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		752C9F431C6CF0CC0060DE99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		752C9F441C6CF0CC0060DE99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		752C9F461C6CF0CC0060DE99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		752C9F471C6CF0CC0060DE99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		752C9F461C6CF0CC0060DE99 /* MemoriesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoriesViewController.h; sourceTree = "<group>"; };
+		752C9F471C6CF0CC0060DE99 /* MemoriesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoriesViewController.m; sourceTree = "<group>"; };
 		752C9F4C1C6CF0CC0060DE99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		752C9F4F1C6CF0CD0060DE99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		752C9F511C6CF0CD0060DE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753195B91C6D2F9C00D7C39E /* MemoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoriesViewController.xib; sourceTree = "<group>"; };
+		753195BB1C6D303E00D7C39E /* PhotoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewCell.h; sourceTree = "<group>"; };
+		753195BC1C6D303E00D7C39E /* PhotoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewCell.m; sourceTree = "<group>"; };
+		753195BD1C6D303E00D7C39E /* PhotoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewCell.xib; sourceTree = "<group>"; };
+		7553B0651C6E55A00099E700 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		7553B0661C6E55A00099E700 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		7553B06B1C6E6DA80099E700 /* PWBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWBlurView.h; sourceTree = "<group>"; };
+		7553B06C1C6E6DA80099E700 /* PWBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWBlurView.m; sourceTree = "<group>"; };
+		7553B06D1C6E6DA80099E700 /* PWCirclesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWCirclesView.h; sourceTree = "<group>"; };
+		7553B06E1C6E6DA80099E700 /* PWCirclesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCirclesView.m; sourceTree = "<group>"; };
+		7553B06F1C6E6DA80099E700 /* PWCirclesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWCirclesViewController.h; sourceTree = "<group>"; };
+		7553B0701C6E6DA80099E700 /* PWCirclesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCirclesViewController.m; sourceTree = "<group>"; };
+		7553B07C1C6E6E8B0099E700 /* emitter-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emitter-circle.png"; sourceTree = "<group>"; };
+		7553B07D1C6E6E8B0099E700 /* emitter-circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emitter-circle@2x.png"; sourceTree = "<group>"; };
+		7553B07E1C6E6E8B0099E700 /* emitter-circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emitter-circle@3x.png"; sourceTree = "<group>"; };
+		7553B0821C6E72800099E700 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		756CCB2C1C6EEA9500E9A4B8 /* settingsImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsImg@2x.png"; sourceTree = "<group>"; };
+		756CCB2D1C6EEA9500E9A4B8 /* settingsImg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsImg@3x.png"; sourceTree = "<group>"; };
+		756CCB301C6F0A2000E9A4B8 /* close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@3x.png"; sourceTree = "<group>"; };
+		84036DB74B9CCD80A19E2494 /* Pods-photohop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photohop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-photohop/Pods-photohop.debug.xcconfig"; sourceTree = "<group>"; };
+		973E3E2B1EE2D1D10F52471C /* Pods_photohop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photohop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1359DF6F5E845F532FCBA17 /* Pods-photohop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photohop.release.xcconfig"; path = "Pods/Target Support Files/Pods-photohop/Pods-photohop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +68,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F27F8971B102C4F8C2AF148 /* Pods_photohop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5238F659B3B902769B8CA080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84036DB74B9CCD80A19E2494 /* Pods-photohop.debug.xcconfig */,
+				A1359DF6F5E845F532FCBA17 /* Pods-photohop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		752C9F341C6CF0CC0060DE99 = {
 			isa = PBXGroup;
 			children = (
 				752C9F3F1C6CF0CC0060DE99 /* photohop */,
 				752C9F3E1C6CF0CC0060DE99 /* Products */,
+				5238F659B3B902769B8CA080 /* Pods */,
+				A66BE9E4EB40700245F13443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +107,22 @@
 			children = (
 				752C9F431C6CF0CC0060DE99 /* AppDelegate.h */,
 				752C9F441C6CF0CC0060DE99 /* AppDelegate.m */,
-				752C9F461C6CF0CC0060DE99 /* ViewController.h */,
-				752C9F471C6CF0CC0060DE99 /* ViewController.m */,
+				752C9F461C6CF0CC0060DE99 /* MemoriesViewController.h */,
+				752C9F471C6CF0CC0060DE99 /* MemoriesViewController.m */,
+				753195B91C6D2F9C00D7C39E /* MemoriesViewController.xib */,
+				7553B0651C6E55A00099E700 /* SettingsViewController.h */,
+				7553B0661C6E55A00099E700 /* SettingsViewController.m */,
+				7553B0821C6E72800099E700 /* SettingsViewController.xib */,
+				7553B0751C6E6DAF0099E700 /* Circles */,
+				753195BB1C6D303E00D7C39E /* PhotoViewCell.h */,
+				753195BC1C6D303E00D7C39E /* PhotoViewCell.m */,
+				753195BD1C6D303E00D7C39E /* PhotoViewCell.xib */,
 				752C9F4C1C6CF0CC0060DE99 /* Assets.xcassets */,
 				752C9F4E1C6CF0CD0060DE99 /* LaunchScreen.storyboard */,
 				752C9F511C6CF0CD0060DE99 /* Info.plist */,
+				756CCB301C6F0A2000E9A4B8 /* close@3x.png */,
+				756CCB2C1C6EEA9500E9A4B8 /* settingsImg@2x.png */,
+				756CCB2D1C6EEA9500E9A4B8 /* settingsImg@3x.png */,
 				752C9F401C6CF0CC0060DE99 /* Supporting Files */,
 			);
 			path = photohop;
@@ -76,6 +136,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7553B0751C6E6DAF0099E700 /* Circles */ = {
+			isa = PBXGroup;
+			children = (
+				7553B07C1C6E6E8B0099E700 /* emitter-circle.png */,
+				7553B07D1C6E6E8B0099E700 /* emitter-circle@2x.png */,
+				7553B07E1C6E6E8B0099E700 /* emitter-circle@3x.png */,
+				7553B06B1C6E6DA80099E700 /* PWBlurView.h */,
+				7553B06C1C6E6DA80099E700 /* PWBlurView.m */,
+				7553B06D1C6E6DA80099E700 /* PWCirclesView.h */,
+				7553B06E1C6E6DA80099E700 /* PWCirclesView.m */,
+				7553B06F1C6E6DA80099E700 /* PWCirclesViewController.h */,
+				7553B0701C6E6DA80099E700 /* PWCirclesViewController.m */,
+			);
+			name = Circles;
+			sourceTree = "<group>";
+		};
+		A66BE9E4EB40700245F13443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				973E3E2B1EE2D1D10F52471C /* Pods_photohop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 752C9F541C6CF0CD0060DE99 /* Build configuration list for PBXNativeTarget "photohop" */;
 			buildPhases = (
+				7A9E059E6F33F150A50564A9 /* Check Pods Manifest.lock */,
 				752C9F391C6CF0CC0060DE99 /* Sources */,
 				752C9F3A1C6CF0CC0060DE99 /* Frameworks */,
 				752C9F3B1C6CF0CC0060DE99 /* Resources */,
+				811D9521F3E315D2651A3795 /* Embed Pods Frameworks */,
+				AB80F0C9A273ADA95EADED0A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,20 +221,82 @@
 			buildActionMask = 2147483647;
 			files = (
 				752C9F501C6CF0CD0060DE99 /* LaunchScreen.storyboard in Resources */,
+				7553B0831C6E72800099E700 /* SettingsViewController.xib in Resources */,
+				7553B0801C6E6E8B0099E700 /* emitter-circle@2x.png in Resources */,
+				7553B07F1C6E6E8B0099E700 /* emitter-circle.png in Resources */,
+				7553B0811C6E6E8B0099E700 /* emitter-circle@3x.png in Resources */,
+				753195BA1C6D2F9C00D7C39E /* MemoriesViewController.xib in Resources */,
 				752C9F4D1C6CF0CC0060DE99 /* Assets.xcassets in Resources */,
+				756CCB2E1C6EEA9500E9A4B8 /* settingsImg@2x.png in Resources */,
+				756CCB2F1C6EEA9500E9A4B8 /* settingsImg@3x.png in Resources */,
+				756CCB311C6F0A2000E9A4B8 /* close@3x.png in Resources */,
+				753195BF1C6D303E00D7C39E /* PhotoViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A9E059E6F33F150A50564A9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		811D9521F3E315D2651A3795 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-photohop/Pods-photohop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB80F0C9A273ADA95EADED0A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-photohop/Pods-photohop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		752C9F391C6CF0CC0060DE99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				752C9F481C6CF0CC0060DE99 /* ViewController.m in Sources */,
+				752C9F481C6CF0CC0060DE99 /* MemoriesViewController.m in Sources */,
 				752C9F451C6CF0CC0060DE99 /* AppDelegate.m in Sources */,
+				7553B0671C6E55A00099E700 /* SettingsViewController.m in Sources */,
+				7553B0731C6E6DA80099E700 /* PWCirclesView.m in Sources */,
 				752C9F421C6CF0CC0060DE99 /* main.m in Sources */,
+				7553B0721C6E6DA80099E700 /* PWBlurView.m in Sources */,
+				753195BE1C6D303E00D7C39E /* PhotoViewCell.m in Sources */,
+				7553B0741C6E6DA80099E700 /* PWCirclesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +396,7 @@
 		};
 		752C9F551C6CF0CD0060DE99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84036DB74B9CCD80A19E2494 /* Pods-photohop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = photohop/Info.plist;
@@ -258,6 +408,7 @@
 		};
 		752C9F561C6CF0CD0060DE99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1359DF6F5E845F532FCBA17 /* Pods-photohop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = photohop/Info.plist;
@@ -286,6 +437,7 @@
 				752C9F561C6CF0CD0060DE99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
