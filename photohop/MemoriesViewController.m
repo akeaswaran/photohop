@@ -129,6 +129,7 @@ const NSInteger kPHPhotoLoadLimit = 100;
     _todayMedia = [NSMutableArray array];
     HUD = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
     HUD.textLabel.text = @"Looking through your photos...";
+    HUD.center = self.view.center;
     [HUD showInView:self.view];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         PHFetchOptions *options = [[PHFetchOptions alloc] init];
