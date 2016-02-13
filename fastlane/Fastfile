@@ -37,7 +37,6 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     # match(type: "appstore") # more information: https://codesigning.guide
-    increment_build_number
     gym(scheme: "photohop")
     pilot
 
@@ -62,6 +61,7 @@ platform :ios do
     # slack(
     #   message: "Successfully deployed new App Update."
     # )
+    notification(subtitle: "Finished Deploying PhotoHop", message: "Ready to upload push to beta testers.")
   end
 
   error do |lane, exception|
