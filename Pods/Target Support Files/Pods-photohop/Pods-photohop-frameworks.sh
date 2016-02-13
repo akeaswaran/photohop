@@ -85,14 +85,12 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-photohop/DZNEmptyDataSet.framework"
-  install_framework "Pods-photohop/EZSwipeController.framework"
   install_framework "Pods-photohop/HexColors.framework"
   install_framework "Pods-photohop/JGProgressHUD.framework"
   install_framework "Pods-photohop/SFFocusViewLayout.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-photohop/DZNEmptyDataSet.framework"
-  install_framework "Pods-photohop/EZSwipeController.framework"
   install_framework "Pods-photohop/HexColors.framework"
   install_framework "Pods-photohop/JGProgressHUD.framework"
   install_framework "Pods-photohop/SFFocusViewLayout.framework"

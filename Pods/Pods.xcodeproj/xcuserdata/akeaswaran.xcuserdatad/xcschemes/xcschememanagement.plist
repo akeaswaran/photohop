@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>EZSwipeController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>HexColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>245E50D8B8ED20A55618CB34601FC17D</key>
+		<key>617B0FC57CCB604D47A24E6198763D04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>617B0FC57CCB604D47A24E6198763D04</key>
+		<key>B6E9497D7033FA912E80DA5A719880CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D168A90FC275B7C8B0DDF59974BBE8BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E938FF06DB165E6E2CA205723A9FCDE7</key>
+		<key>DAB26F8F958E052960E48D53EF7C432D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
