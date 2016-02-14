@@ -67,40 +67,53 @@ const NSInteger kPHPhotoLoadLimit = 100;
 }
 
 - (UIView*)navTitleBar {
-    UILabel *label = [[UILabel alloc] init];
-    [label setFont:[UIFont systemFontOfSize:18]];
-    [label setTextColor:[UIColor whiteColor]];
-    [label setText:@"Today's Memories"];
-    [label sizeToFit];
-    if (_todayMedia.count == 0) {
-        [label setText:@""];
-    }
-    //[label.layer setBorderColor:[UIColor redColor].CGColor];
-    //[label.layer setBorderWidth:1.0];
-    [label setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width / 2.0, 25 + label.frame.size.height / 2.0)];
-    
-    UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, (25 + label.frame.size.height / 2.0) + 20)];
-    navView.backgroundColor = [UIColor clearColor];
-    [navView addSubview:label];
-    if (_todayMedia.count > 0) {
-        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-        gradientLayer.frame = navView.bounds;
-        gradientLayer.colors = [NSArray arrayWithObjects:(id)[UIColor blackColor].CGColor, (id)[UIColor clearColor].CGColor, nil];
-        gradientLayer.startPoint = CGPointMake(0.0, 0.0);
-        gradientLayer.endPoint = CGPointMake(0.0, 1.0);
-        gradientLayer.borderColor = [UIColor clearColor].CGColor;
-        [navView.layer insertSublayer:gradientLayer atIndex:0];
-    }
-    
-    //settings button
-    UIButton *settingsButton = [[UIButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 10 - 44, (navView.frame.size.height / 2.0) - 22, 44, 44)];
-    settingsButton.center = CGPointMake(settingsButton.center.x, label.center.y);
-   // [settingsButton.layer setBorderColor:[UIColor blueColor].CGColor];
-   // [settingsButton.layer setBorderWidth:1.0];
-    [settingsButton setImage:[UIImage imageNamed:@"SettingsImg"] forState:UIControlStateNormal];
-    [settingsButton addTarget:self action:@selector(openSettings) forControlEvents:UIControlEventTouchUpInside];
-    [navView addSubview:settingsButton];
+    static dispatch_once_t onceToken;
+    static UIView *navView;
+    dispatch_once(&onceToken, ^{
+        UILabel *label = [[UILabel alloc] init];
+        [label setFont:[UIFont systemFontOfSize:18]];
+        [label setTextColor:[UIColor whiteColor]];
+        [label setText:@"Today's Memories"];
+        [label sizeToFit];
+        if (_todayMedia.count == 0) {
+            [label setText:@""];
+        }
+        //[label.layer setBorderColor:[UIColor redColor].CGColor];
+        //[label.layer setBorderWidth:1.0];
+        [label setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width / 2.0, 25 + label.frame.size.height / 2.0)];
+        
+        navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, (25 + label.frame.size.height / 2.0) + 20)];
+        navView.backgroundColor = [UIColor clearColor];
+        [navView addSubview:label];
+        if (_todayMedia.count > 0) {
+            CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+            gradientLayer.frame = navView.bounds;
+            gradientLayer.colors = [NSArray arrayWithObjects:(id)[UIColor blackColor].CGColor, (id)[UIColor clearColor].CGColor, nil];
+            gradientLayer.startPoint = CGPointMake(0.0, 0.0);
+            gradientLayer.endPoint = CGPointMake(0.0, 1.0);
+            gradientLayer.borderColor = [UIColor clearColor].CGColor;
+            [navView.layer insertSublayer:gradientLayer atIndex:0];
+        }
+        
+        //settings button
+        UIButton *settingsButton = [[UIButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 10 - 44, (navView.frame.size.height / 2.0) - 22, 44, 44)];
+        settingsButton.center = CGPointMake(settingsButton.center.x, label.center.y);
+        // [settingsButton.layer setBorderColor:[UIColor blueColor].CGColor];
+        // [settingsButton.layer setBorderWidth:1.0];
+        [settingsButton setImage:[UIImage imageNamed:@"SettingsImg"] forState:UIControlStateNormal];
+        [settingsButton addTarget:self action:@selector(openSettings) forControlEvents:UIControlEventTouchUpInside];
+        [navView addSubview:settingsButton];
+    });
     return navView;
+}
+
+-(PHImageManager*)imageManager {
+    static dispatch_once_t onceToken;
+    static PHImageManager *imageManager;
+    dispatch_once(&onceToken, ^{
+        imageManager = [[PHImageManager alloc] init];
+    });
+    return imageManager;
 }
 
 -(void)openSettings {
@@ -122,12 +135,14 @@ const NSInteger kPHPhotoLoadLimit = 100;
     if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusAuthorized) {
        [self refreshMedia];
     }
+    [self.view addSubview:[self navTitleBar]];
 }
 
 -(void)refreshMedia {
     _today = [NSDate date];
     _todayMedia = [NSMutableArray array];
     HUD = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
+    HUD.indicatorView = [[JGProgressHUDRingIndicatorView alloc] initWithHUDStyle:HUD.style];
     HUD.textLabel.text = @"Looking through your photos...";
     HUD.center = self.view.center;
     [HUD showInView:self.view];
@@ -135,25 +150,30 @@ const NSInteger kPHPhotoLoadLimit = 100;
         PHFetchOptions *options = [[PHFetchOptions alloc] init];
         [options setIncludeHiddenAssets:NO];
         [options setIncludeAllBurstAssets:YES];
-        [options setIncludeAssetSourceTypes:PHAssetSourceTypeCloudShared | PHAssetSourceTypeUserLibrary | PHAssetSourceTypeiTunesSynced];
+        [options setIncludeAssetSourceTypes:PHAssetSourceTypeUserLibrary];
         [options setFetchLimit:kPHPhotoLoadLimit];
         _images = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:nil];
         for (int i = 0; i < _images.count; i++) {
             PHAsset *asset = _images[i];
-            PHContentEditingInputRequestOptions *options = [[PHContentEditingInputRequestOptions alloc] init];
+            float progress = ((float)i / (float)_images.count);
+            PHPLog(@"PROGRESS: %f", progress);
+            [HUD setProgress:progress animated:YES];
+            PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+            options.deliveryMode = PHImageRequestOptionsDeliveryModeFastFormat;
             options.networkAccessAllowed = YES;
-            
-            [asset requestContentEditingInputWithOptions:options completionHandler:^(PHContentEditingInput *contentEditingInput, NSDictionary *info) {
-                CIImage *fullImage = [CIImage imageWithContentsOfURL:contentEditingInput.fullSizeImageURL];
-                NSString* creationDate = fullImage.properties[@"{TIFF}"][@"DateTime"];
-                PHPLog(@"CREATION DATE STRING: %@", creationDate);
-                NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self dateFormatter] dateFromString:creationDate]];
+            options.resizeMode = PHImageRequestOptionsResizeModeFast;
+            options.version = PHImageRequestOptionsVersionOriginal;
+            [[self imageManager] requestImageForAsset:asset targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeAspectFill options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                //PHPLog(@"DICTIONARY: %@", info);
+                //PHPLog(@"PHAsset creationDate: %@", asset.creationDate);
+                NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:asset.creationDate];
                 NSDateComponents *todayDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self gmtFormatter] dateFromString:[[self gmtFormatter] stringFromDate:_today]]];
                 if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
-                    [_todayMedia addObject:@{@"media" : contentEditingInput.displaySizeImage, @"date" : [[self dateFormatter] dateFromString:creationDate], @"year" : @(creationDateComps.year)}];
+                    [_todayMedia addObject:@{@"media" : result, @"date" : asset.creationDate, @"year" : @(creationDateComps.year)}];
                 }
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if (i == _images.count - 1) {
+                        [[self navTitleBar] removeFromSuperview];
                         [self.view addSubview:[self navTitleBar]];
                         [HUD dismissAnimated:YES];
                         PHPLog(@"IMAGES: %lu", (unsigned long)_todayMedia.count);
@@ -162,6 +182,7 @@ const NSInteger kPHPhotoLoadLimit = 100;
                         [self.collectionView reloadData];
                     }
                 });
+
             }];
         }
     });

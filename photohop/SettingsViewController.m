@@ -7,7 +7,6 @@
 //
 
 #import "SettingsViewController.h"
-#import "PWCirclesView.h"
 #import "HexColors.h"
 
 @import Photos;
@@ -73,14 +72,13 @@
     
     //photo load limit
     
-    //licenses/attribution (all cocoapods, and Icons8)
+    //licenses/attribution (all cocoapods and Icons8)
     //dev website
     //dev email
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.frame: CGRect(origin: CGPointZero, size: borderImage.size)
 }
 
 

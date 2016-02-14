@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6C70D9ACF67D6A1D07FD1F37'
+               BlueprintIdentifier = '013D326DEDE3E9729FBFCFE2'
                BlueprintName = 'SFFocusViewLayout'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SFFocusViewLayout.framework'>

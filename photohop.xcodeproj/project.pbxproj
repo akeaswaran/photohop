@@ -17,12 +17,6 @@
 		753195BE1C6D303E00D7C39E /* PhotoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 753195BC1C6D303E00D7C39E /* PhotoViewCell.m */; };
 		753195BF1C6D303E00D7C39E /* PhotoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753195BD1C6D303E00D7C39E /* PhotoViewCell.xib */; };
 		7553B0671C6E55A00099E700 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7553B0661C6E55A00099E700 /* SettingsViewController.m */; };
-		7553B0721C6E6DA80099E700 /* PWBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7553B06C1C6E6DA80099E700 /* PWBlurView.m */; };
-		7553B0731C6E6DA80099E700 /* PWCirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7553B06E1C6E6DA80099E700 /* PWCirclesView.m */; };
-		7553B0741C6E6DA80099E700 /* PWCirclesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7553B0701C6E6DA80099E700 /* PWCirclesViewController.m */; };
-		7553B07F1C6E6E8B0099E700 /* emitter-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7553B07C1C6E6E8B0099E700 /* emitter-circle.png */; };
-		7553B0801C6E6E8B0099E700 /* emitter-circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7553B07D1C6E6E8B0099E700 /* emitter-circle@2x.png */; };
-		7553B0811C6E6E8B0099E700 /* emitter-circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7553B07E1C6E6E8B0099E700 /* emitter-circle@3x.png */; };
 		7553B0831C6E72800099E700 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7553B0821C6E72800099E700 /* SettingsViewController.xib */; };
 		756CCB2E1C6EEA9500E9A4B8 /* settingsImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 756CCB2C1C6EEA9500E9A4B8 /* settingsImg@2x.png */; };
 		756CCB2F1C6EEA9500E9A4B8 /* settingsImg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 756CCB2D1C6EEA9500E9A4B8 /* settingsImg@3x.png */; };
@@ -54,15 +48,6 @@
 		753195BD1C6D303E00D7C39E /* PhotoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewCell.xib; sourceTree = "<group>"; };
 		7553B0651C6E55A00099E700 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		7553B0661C6E55A00099E700 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		7553B06B1C6E6DA80099E700 /* PWBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWBlurView.h; sourceTree = "<group>"; };
-		7553B06C1C6E6DA80099E700 /* PWBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWBlurView.m; sourceTree = "<group>"; };
-		7553B06D1C6E6DA80099E700 /* PWCirclesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWCirclesView.h; sourceTree = "<group>"; };
-		7553B06E1C6E6DA80099E700 /* PWCirclesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCirclesView.m; sourceTree = "<group>"; };
-		7553B06F1C6E6DA80099E700 /* PWCirclesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWCirclesViewController.h; sourceTree = "<group>"; };
-		7553B0701C6E6DA80099E700 /* PWCirclesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCirclesViewController.m; sourceTree = "<group>"; };
-		7553B07C1C6E6E8B0099E700 /* emitter-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emitter-circle.png"; sourceTree = "<group>"; };
-		7553B07D1C6E6E8B0099E700 /* emitter-circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emitter-circle@2x.png"; sourceTree = "<group>"; };
-		7553B07E1C6E6E8B0099E700 /* emitter-circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emitter-circle@3x.png"; sourceTree = "<group>"; };
 		7553B0821C6E72800099E700 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		756CCB2C1C6EEA9500E9A4B8 /* settingsImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsImg@2x.png"; sourceTree = "<group>"; };
 		756CCB2D1C6EEA9500E9A4B8 /* settingsImg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsImg@3x.png"; sourceTree = "<group>"; };
@@ -146,26 +131,9 @@
 		752C9F401C6CF0CC0060DE99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7553B0751C6E6DAF0099E700 /* Circles */,
 				752C9F411C6CF0CC0060DE99 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7553B0751C6E6DAF0099E700 /* Circles */ = {
-			isa = PBXGroup;
-			children = (
-				7553B07C1C6E6E8B0099E700 /* emitter-circle.png */,
-				7553B07D1C6E6E8B0099E700 /* emitter-circle@2x.png */,
-				7553B07E1C6E6E8B0099E700 /* emitter-circle@3x.png */,
-				7553B06B1C6E6DA80099E700 /* PWBlurView.h */,
-				7553B06C1C6E6DA80099E700 /* PWBlurView.m */,
-				7553B06D1C6E6DA80099E700 /* PWCirclesView.h */,
-				7553B06E1C6E6DA80099E700 /* PWCirclesView.m */,
-				7553B06F1C6E6DA80099E700 /* PWCirclesViewController.h */,
-				7553B0701C6E6DA80099E700 /* PWCirclesViewController.m */,
-			);
-			name = Circles;
 			sourceTree = "<group>";
 		};
 		756CCB441C6F1A5000E9A4B8 /* Images */ = {
@@ -262,9 +230,6 @@
 				756CCB3C1C6F122200E9A4B8 /* Icon-60@2x.png in Resources */,
 				756CCB3B1C6F122200E9A4B8 /* Icon-60.png in Resources */,
 				756CCB3D1C6F122200E9A4B8 /* Icon-60@3x.png in Resources */,
-				7553B0801C6E6E8B0099E700 /* emitter-circle@2x.png in Resources */,
-				7553B07F1C6E6E8B0099E700 /* emitter-circle.png in Resources */,
-				7553B0811C6E6E8B0099E700 /* emitter-circle@3x.png in Resources */,
 				756CCB3E1C6F122200E9A4B8 /* Icon-Small.png in Resources */,
 				756CCB411C6F122200E9A4B8 /* Icon-Spotlight-40.png in Resources */,
 				756CCB431C6F122200E9A4B8 /* Icon-Spotlight-40@3x.png in Resources */,
@@ -337,11 +302,8 @@
 				752C9F481C6CF0CC0060DE99 /* MemoriesViewController.m in Sources */,
 				752C9F451C6CF0CC0060DE99 /* AppDelegate.m in Sources */,
 				7553B0671C6E55A00099E700 /* SettingsViewController.m in Sources */,
-				7553B0731C6E6DA80099E700 /* PWCirclesView.m in Sources */,
 				752C9F421C6CF0CC0060DE99 /* main.m in Sources */,
-				7553B0721C6E6DA80099E700 /* PWBlurView.m in Sources */,
 				753195BE1C6D303E00D7C39E /* PhotoViewCell.m in Sources */,
-				7553B0741C6E6DA80099E700 /* PWCirclesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
