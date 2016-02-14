@@ -156,7 +156,7 @@ const NSInteger kPHPhotoLoadLimit = 100;
         for (int i = 0; i < _images.count; i++) {
             PHAsset *asset = _images[i];
             float progress = ((float)i / (float)_images.count);
-            PHPLog(@"PROGRESS: %f", progress);
+            //PHPLog(@"PROGRESS: %f", progress);
             [HUD setProgress:progress animated:YES];
             PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
             options.deliveryMode = PHImageRequestOptionsDeliveryModeFastFormat;
@@ -171,6 +171,7 @@ const NSInteger kPHPhotoLoadLimit = 100;
                 if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
                     [_todayMedia addObject:@{@"media" : result, @"date" : asset.creationDate, @"year" : @(creationDateComps.year)}];
                 }
+                
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if (i == _images.count - 1) {
                         [[self navTitleBar] removeFromSuperview];
@@ -182,7 +183,6 @@ const NSInteger kPHPhotoLoadLimit = 100;
                         [self.collectionView reloadData];
                     }
                 });
-
             }];
         }
     });
