@@ -165,6 +165,7 @@
     [options setIncludeHiddenAssets:NO];
     [options setIncludeAllBurstAssets:NO];
     [options setIncludeAssetSourceTypes:PHAssetSourceTypeUserLibrary];
+    //[options setFetchLimit:100];
     _images = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
     for (int i = 0; i < _images.count; i++) {
         PHAsset *asset = _images[i];
@@ -189,22 +190,17 @@
                 PHAsset *curAsset = todayAssets[j];
                 [[self imageManager] requestImageForAsset:curAsset targetSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 280) contentMode:PHImageContentModeAspectFill options:reqOptions resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
                     [SVProgressHUD showProgress:(CGFloat)j / (CGFloat)todayAssets.count status:[NSString stringWithFormat:@"Getting image %i of %lu", j, (unsigned long)todayAssets.count]];
-                    //PHPLog(@"DICTIONARY: %@", info);
-                    //PHPLog(@"PHAsset creationDate: %@", asset.creationDate);
                     NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:curAsset.creationDate];
-                    NSDateComponents *todayDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self gmtFormatter] dateFromString:[[self gmtFormatter] stringFromDate:_today]]];
-                    if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
-                        if (result) {
-                            [_todayMedia addObject:@{@"media" : result, @"date" : curAsset.creationDate, @"year" : @(creationDateComps.year)}];
-                        }
+                    if (result) {
+                        [_todayMedia addObject:@{@"media" : result, @"date" : curAsset.creationDate, @"year" : @(creationDateComps.year)}];
                     }
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
                         if (j == _images.count - 1) {
+                            [SVProgressHUD showSuccessWithStatus:@"Done!"];
                             [[self navTitleBar] removeFromSuperview];
                             [self.view addSubview:[self navTitleBar]];
                             
-                            [SVProgressHUD showSuccessWithStatus:@"Done!"];
                             PHPLog(@"IMAGES: %lu", (unsigned long)_todayMedia.count);
                             NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:NO];
                             _todayMedia = [NSMutableArray arrayWithArray:[_todayMedia.copy sortedArrayUsingDescriptors:@[sort]]];
