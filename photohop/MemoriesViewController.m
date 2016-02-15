@@ -25,6 +25,7 @@
 #endif
 
 @interface MemoriesViewController () <UICollectionViewDataSource, UICollectionViewDelegate,DZNEmptyDataSetDelegate, DZNEmptyDataSetSource> {
+    UILabel *titleLabel;
 }
 @property (strong, nonatomic) NSDate *today;
 @property (strong, nonatomic) PHFetchResult *images;
@@ -69,21 +70,21 @@
     static dispatch_once_t onceToken;
     static UIView *navView;
     dispatch_once(&onceToken, ^{
-        UILabel *label = [[UILabel alloc] init];
-        [label setFont:[UIFont boldSystemFontOfSize:18]];
-        [label setTextColor:[UIColor blackColor]];
-        [label setText:@"Today's Memories"];
-        [label sizeToFit];
+        titleLabel = [[UILabel alloc] init];
+        [titleLabel setFont:[UIFont boldSystemFontOfSize:18]];
+        [titleLabel setTextColor:[UIColor blackColor]];
+        [titleLabel setText:@"Today's Memories"];
+        [titleLabel sizeToFit];
         if (_todayMedia.count == 0) {
-            [label setText:@""];
+            [titleLabel setText:@""];
         }
         //[label.layer setBorderColor:[UIColor redColor].CGColor];
         //[label.layer setBorderWidth:1.0];
-        [label setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width / 2.0, 25 + label.frame.size.height / 2.0)];
+        [titleLabel setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width / 2.0, 25 + titleLabel.frame.size.height / 2.0)];
         
-        navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, (25 + label.frame.size.height / 2.0) + 20)];
+        navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, (25 + titleLabel.frame.size.height / 2.0) + 20)];
         navView.backgroundColor = [UIColor clearColor];
-        [navView addSubview:label];
+        [navView addSubview:titleLabel];
         if (_todayMedia.count > 0) {
             CAGradientLayer *gradientLayer = [CAGradientLayer layer];
             gradientLayer.frame = navView.bounds;
@@ -94,18 +95,26 @@
             [navView.layer insertSublayer:gradientLayer atIndex:0];
         }
         
-        //settings button
-        UIButton *settingsButton = [[UIButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 10 - 44, (navView.frame.size.height / 2.0) - 22, 44, 44)];
-        settingsButton.center = CGPointMake(settingsButton.center.x, label.center.y);
+    });
+    return navView;
+}
+
+-(UIButton*)settingsButton {
+    //settings button
+    static dispatch_once_t onceToken;
+    static UIButton *button;
+    dispatch_once(&onceToken, ^{
+        button = [[UIButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 10 - 44, ([self navTitleBar].frame.size.height / 2.0) - 22, 44, 44)];
+        button.center = CGPointMake(button.center.x, titleLabel.center.y);
         // [settingsButton.layer setBorderColor:[UIColor blueColor].CGColor];
         // [settingsButton.layer setBorderWidth:1.0];
         UIImage *buttonImg = [[UIImage imageNamed:@"SettingsImg"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-        settingsButton.tintColor = kPHContrastTextColor;
-        [settingsButton setImage:buttonImg forState:UIControlStateNormal];
-        [settingsButton addTarget:self action:@selector(openSettings) forControlEvents:UIControlEventTouchUpInside];
-        [navView addSubview:settingsButton];
+        button.tintColor = kPHContrastTextColor;
+        [button setImage:buttonImg forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(openSettings) forControlEvents:UIControlEventTouchUpInside];
     });
-    return navView;
+    
+    return button;
 }
 
 -(PHImageManager*)imageManager {
@@ -140,45 +149,66 @@
        [self refreshMedia];
     }
     [self.view addSubview:[self navTitleBar]];
-    [self setStatusBarStyle:UIStatusBarStyleDefault];
+    [[self navTitleBar] addSubview:[self settingsButton]];
+    [self setNeedsStatusBarAppearanceUpdate];
+    
 }
 
 -(void)refreshMedia {
     _today = [NSDate date];
     _todayMedia = [NSMutableArray array];
     [SVProgressHUD showWithStatus:@"Looking through your photos..."];
-    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleLight];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         PHFetchOptions *options = [[PHFetchOptions alloc] init];
         [options setIncludeHiddenAssets:NO];
         [options setIncludeAllBurstAssets:NO];
         [options setIncludeAssetSourceTypes:PHAssetSourceTypeUserLibrary];
+        //[options setFetchLimit:100];
         _images = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
         for (int i = 0; i < _images.count; i++) {
             PHAsset *asset = _images[i];
             PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-            options.deliveryMode = PHImageRequestOptionsDeliveryModeFastFormat;
+            options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
             options.networkAccessAllowed = YES;
             options.resizeMode = PHImageRequestOptionsResizeModeFast;
             options.version = PHImageRequestOptionsVersionOriginal;
-            [[self imageManager] requestImageForAsset:asset targetSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 200) contentMode:PHImageContentModeAspectFill options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            [[self imageManager] requestImageForAsset:asset targetSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 280) contentMode:PHImageContentModeAspectFill options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                [SVProgressHUD showProgress:(CGFloat)i / (CGFloat)_images.count status:[NSString stringWithFormat:@"Checking photo %i of %lu", i, (unsigned long)_images.count]];
                 //PHPLog(@"DICTIONARY: %@", info);
                 //PHPLog(@"PHAsset creationDate: %@", asset.creationDate);
                 NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:asset.creationDate];
                 NSDateComponents *todayDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self gmtFormatter] dateFromString:[[self gmtFormatter] stringFromDate:_today]]];
                 if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
-                    [_todayMedia addObject:@{@"media" : result, @"date" : asset.creationDate, @"year" : @(creationDateComps.year)}];
+                    if (result) {
+                        [_todayMedia addObject:@{@"media" : result, @"date" : asset.creationDate, @"year" : @(creationDateComps.year)}];
+                    }
                 }
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if (i == _images.count - 1) {
                         [[self navTitleBar] removeFromSuperview];
                         [self.view addSubview:[self navTitleBar]];
-                        [SVProgressHUD dismiss];
+                        
+                        [SVProgressHUD showSuccessWithStatus:@"All photos checked!"];
                         PHPLog(@"IMAGES: %lu", (unsigned long)_todayMedia.count);
                         NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:NO];
                         _todayMedia = [NSMutableArray arrayWithArray:[_todayMedia.copy sortedArrayUsingDescriptors:@[sort]]];
                         [self.collectionView reloadData];
+                        
+                        if (_todayMedia.count > 0) {
+                            UIApplication *application = [UIApplication sharedApplication];
+                            if (_todayMedia.count > 0) {
+                                application.statusBarStyle = UIStatusBarStyleLightContent;
+                                [[self settingsButton] setTintColor:[UIColor whiteColor]];
+                                [self.collectionView setBackgroundColor:[UIColor blackColor]];
+                            } else {
+                                application.statusBarStyle = UIStatusBarStyleDefault;
+                                [[self settingsButton] setTintColor:kPHContrastTextColor];
+                            }
+                            [self setNeedsStatusBarAppearanceUpdate];
+                        }
                     }
                 });
             }];
@@ -236,7 +266,11 @@
     NSMutableParagraphStyle *paragraph = [NSMutableParagraphStyle new];
     paragraph.lineBreakMode = NSLineBreakByWordWrapping;
     paragraph.alignment = NSTextAlignmentCenter;
-    text = @"If you have memories from today in years past, you'll see them here.";
+    if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusNotDetermined || [PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusDenied || [PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusRestricted) {
+        text = @"Allow PhotoHop access to your photos to see memories from years gone by.";
+    } else {
+        text = @"If you have memories from today in years past, you'll see them here.";
+    }
     font = [UIFont systemFontOfSize:13.0];
     textColor = kPHContrastTextColor;
     paragraph.lineSpacing = 4.0;
@@ -316,7 +350,7 @@
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     if (self.presentedViewController == nil) {
         NSDictionary *infoDict = _todayMedia[indexPath.item];
-        NSString *message = [NSString stringWithFormat:@"My memory from %@ ago today!",[self formatDateString:infoDict[@"year"]]];
+        NSString *message = [NSString stringWithFormat:@"My memory from %@ today!",[self formatDateString:infoDict[@"year"]]];
         UIImage *image = infoDict[@"media"];
         
         NSArray *shareItems = @[message, image];

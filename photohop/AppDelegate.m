@@ -20,7 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window setRootViewController:[[MemoriesViewController alloc] init]];
+    MemoriesViewController *memVC = [[MemoriesViewController alloc] init];
+    [self.window setRootViewController:memVC];
     [self.window makeKeyAndVisible];
     return YES;
 }

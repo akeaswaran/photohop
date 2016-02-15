@@ -10,11 +10,14 @@
 #import "MemoriesViewController.h"
 
 #import "HexColors.h"
+#import "Chameleon.h"
 
 @import Photos;
 @import MessageUI;
 
-@interface SettingsViewController () <UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate>
+@interface SettingsViewController () <UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate> {
+    BOOL todayMediaExists;
+}
 @property (strong, nonatomic) UIImage *backgroundImage;
 @property (nonatomic) UIImageView *imageView;
 @property (nonatomic) UIVisualEffectView *visView;
@@ -33,7 +36,11 @@
 - (UIView*)navTitle {
     UILabel *label = [[UILabel alloc] init];
     [label setFont:[UIFont boldSystemFontOfSize:18]];
-    [label setTextColor:[UIColor blackColor]];
+    if (todayMediaExists) {
+        [label setTextColor:[UIColor whiteColor]];
+    } else {
+        [label setTextColor:[UIColor blackColor]];
+    }
     [label setText:@"Settings"];
     [label sizeToFit];
     [label setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width / 2.0, 25 + label.frame.size.height / 2.0)];
@@ -44,7 +51,11 @@
     
     UIButton *doneButton = [[UIButton alloc] initWithFrame:CGRectMake(10, (navView.frame.size.height / 2.0) - 22, 44, 44)];
     doneButton.center = CGPointMake(doneButton.center.x, label.center.y);
-    doneButton.tintColor = [UIColor hx_colorWithHexString:@"000000" alpha:0.25];
+    if (todayMediaExists) {
+        doneButton.tintColor = [UIColor hx_colorWithHexString:@"FFFFFF" alpha:0.25];
+    } else {
+        doneButton.tintColor = [UIColor hx_colorWithHexString:@"000000" alpha:0.25];
+    }
     [doneButton setImage:[[UIImage imageNamed:@"close"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
     [doneButton addTarget:self action:@selector(dismissVC) forControlEvents:UIControlEventTouchUpInside];
     [navView addSubview:doneButton];
@@ -63,11 +74,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[UILabel appearanceWhenContainedInInstancesOfClasses:@[[UITableViewHeaderFooterView class]]] setTextColor:[UIColor hx_colorWithHexString:@"000000" alpha:0.25]];
+    MemoriesViewController *memVC = (MemoriesViewController*)self.navigationController.presentingViewController;
+    todayMediaExists = (memVC.todayMedia.count > 0);
+    
     _imageView = [[UIImageView alloc] initWithImage:_backgroundImage];
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:_imageView];
-    _visView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+    if (todayMediaExists) {
+        _visView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
+        [[UILabel appearanceWhenContainedInInstancesOfClasses:@[[UITableViewHeaderFooterView class]]] setTextColor:[UIColor hx_colorWithHexString:@"FFFFFF" alpha:0.25]];
+    } else {
+        _visView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+        [[UILabel appearanceWhenContainedInInstancesOfClasses:@[[UITableViewHeaderFooterView class]]] setTextColor:[UIColor hx_colorWithHexString:@"000000" alpha:0.25]];
+    }
+    
     _visView.frame = self.view.bounds;
 
     [_visView addSubview:[self navTitle]];
@@ -75,7 +95,11 @@
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, [self navTitle].frame.origin.y + [self navTitle].frame.size.height, self.view.bounds.size.width, self.view.bounds.size.height - [self navTitle].frame.origin.y + [self navTitle].frame.size.height) style:UITableViewStyleGrouped];
     [_tableView setDelegate:self];
     [_tableView setDataSource:self];
-    [_tableView setSeparatorColor:[UIColor hx_colorWithHexString:@"000000" alpha:0.25]];
+    if (todayMediaExists) {
+        [_tableView setSeparatorColor:[UIColor hx_colorWithHexString:@"FFFFFF" alpha:0.25]];
+    } else {
+        [_tableView setSeparatorColor:[UIColor hx_colorWithHexString:@"000000" alpha:0.25]];
+    }
     [_tableView setBackgroundColor:[UIColor clearColor]];
     [self.view addSubview:_visView];
     [self.view addSubview:_tableView];
@@ -100,9 +124,15 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
         cell.backgroundColor = [UIColor clearColor];
-        [cell.textLabel setTextColor:[UIColor blackColor]];
+        
         UIView *bgView = [[UIView alloc] initWithFrame:cell.bounds];
-        [bgView setBackgroundColor:[UIColor hx_colorWithHexString:@"000000" alpha:0.1]];
+        if (todayMediaExists) {
+            [cell.textLabel setTextColor:[UIColor whiteColor]];
+            [bgView setBackgroundColor:[UIColor hx_colorWithHexString:@"FFFFFF" alpha:0.25]];
+        } else {
+            [cell.textLabel setTextColor:[UIColor blackColor]];
+            [bgView setBackgroundColor:[UIColor hx_colorWithHexString:@"000000" alpha:0.1]];
+        }
         [cell setSelectedBackgroundView:bgView];
     }
 
