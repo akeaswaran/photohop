@@ -196,7 +196,7 @@
                     }
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        if (j == _images.count - 1) {
+                        if (j == todayAssets.count - 1) {
                             [SVProgressHUD showSuccessWithStatus:@"Done!"];
                             [[self navTitleBar] removeFromSuperview];
                             [self.view addSubview:[self navTitleBar]];
