@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "MemoriesViewController.h"
 
+#import <ChameleonFramework/Chameleon.h>
+
 @interface AppDelegate ()
 
 @end
@@ -22,5 +24,6 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+
 
 @end

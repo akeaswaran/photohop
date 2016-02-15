@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E39d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
@@ -17,21 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOHOP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6I-3u-DgU">
-                                <rect key="frame" x="148" y="267" width="305" height="66"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PHLogo-Small.png" translatesAutoresizingMaskIntoConstraints="NO" id="BEM-3K-PON">
+                                <rect key="frame" x="141" y="141" width="318" height="318"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="305" id="MbD-HJ-Y0L"/>
+                                    <constraint firstAttribute="width" constant="318" id="6Mi-Yv-9p5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.035294117649999998" green="0.035294117649999998" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="q6I-3u-DgU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5l1-CU-zUV"/>
-                            <constraint firstItem="q6I-3u-DgU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UGq-Dd-70C"/>
-                            <constraint firstItem="q6I-3u-DgU" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="247" id="o7O-qB-7Pn"/>
+                            <constraint firstItem="BEM-3K-PON" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="V4C-iL-wFy"/>
+                            <constraint firstItem="BEM-3K-PON" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="121" id="hIe-st-Rie"/>
+                            <constraint firstItem="BEM-3K-PON" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tHn-Vu-Amw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,4 +36,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PHLogo-Small.png" width="2000" height="2000"/>
+    </resources>
 </document>

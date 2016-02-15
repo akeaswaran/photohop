@@ -6,6 +6,7 @@ use_frameworks!
 target 'photohop' do
 pod 'HexColors'
 pod 'SFFocusViewLayout', '~> 2.0'
-pod 'JGProgressHUD'
+pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 pod 'DZNEmptyDataSet'
+pod 'ChameleonFramework'
 end

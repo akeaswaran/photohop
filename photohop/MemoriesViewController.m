@@ -10,13 +10,13 @@
 #import "PhotoViewCell.h"
 #import "SettingsViewController.h"
 #import <Photos/Photos.h>
+#import "AppDelegate.h"
 
 #import <SFFocusViewLayout/SFFocusViewLayout.h>
-#import <JGProgressHUD/JGProgressHUD.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 #import "UIScrollView+EmptyDataSet.h"
 #import "HexColors.h"
-
-const NSInteger kPHPhotoLoadLimit = 100;
+#import "Chameleon.h"
 
 #ifdef NDEBUG
     #define PHPLog(...)
@@ -25,7 +25,6 @@ const NSInteger kPHPhotoLoadLimit = 100;
 #endif
 
 @interface MemoriesViewController () <UICollectionViewDataSource, UICollectionViewDelegate,DZNEmptyDataSetDelegate, DZNEmptyDataSetSource> {
-    JGProgressHUD *HUD;
 }
 @property (strong, nonatomic) NSDate *today;
 @property (strong, nonatomic) PHFetchResult *images;
@@ -71,8 +70,8 @@ const NSInteger kPHPhotoLoadLimit = 100;
     static UIView *navView;
     dispatch_once(&onceToken, ^{
         UILabel *label = [[UILabel alloc] init];
-        [label setFont:[UIFont systemFontOfSize:18]];
-        [label setTextColor:[UIColor whiteColor]];
+        [label setFont:[UIFont boldSystemFontOfSize:18]];
+        [label setTextColor:[UIColor blackColor]];
         [label setText:@"Today's Memories"];
         [label sizeToFit];
         if (_todayMedia.count == 0) {
@@ -100,7 +99,9 @@ const NSInteger kPHPhotoLoadLimit = 100;
         settingsButton.center = CGPointMake(settingsButton.center.x, label.center.y);
         // [settingsButton.layer setBorderColor:[UIColor blueColor].CGColor];
         // [settingsButton.layer setBorderWidth:1.0];
-        [settingsButton setImage:[UIImage imageNamed:@"SettingsImg"] forState:UIControlStateNormal];
+        UIImage *buttonImg = [[UIImage imageNamed:@"SettingsImg"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        settingsButton.tintColor = kPHContrastTextColor;
+        [settingsButton setImage:buttonImg forState:UIControlStateNormal];
         [settingsButton addTarget:self action:@selector(openSettings) forControlEvents:UIControlEventTouchUpInside];
         [navView addSubview:settingsButton];
     });
@@ -126,6 +127,9 @@ const NSInteger kPHPhotoLoadLimit = 100;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    kPHBaseColor = [UIColor hx_colorWithHexString:@"f0f0f0"];
+    kPHContrastTextColor = [UIColor colorWithContrastingBlackOrWhiteColorOn:kPHBaseColor isFlat:YES];
+    kPHButtonColor = [UIColor flatOrangeColorDark];
     [self.collectionView setDelegate:self];
     [self.collectionView setDataSource:self];
     [self.collectionView registerNib:[UINib nibWithNibName:@"PhotoViewCell" bundle:nil] forCellWithReuseIdentifier:@"PhotoViewCell"];
@@ -136,34 +140,28 @@ const NSInteger kPHPhotoLoadLimit = 100;
        [self refreshMedia];
     }
     [self.view addSubview:[self navTitleBar]];
+    [self setStatusBarStyle:UIStatusBarStyleDefault];
 }
 
 -(void)refreshMedia {
     _today = [NSDate date];
     _todayMedia = [NSMutableArray array];
-    HUD = [JGProgressHUD progressHUDWithStyle:JGProgressHUDStyleDark];
-    HUD.indicatorView = [[JGProgressHUDRingIndicatorView alloc] initWithHUDStyle:HUD.style];
-    HUD.textLabel.text = @"Looking through your photos...";
-    HUD.center = self.view.center;
-    [HUD showInView:self.view];
+    [SVProgressHUD showWithStatus:@"Looking through your photos..."];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         PHFetchOptions *options = [[PHFetchOptions alloc] init];
         [options setIncludeHiddenAssets:NO];
-        [options setIncludeAllBurstAssets:YES];
+        [options setIncludeAllBurstAssets:NO];
         [options setIncludeAssetSourceTypes:PHAssetSourceTypeUserLibrary];
-        [options setFetchLimit:kPHPhotoLoadLimit];
-        _images = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:nil];
+        _images = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
         for (int i = 0; i < _images.count; i++) {
             PHAsset *asset = _images[i];
-            float progress = ((float)i / (float)_images.count);
-            //PHPLog(@"PROGRESS: %f", progress);
-            [HUD setProgress:progress animated:YES];
             PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
             options.deliveryMode = PHImageRequestOptionsDeliveryModeFastFormat;
             options.networkAccessAllowed = YES;
             options.resizeMode = PHImageRequestOptionsResizeModeFast;
             options.version = PHImageRequestOptionsVersionOriginal;
-            [[self imageManager] requestImageForAsset:asset targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeAspectFill options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            [[self imageManager] requestImageForAsset:asset targetSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 200) contentMode:PHImageContentModeAspectFill options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
                 //PHPLog(@"DICTIONARY: %@", info);
                 //PHPLog(@"PHAsset creationDate: %@", asset.creationDate);
                 NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:asset.creationDate];
@@ -176,7 +174,7 @@ const NSInteger kPHPhotoLoadLimit = 100;
                     if (i == _images.count - 1) {
                         [[self navTitleBar] removeFromSuperview];
                         [self.view addSubview:[self navTitleBar]];
-                        [HUD dismissAnimated:YES];
+                        [SVProgressHUD dismiss];
                         PHPLog(@"IMAGES: %lu", (unsigned long)_todayMedia.count);
                         NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:NO];
                         _todayMedia = [NSMutableArray arrayWithArray:[_todayMedia.copy sortedArrayUsingDescriptors:@[sort]]];
@@ -216,8 +214,7 @@ const NSInteger kPHPhotoLoadLimit = 100;
     }
     
     font = [UIFont boldSystemFontOfSize:16.0];
-    textColor = [UIColor hx_colorWithHexString:@"c9c9c9"];
-    
+    textColor = kPHContrastTextColor;     
     
     NSMutableDictionary *attributes = [NSMutableDictionary new];
     if (font) [attributes setObject:font forKey:NSFontAttributeName];
@@ -241,7 +238,7 @@ const NSInteger kPHPhotoLoadLimit = 100;
     paragraph.alignment = NSTextAlignmentCenter;
     text = @"If you have memories from today in years past, you'll see them here.";
     font = [UIFont systemFontOfSize:13.0];
-    textColor = [UIColor hx_colorWithHexString:@"cfcfcf"];
+    textColor = kPHContrastTextColor;
     paragraph.lineSpacing = 4.0;
     
     if (font) [attributes setObject:font forKey:NSFontAttributeName];
@@ -260,7 +257,7 @@ const NSInteger kPHPhotoLoadLimit = 100;
         UIFont *font = nil;
         UIColor *textColor = nil;
         font = [UIFont boldSystemFontOfSize:16.0];
-        textColor = [UIColor hx_colorWithHexString:(state == UIControlStateNormal) ? @"05adff" : @"6bceff"];
+        textColor = kPHButtonColor;
         text = @"Import your photos";
         NSMutableDictionary *attributes = [NSMutableDictionary new];
         if (font) [attributes setObject:font forKey:NSFontAttributeName];
@@ -274,7 +271,7 @@ const NSInteger kPHPhotoLoadLimit = 100;
 
 - (UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView
 {
-    return [UIColor hx_colorWithHexString:@"090909"];
+    return kPHBaseColor;//[UIColor hx_colorWithHexString:@"090909"];
 }
 
 - (CGFloat)verticalOffsetForEmptyDataSet:(UIScrollView *)scrollView

@@ -7,80 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04EDB24BBF37218355321DFD146DB3B3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */; };
-		0781C0E9971BCD97C52F1A053EB97DDA /* JGProgressHUDFadeZoomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C03224C4C8777FAE60E512210012A52B /* JGProgressHUDFadeZoomAnimation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		08ECDF579531F7093759606F912B9D2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
-		0AF03BEB17B21617DAE72E1DB2AA6239 /* JGProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1B94DAA2F3304A20F524E8897FBF40 /* JGProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D901285F728E0C7CF17DC6ED3810351 /* Pods-photohop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4C8461CEB0336444B35DE99215EDB4 /* Pods-photohop-dummy.m */; };
-		112F63A968D2B1E3103BE1D0957DF597 /* JGProgressHUD Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A1DE0D4648E9A435CD3611437E5FA9C3 /* JGProgressHUD Resources.bundle */; };
-		22DC2D74E9117167CD17FD04C327EB9D /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 943E272D65B2506453B4F4602C5A23C7 /* DZNEmptyDataSet-dummy.m */; };
-		2AA21748F66B4A7AC8930D6F63D4AC56 /* Pods-photohop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADA59317FD179F55D1CE65459D8779B /* Pods-photohop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DF9B5866AD77B64B15536DA4E04296D /* JGProgressHUDRingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 895FFAF75889C64B2EA856A6F9413EB7 /* JGProgressHUDRingIndicatorView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3210552EE14BF09797714D00F55D075B /* JGProgressHUD-Defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E3CAC845593F4EB563F1E4ACD3A649A /* JGProgressHUD-Defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38082DAABEC61FA8F13A507963AE3205 /* JGProgressHUDIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 440414AECA128714DC8D4F647CD3A531 /* JGProgressHUDIndicatorView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3BC49A2B50306C45D4EBCAA50600EBE7 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A3D7578DDF3C36DEB05241D96A1522 /* UIScrollView+EmptyDataSet.m */; };
-		3EBA98EEF1A580EC8BF2CE2E7903ECC4 /* JGProgressHUDRingIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = D538E2A315752C85CE4DB3CC17199DE6 /* JGProgressHUDRingIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46196B61BABC54BA463AD72064D898D6 /* JGProgressHUDIndeterminateIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E7630A75942F93FAA6D6CCB9542BB1 /* JGProgressHUDIndeterminateIndicatorView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		47687FC7E616654C7A37EAE88C14BF5F /* SFFocusViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA05FA42D23B8D3144D9A1E034C27E0 /* SFFocusViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		476E30A7475DCC20F88BE4982A8E4924 /* JGProgressHUDErrorIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = D91139D2601A64DD3A2A06911C621672 /* JGProgressHUDErrorIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E5B4EEA50BEF0B4D0FE2394D3EB119A /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9091B3E3CB7A03F414F95BF5E9D8DC /* HexColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5597298A201CB095F76D36B6A8C8811E /* JGProgressHUDFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A627700443C5961DBFF079A30D2F94 /* JGProgressHUDFadeAnimation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		56A54DEE7567ACC08FC79D6C4E554BFB /* JGProgressHUDImageIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C8EFDE628B87CD3CA12FA1DBEAAB1A /* JGProgressHUDImageIndicatorView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		596758BBEC68789E6C8928ECE3FC341C /* HexColors.h in Headers */ = {isa = PBXBuildFile; fileRef = A7CE6E5E4A6D5353D687B37CAA11C982 /* HexColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60C7284F233162FBCD908582DA813895 /* SFFocusViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E0864DB33F4471E11C6F825EFC3A0C0 /* SFFocusViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69222EABD062DDE82BD26D0804F9366B /* SFFocusViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8A3FC0EC4EB7E89512008B4812803C /* SFFocusViewLayout-dummy.m */; };
-		7019D2587E0AA201AEF8C09319D1FF55 /* JGProgressHUDAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A12E00CAA9EB583BABCFD7211D4D879C /* JGProgressHUDAnimation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		72E250C04949942C751C0B61CA3CFFD1 /* JGProgressHUDIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB2BC0085C48BA917FC7C8DC4869DCE /* JGProgressHUDIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7807E4544CE620CD6AB2561ADC0425EC /* JGProgressHUDSuccessIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D5BBD1F9753D021895DC54B5FACA8D /* JGProgressHUDSuccessIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		780A2BE87454E8209CB1FF7F5B339CA3 /* JGProgressHUDPieIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4153144E36C5369FB979F34D383370B /* JGProgressHUDPieIndicatorView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7845BE0FF876B96E5FF8D9513E928CAF /* JGProgressHUDFadeZoomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F17522F247A04F2589994B5CC2579B /* JGProgressHUDFadeZoomAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89564C6D85AE2A4DF13AF536497AD603 /* JGProgressHUDPieIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C10180AB6C5A09DD6AABEC4E3C923C /* JGProgressHUDPieIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8AB97551B3EC56D58DB1B40042D6A441 /* JGProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 32316D0E294AE72F7BE085C103654F0B /* JGProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DCF5C0EE6AC7543935C51AA756864C0 /* HexColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CC02CB1D13CDC5CC60EE32478B38F3 /* HexColors-dummy.m */; };
-		9449D2693EF02E46F7BFAABDA5BBCA4D /* SFFocusViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A15087938183B22C62263CFF7E9CFD7F /* SFFocusViewLayout.m */; };
-		957511BE5A569B2AAFB77708FD0039D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
-		9DB9BC32D9ECF36192E43A6FC728CACF /* JGProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F26A9E74077BA9D5F26AC788B4E406A0 /* JGProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9EBA127F90CA19F3F427C10900E5DB5C /* JGProgressHUDFadeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF3ED324B6EE2C10FE53A9E2DB68318 /* JGProgressHUDFadeAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA8E48DCFBBE2626D07F079317FD8A91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
-		B116B651388E34E3CE3E9097BC83D47F /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D283A43993C6E638F4A88FD1A608CF /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B21E4FA84A3EB446470A904B9F3A78B0 /* JGProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E10011C275E64E97C048D1A7059C6B8D /* JGProgressHUD-dummy.m */; };
-		B768EAA4F040B54F0CC187469BE9DEC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
-		B7FDAC105AB53E3D878BCF26E2860012 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
-		C2C5B4F871F6D0D9D309BE19975DB0D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
-		C48DB1A4001B5B8B8B50A7C453163AD0 /* JGProgressHUDAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E5BF9C7601DE14F78A47D63E95D1F4 /* JGProgressHUDAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAAD45C4CF53ECB0A96811C4CCCFAA2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
-		D1DCC96C235AF48AFABD6317E54926F5 /* JGProgressHUDSuccessIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4632D02FAB24ACE219DDF4C25021053B /* JGProgressHUDSuccessIndicatorView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D1E92AEC9F093E10C69F2B89A14F49F5 /* HexColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CC1137A3CCD2001EF1BC73462153BE4 /* HexColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D883F171D2C7A40FC3DE6EB57A446DF7 /* JGProgressHUDErrorIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2506438D6FD12BC71F63E7BF905A5A57 /* JGProgressHUDErrorIndicatorView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E14B01B2BDDA7C86AC2EBC45FCFEF52E /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = C02566A31900E0A1F20713A57864A640 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED854B70B070D7FDDA5911CA815043C2 /* JGProgressHUDImageIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4183A6C28F51F781F64B730B12595F6D /* JGProgressHUDImageIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0514042E1FE8FC419CFF033697FA716 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
-		FEA21DBE90FFFA123BD5B1B18F356A60 /* JGProgressHUDIndeterminateIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = B087D536FE1AB522145659CCFFF02DAC /* JGProgressHUDIndeterminateIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00E3A68D030F24BE47B99D1D1A1720E2 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = B99C03C4651B9216E478CAF8D22788A4 /* UIColor+ChameleonPrivate.m */; };
+		039FF2090242B4B4CB29EBBB0B6CDA00 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAD6B11EDA9CC7123A43570DC5604C /* SVProgressHUD.m */; };
+		072BEEF7E71F00675E87028A9A668B84 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 598FFDE6F2FD52F432DE6600C676530E /* UIImage+ChameleonPrivate.m */; };
+		094F2EC0A53F64D5A99B85D3E0CF4D17 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD59B6285B97D46223D7D3AD9F47A3 /* SVRadialGradientLayer.m */; };
+		0B8C824736914715CF75EB1083A7A104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		10D5BE2917726FB877BFE065F2F52014 /* SFFocusViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 615A2A46724791BE0FBF7DFD317E0A75 /* SFFocusViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		160634C0F5454A32E810DDF5BA9E5985 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = B73C814E3D16A6204391F0321CD59512 /* NSArray+Chameleon.m */; };
+		1716FA0939818C49FE4BBE6A658E9834 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 266FE07C9C0B71C0B908BF7F5025E557 /* UIButton+Chameleon.m */; };
+		1DE26E57570167EE496080D68F855A01 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 68740E4DDEA1C4CB200558719DA8DEC1 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2139B6A9B4241F53BB478C43D51921CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */; };
+		22DC2D74E9117167CD17FD04C327EB9D /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D538F0AFC356D91EB405A56041CB95AC /* DZNEmptyDataSet-dummy.m */; };
+		23795D7EC1AF274A6AFF4233B1E84C4C /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = AA408CD9F0FFDD853E605D2AE5F44F7E /* UINavigationController+Chameleon.m */; };
+		2B2CDF28A19D251BE61300A42473F377 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
+		2E2946436612A5B920BE18E09BF80CAF /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE1038C66866CE063DCC440C848470 /* UIViewController+Chameleon.m */; };
+		3132A9EBC1F85B6971B934C88914CD58 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD19AABE6F0B3DA98CA6EA9260B895E /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B2A79213DC65661D7BE37BE589F0F99 /* SFFocusViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C6A50F3AE3414E12ED58F9EA35729E /* SFFocusViewLayout-dummy.m */; };
+		3BC49A2B50306C45D4EBCAA50600EBE7 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 77871B44654450CFB6D271279C8769DB /* UIScrollView+EmptyDataSet.m */; };
+		3CCCC6F0C10F65283522C54CF1D6E761 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C9F07FC9118CD875F381D27E0124944 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D1FF907F6AD5186FAF926C0F20083AE /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF190D9AA46A67A0E12BAB3B8BB5495 /* Chameleon_.m */; };
+		3EB87077CB9227C321F62EE54941ACCF /* Pods-photohop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADA59317FD179F55D1CE65459D8779B /* Pods-photohop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41E19345B5C2331DAA02119D782F4E5F /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFB5CB9EC430994935933054EEEE2DD /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42B81612C22744B21A3AC57DC36F7DD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		4B181B0AC8894DE05050B3F6718D392C /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4FF4626DFCBD1D6972744CCF181CA9 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E1065208C5B2417E306235ED5CABC2B /* Pods-photohop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4C8461CEB0336444B35DE99215EDB4 /* Pods-photohop-dummy.m */; };
+		4E53C48294089DC928E3A7BD1C2DE4D7 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CD61982C5569848F333ADEADC5C35A58 /* UIColor+Chameleon.m */; };
+		4E5B4EEA50BEF0B4D0FE2394D3EB119A /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C54973DF91EFEE34C5720CDAE68C4B1 /* HexColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		596758BBEC68789E6C8928ECE3FC341C /* HexColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 244D937C2205532F42A0C3E3353F96E1 /* HexColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BF38591007E7E4ADAD878E405949598 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F82F38B731F5A8873B02B05AF16DAF4C /* ChameleonConstants.m */; };
+		7A8C05065D9F9BA2C218F75AD6B1F798 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 997C11F44E7333F99D426ED3CE4C24E0 /* UIAppearance+Swift.m */; };
+		7AC6A834FA57B36D28F89E0DB6B10730 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E40A523A78D4A23DE7E9CA856729DB46 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EDDB8F47291F592694D7135A10DAFFF /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = E323B313261976BA3325CA845C262FCB /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D7B7FAA855B1C97BECB7651AC9584C4 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5EF86CB650D3620E63CBBA4FBE4EF /* SVIndefiniteAnimatedView.m */; };
+		8DCF5C0EE6AC7543935C51AA756864C0 /* HexColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF0CFEC4DF4D463A709A7A2E2E8F6 /* HexColors-dummy.m */; };
+		9EEBF7B1602C1C17236C4EA0DD9717E2 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 443EC587835EEEA12AE497087FCE0AAA /* UILabel+Chameleon.m */; };
+		A96F59F26A96FF08FC2E9C6284B48A63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		B116B651388E34E3CE3E9097BC83D47F /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E50EE603E2A48EAD8D8104E8B19CF6 /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3429381360BE9C37D00301284E4B63A /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F67E87A3FD56383CAEDC7C119A3D21F5 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B768EAA4F040B54F0CC187469BE9DEC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		B7FDAC105AB53E3D878BCF26E2860012 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		BBAF679B62332C972CF0E73893EE0E65 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85ABE21C62BE37AB03BAEB0B55224094 /* SVProgressHUD.bundle */; };
+		C0FD7C79EC924F23C9A2FC82C540CDF3 /* SFFocusViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6A589F55ECF330867313E12D214C7 /* SFFocusViewLayout.m */; };
+		C5D22B9D6600C31DC02CEC59BDA086B0 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = CB8D3AC674A2D7A370664AC5E2EDE9D9 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C61ED2CF225C6D9872D34F5455C945D4 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 11BC126D2810065474CE6B740EAED468 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C67E03EC22D124DE998695EF86B99E25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
+		C84DFC79CACF46C6275670861ADBA6D4 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E372CEE9250807F38E8587BCD50B7B /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8F5D883246ECEF0F939E9F02AAB9C05 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7930172D54FD18DFC5F37A8E8198E2F7 /* SVProgressHUD-dummy.m */; };
+		C94589A47D4E708DDE92C416033C1B66 /* SFFocusViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1F9E3431F2572D1531616A575C0678 /* SFFocusViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAAD45C4CF53ECB0A96811C4CCCFAA2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
+		CC51E5C010ABC87B9CAAA1CB721A6A94 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF89648DA6C5E365346BBC4FAA2EF44 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFE128CC77A6E92EC556F5730EDBD337 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E537DAE654809917EDFF2A9A26C98D90 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E92AEC9F093E10C69F2B89A14F49F5 /* HexColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 091C3D595E97A79891840471597F3EC3 /* HexColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D33ED72DE0A9C46DB0614F59D2ED05BF /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5DB19AA88AC2E982D18AEA7269C128 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D43D856D7A951AE72D28A271FE399110 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D99F5551ACFC8A75E2FD52B408280AD /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDD470435EE37EBA46CD0FF081559295 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA9F40520C78FDE74356ADE438A59AD /* ChameleonFramework-dummy.m */; };
+		E04963F0C6D76377186361A0AF79A4C6 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FC6EBAAC4FDDBC1DCD7DED1FE36C0E7 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E14B01B2BDDA7C86AC2EBC45FCFEF52E /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 630723D507A318CFB1DF2C92BF723011 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E53E2CD0E939A133E73880E7B3BB4DBF /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFBA335D20AC3D1EAC8CFFF44CC7F74 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED545537CDC6C83EBA629FE6524D550A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */; };
+		F32D7BD1DA58639964C91FA86A002AB4 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F89ED243B4392294B896F3282BF5694 /* UIView+ChameleonPrivate.m */; };
+		F5CC9B27F3CF472FE72A905E8C2D7A9D /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A5C15420EAD9D1D18DBA89839497CAE8 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F85099F6E9B7DB837BAB856EB61A6F07 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 047E56CBCFBB24141E94E01749A49061 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F977C86364E276C18C68EBD6BF2A409E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		FA90B7D6EBE7A289796856FF2B310FC0 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 999B7F20CF2C5CB3311F33D94996C4AC /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDF66181555E540FD4362F5F9E145740 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D3466DB41C3431B21E9E1BDDB1FADB6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6E9497D7033FA912E80DA5A719880CF;
-			remoteInfo = SFFocusViewLayout;
-		};
-		30A22F94B04CEE21B84216CEE437AB04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 617B0FC57CCB604D47A24E6198763D04;
-			remoteInfo = JGProgressHUD;
-		};
-		B7DFFA707BD08671DF96D0C70CC3FB94 /* PBXContainerItemProxy */ = {
+		35EE99E9991041E9623D847C879A58DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 16FB872D0D2D4BA0F378AB34D47CF95F;
 			remoteInfo = DZNEmptyDataSet;
 		};
-		D404C3C23D971DB6C1E0E876BC68C290 /* PBXContainerItemProxy */ = {
+		A6ABF86456B4F1D39851F580FF24830A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7B0206D4070BD33136CB9F4E80104BD;
+			remoteInfo = SVProgressHUD;
+		};
+		B1C05790749484925CD061E81EFB996F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B57F4EE4746045CEAE2D933A3C8EC9E;
+			remoteInfo = ChameleonFramework;
+		};
+		B343736070DE7E4F2DEF4FAC62B921A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E86CA3A283C0BBACB76FEE17FCA8E89;
+			remoteInfo = SFFocusViewLayout;
+		};
+		C8CDC0A36BC0558215FA5027FDBE8632 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -90,82 +112,119 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02DF58E4BF4B91141AB5A81F299FA8A3 /* Pods_photohop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photohop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E0864DB33F4471E11C6F825EFC3A0C0 /* SFFocusViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFFocusViewLayout.h; path = Classes/SFFocusViewLayout.h; sourceTree = "<group>"; };
-		2506438D6FD12BC71F63E7BF905A5A57 /* JGProgressHUDErrorIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDErrorIndicatorView.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDErrorIndicatorView.m; sourceTree = "<group>"; };
+		003BC3775D8C8BC2FB87E45C1F897A89 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047E56CBCFBB24141E94E01749A49061 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		091C3D595E97A79891840471597F3EC3 /* HexColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-umbrella.h"; sourceTree = "<group>"; };
+		0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		11BC126D2810065474CE6B740EAED468 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		11DBB4EBE88C0F0C6FA0838B1BA888DD /* Pods_photohop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photohop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AAD6B11EDA9CC7123A43570DC5604C /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		154E63A9C761C05A519873224E2D78F8 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		18B54701886FA0045778DCD44B6DCD92 /* SFFocusViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFFocusViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F89ED243B4392294B896F3282BF5694 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		244D937C2205532F42A0C3E3353F96E1 /* HexColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HexColors.h; path = Classes/HexColors.h; sourceTree = "<group>"; };
+		266FE07C9C0B71C0B908BF7F5025E557 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		279C87ED940DD31EC8F72538D0A2D4A3 /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
 		28F0C043C988625E9BEA18649B10E6FB /* Pods-photohop-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-photohop-frameworks.sh"; sourceTree = "<group>"; };
-		29A3D7578DDF3C36DEB05241D96A1522 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
-		2D745EC52A70F0A1F7060B87E93265E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E1B94DAA2F3304A20F524E8897FBF40 /* JGProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JGProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		309779F797AB84639B3A88928F979E91 /* SFFocusViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout-prefix.pch"; sourceTree = "<group>"; };
-		32316D0E294AE72F7BE085C103654F0B /* JGProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUD.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUD.h; sourceTree = "<group>"; };
-		36D5BBD1F9753D021895DC54B5FACA8D /* JGProgressHUDSuccessIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDSuccessIndicatorView.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDSuccessIndicatorView.h; sourceTree = "<group>"; };
-		380D29EFB966C19ECAFDC5ED0F13C92D /* JGProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JGProgressHUD.modulemap; sourceTree = "<group>"; };
-		3F3BA976D443FE986D222BFF930C3354 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4183A6C28F51F781F64B730B12595F6D /* JGProgressHUDImageIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDImageIndicatorView.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDImageIndicatorView.h; sourceTree = "<group>"; };
+		2F523D84DFB9761DECC2608EAE78D130 /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
+		38C0FCE3D61480FBE5D30915E41DE064 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		3C54973DF91EFEE34C5720CDAE68C4B1 /* HexColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HexColors.m; path = Classes/HexColors.m; sourceTree = "<group>"; };
+		3D1F9E3431F2572D1531616A575C0678 /* SFFocusViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout-umbrella.h"; sourceTree = "<group>"; };
 		439010847AEE3E45458BC2742EDCAE49 /* Pods-photohop-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-photohop-acknowledgements.plist"; sourceTree = "<group>"; };
-		440414AECA128714DC8D4F647CD3A531 /* JGProgressHUDIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDIndicatorView.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDIndicatorView.m; sourceTree = "<group>"; };
-		4632D02FAB24ACE219DDF4C25021053B /* JGProgressHUDSuccessIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDSuccessIndicatorView.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDSuccessIndicatorView.m; sourceTree = "<group>"; };
-		4E3CAC845593F4EB563F1E4ACD3A649A /* JGProgressHUD-Defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JGProgressHUD-Defines.h"; path = "JGProgressHUD/JGProgressHUD/JGProgressHUD-Defines.h"; sourceTree = "<group>"; };
-		58CC02CB1D13CDC5CC60EE32478B38F3 /* HexColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HexColors-dummy.m"; sourceTree = "<group>"; };
-		58EBCE0A31E171D352EE2E39AA57D0E9 /* JGProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B9091B3E3CB7A03F414F95BF5E9D8DC /* HexColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HexColors.m; path = Classes/HexColors.m; sourceTree = "<group>"; };
-		5CC36BE3DFAD43D2C7341D3BF265821C /* HexColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HexColors.modulemap; sourceTree = "<group>"; };
-		6303D2B802E8050C50E7269840A95FF7 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
-		64E5BF9C7601DE14F78A47D63E95D1F4 /* JGProgressHUDAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDAnimation.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDAnimation.h; sourceTree = "<group>"; };
+		443EC587835EEEA12AE497087FCE0AAA /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		49D2EAD290D56685AD62390FA4FDE503 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4DD19AABE6F0B3DA98CA6EA9260B895E /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		4DF89648DA6C5E365346BBC4FAA2EF44 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		4FC6EBAAC4FDDBC1DCD7DED1FE36C0E7 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		598FFDE6F2FD52F432DE6600C676530E /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		5BBE1038C66866CE063DCC440C848470 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		5E2DAE8728368F73CA60DB5C81973A25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		615A2A46724791BE0FBF7DFD317E0A75 /* SFFocusViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFFocusViewLayout.h; path = Classes/SFFocusViewLayout.h; sourceTree = "<group>"; };
+		630723D507A318CFB1DF2C92BF723011 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		6796ED40A08F6FBE9D0C23F23441EC96 /* HexColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HexColors.xcconfig; sourceTree = "<group>"; };
 		67DBC4AFF3D25EA5F9D6281B25568235 /* Pods-photohop-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-photohop-resources.sh"; sourceTree = "<group>"; };
-		67F17522F247A04F2589994B5CC2579B /* JGProgressHUDFadeZoomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDFadeZoomAnimation.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDFadeZoomAnimation.h; sourceTree = "<group>"; };
-		6BF3ED324B6EE2C10FE53A9E2DB68318 /* JGProgressHUDFadeAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDFadeAnimation.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDFadeAnimation.h; sourceTree = "<group>"; };
-		6FC380D634B29DE75036385F8D08FD42 /* SFFocusViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFFocusViewLayout.xcconfig; sourceTree = "<group>"; };
-		7B8A3FC0EC4EB7E89512008B4812803C /* SFFocusViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFFocusViewLayout-dummy.m"; sourceTree = "<group>"; };
-		7CA05FA42D23B8D3144D9A1E034C27E0 /* SFFocusViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		68740E4DDEA1C4CB200558719DA8DEC1 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		6C9D2CEA55AE9FD8A7B771E77DB6709D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712344A25993FF66BD3B14698C52FDD0 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		73E913F2D3E81E8D74A6B7177C84EC03 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
+		75E1D289A746128387C08472CE0A2BCF /* SFFocusViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFFocusViewLayout.xcconfig; sourceTree = "<group>"; };
+		77871B44654450CFB6D271279C8769DB /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		77BBF0CFEC4DF4D463A709A7A2E2E8F6 /* HexColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HexColors-dummy.m"; sourceTree = "<group>"; };
+		7930172D54FD18DFC5F37A8E8198E2F7 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		7DFB5CB9EC430994935933054EEEE2DD /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		7E028C59699DB170CB213FBD79A93777 /* SFFocusViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout-prefix.pch"; sourceTree = "<group>"; };
 		81749E828920DB6BE32470F2406D03F9 /* Pods-photohop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-photohop.debug.xcconfig"; sourceTree = "<group>"; };
-		8308839D9D2EE67030DA119D91CD75ED /* SFFocusViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFFocusViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		856214F512D89659BA0B736A387F48AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85C42636F70D74F448F276C1989AD67D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C6A50F3AE3414E12ED58F9EA35729E /* SFFocusViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFFocusViewLayout-dummy.m"; sourceTree = "<group>"; };
+		85ABE21C62BE37AB03BAEB0B55224094 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		86DB3E8EAA1C94D3EBBBB49AF7968A02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		895FFAF75889C64B2EA856A6F9413EB7 /* JGProgressHUDRingIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDRingIndicatorView.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDRingIndicatorView.m; sourceTree = "<group>"; };
-		8CC1137A3CCD2001EF1BC73462153BE4 /* HexColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-umbrella.h"; sourceTree = "<group>"; };
+		8C9F07FC9118CD875F381D27E0124944 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		8D99F5551ACFC8A75E2FD52B408280AD /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		904AF07B2952A7AB9070FF7EA2A27A87 /* Pods-photohop-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-photohop-acknowledgements.markdown"; sourceTree = "<group>"; };
-		91413329813FA6FE5A78842159E69621 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		92A627700443C5961DBFF079A30D2F94 /* JGProgressHUDFadeAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDFadeAnimation.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDFadeAnimation.m; sourceTree = "<group>"; };
-		943E272D65B2506453B4F4602C5A23C7 /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
-		99F2024F2DF7943D5AFD357FC426E373 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		976E9A58A29539BB6A4D0EEAC8ACF3A5 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
+		997C11F44E7333F99D426ED3CE4C24E0 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		999B7F20CF2C5CB3311F33D94996C4AC /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
 		9ADA59317FD179F55D1CE65459D8779B /* Pods-photohop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-photohop-umbrella.h"; sourceTree = "<group>"; };
-		9DF93180047FFD6E1357BACFD6A55DD3 /* JGProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JGProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		A12E00CAA9EB583BABCFD7211D4D879C /* JGProgressHUDAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDAnimation.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDAnimation.m; sourceTree = "<group>"; };
-		A15087938183B22C62263CFF7E9CFD7F /* SFFocusViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFFocusViewLayout.m; path = Classes/SFFocusViewLayout.m; sourceTree = "<group>"; };
-		A1DE0D4648E9A435CD3611437E5FA9C3 /* JGProgressHUD Resources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = "JGProgressHUD Resources.bundle"; path = "JGProgressHUD/JGProgressHUD/JGProgressHUD Resources.bundle"; sourceTree = "<group>"; };
-		A4C10180AB6C5A09DD6AABEC4E3C923C /* JGProgressHUDPieIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDPieIndicatorView.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDPieIndicatorView.h; sourceTree = "<group>"; };
-		A76582D16C92F4E0E2C67946CD30AC87 /* HexColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-prefix.pch"; sourceTree = "<group>"; };
-		A7CE6E5E4A6D5353D687B37CAA11C982 /* HexColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HexColors.h; path = Classes/HexColors.h; sourceTree = "<group>"; };
+		9D47C656172192F37ACABDED687DCEC4 /* HexColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-prefix.pch"; sourceTree = "<group>"; };
+		9EF190D9AA46A67A0E12BAB3B8BB5495 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		A17FFB4ACC1401FB1D2B2AD4544AA20F /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		A28A3365800FAA0979967399312DA8C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C15420EAD9D1D18DBA89839497CAE8 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		A77FD654769D6D9CB6A852DC7656FC88 /* HexColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HexColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA408CD9F0FFDD853E605D2AE5F44F7E /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
 		AA4C8461CEB0336444B35DE99215EDB4 /* Pods-photohop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-photohop-dummy.m"; sourceTree = "<group>"; };
-		B087D536FE1AB522145659CCFFF02DAC /* JGProgressHUDIndeterminateIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDIndeterminateIndicatorView.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDIndeterminateIndicatorView.h; sourceTree = "<group>"; };
+		ABF6A589F55ECF330867313E12D214C7 /* SFFocusViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFFocusViewLayout.m; path = Classes/SFFocusViewLayout.m; sourceTree = "<group>"; };
+		B73C814E3D16A6204391F0321CD59512 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		B78672A60F17E0D23EF24ABC4257704A /* SFFocusViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SFFocusViewLayout.modulemap; sourceTree = "<group>"; };
+		B99C03C4651B9216E478CAF8D22788A4 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C02566A31900E0A1F20713A57864A640 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
-		C03224C4C8777FAE60E512210012A52B /* JGProgressHUDFadeZoomAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDFadeZoomAnimation.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDFadeZoomAnimation.m; sourceTree = "<group>"; };
-		C3D283A43993C6E638F4A88FD1A608CF /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
-		C4153144E36C5369FB979F34D383370B /* JGProgressHUDPieIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDPieIndicatorView.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDPieIndicatorView.m; sourceTree = "<group>"; };
-		CDB9044E9E58AA582E8417820C742833 /* HexColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HexColors.xcconfig; sourceTree = "<group>"; };
-		D417632D0E507472FAE9F39D9F84DBE6 /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
-		D4C8EFDE628B87CD3CA12FA1DBEAAB1A /* JGProgressHUDImageIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDImageIndicatorView.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDImageIndicatorView.m; sourceTree = "<group>"; };
-		D538E2A315752C85CE4DB3CC17199DE6 /* JGProgressHUDRingIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDRingIndicatorView.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDRingIndicatorView.h; sourceTree = "<group>"; };
-		D91139D2601A64DD3A2A06911C621672 /* JGProgressHUDErrorIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDErrorIndicatorView.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDErrorIndicatorView.h; sourceTree = "<group>"; };
-		D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E0E7630A75942F93FAA6D6CCB9542BB1 /* JGProgressHUDIndeterminateIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUDIndeterminateIndicatorView.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUDIndeterminateIndicatorView.m; sourceTree = "<group>"; };
-		E10011C275E64E97C048D1A7059C6B8D /* JGProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JGProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		E111462897C3EE38E58C2A5462FBA002 /* JGProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JGProgressHUD.xcconfig; sourceTree = "<group>"; };
+		BD5DB19AA88AC2E982D18AEA7269C128 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		BFCD7DA67318691B6A5B0E1B30F0D29F /* HexColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HexColors.modulemap; sourceTree = "<group>"; };
+		CB4FF4626DFCBD1D6972744CCF181CA9 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		CB8D3AC674A2D7A370664AC5E2EDE9D9 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		CD61982C5569848F333ADEADC5C35A58 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		CE3BF43E6607B26645A9B373A5925C78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE622FDD71389791C07A7DF007F5E228 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		D538F0AFC356D91EB405A56041CB95AC /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
+		D5E50EE603E2A48EAD8D8104E8B19CF6 /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
+		D7FD59B6285B97D46223D7D3AD9F47A3 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		E1204833D4579C8876BDC2AC3804A409 /* Pods-photohop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-photohop.modulemap"; sourceTree = "<group>"; };
-		E418AD3234412640D57A59B28C425251 /* SFFocusViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SFFocusViewLayout.modulemap; sourceTree = "<group>"; };
-		E47A7B9C95258132E337EE701E901011 /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
-		E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		EAB2BC0085C48BA917FC7C8DC4869DCE /* JGProgressHUDIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGProgressHUDIndicatorView.h; path = JGProgressHUD/JGProgressHUD/JGProgressHUDIndicatorView.h; sourceTree = "<group>"; };
-		F26A9E74077BA9D5F26AC788B4E406A0 /* JGProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGProgressHUD.m; path = JGProgressHUD/JGProgressHUD/JGProgressHUD.m; sourceTree = "<group>"; };
-		F753384F7CBCD96FBB0F7DEDBEAFF6C3 /* HexColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HexColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E323B313261976BA3325CA845C262FCB /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		E40A523A78D4A23DE7E9CA856729DB46 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		E537DAE654809917EDFF2A9A26C98D90 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		E6E372CEE9250807F38E8587BCD50B7B /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F67E87A3FD56383CAEDC7C119A3D21F5 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		F82F38B731F5A8873B02B05AF16DAF4C /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
 		FB59B770013046691AA3F9A68836C893 /* Pods-photohop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-photohop.release.xcconfig"; sourceTree = "<group>"; };
+		FDA5EF86CB650D3620E63CBBA4FBE4EF /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		FDFBA335D20AC3D1EAC8CFFF44CC7F74 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		FE2AE78FB716605F6579D4E10B664906 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB28354DD526A3829598A4AB090A623 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA9F40520C78FDE74356ADE438A59AD /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3641AADEE9F84704B84C97F7C809773C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8C824736914715CF75EB1083A7A104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D0E661242C853E94F4299270086801D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED545537CDC6C83EBA629FE6524D550A /* CoreGraphics.framework in Frameworks */,
+				42B81612C22744B21A3AC57DC36F7DD3 /* Foundation.framework in Frameworks */,
+				2139B6A9B4241F53BB478C43D51921CC /* QuartzCore.framework in Frameworks */,
+				C67E03EC22D124DE998695EF86B99E25 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4BA155DC3466C96A26E2FED0479F99BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,30 +233,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		909E324AF6AA8ECD899D988B95EE7BD9 /* Frameworks */ = {
+		6697BC56109DFC14DD06A572A5D587A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				957511BE5A569B2AAFB77708FD0039D6 /* Foundation.framework in Frameworks */,
-				F0514042E1FE8FC419CFF033697FA716 /* UIKit.framework in Frameworks */,
+				A96F59F26A96FF08FC2E9C6284B48A63 /* Foundation.framework in Frameworks */,
+				FDF66181555E540FD4362F5F9E145740 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4F81A8DC304E3E266FD1B1C14108FE7 /* Frameworks */ = {
+		976E725756F63FE4881D11C8D7C6A83D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2C5B4F871F6D0D9D309BE19975DB0D3 /* Foundation.framework in Frameworks */,
-				04EDB24BBF37218355321DFD146DB3B3 /* QuartzCore.framework in Frameworks */,
-				AA8E48DCFBBE2626D07F079317FD8A91 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7B881EDE4396E4AEF33E76EF498A776 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08ECDF579531F7093759606F912B9D2B /* Foundation.framework in Frameworks */,
+				F977C86364E276C18C68EBD6BF2A409E /* Foundation.framework in Frameworks */,
+				2B2CDF28A19D251BE61300A42473F377 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,70 +263,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A778DE135210B41FC1A73B16AF53115 /* Support Files */ = {
+		07B388E7D862242A1B3FDAAB26CF7A8C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5CC36BE3DFAD43D2C7341D3BF265821C /* HexColors.modulemap */,
-				CDB9044E9E58AA582E8417820C742833 /* HexColors.xcconfig */,
-				58CC02CB1D13CDC5CC60EE32478B38F3 /* HexColors-dummy.m */,
-				A76582D16C92F4E0E2C67946CD30AC87 /* HexColors-prefix.pch */,
-				8CC1137A3CCD2001EF1BC73462153BE4 /* HexColors-umbrella.h */,
-				85C42636F70D74F448F276C1989AD67D /* Info.plist */,
+				003BC3775D8C8BC2FB87E45C1F897A89 /* Info.plist */,
+				B78672A60F17E0D23EF24ABC4257704A /* SFFocusViewLayout.modulemap */,
+				75E1D289A746128387C08472CE0A2BCF /* SFFocusViewLayout.xcconfig */,
+				81C6A50F3AE3414E12ED58F9EA35729E /* SFFocusViewLayout-dummy.m */,
+				7E028C59699DB170CB213FBD79A93777 /* SFFocusViewLayout-prefix.pch */,
+				3D1F9E3431F2572D1531616A575C0678 /* SFFocusViewLayout-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/HexColors";
+			path = "../Target Support Files/SFFocusViewLayout";
 			sourceTree = "<group>";
 		};
-		11FEE465281C55ED7AD20878EAD8A0FA /* Support Files */ = {
+		08A1E28AD65D5D73CD6473BDA32588DC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E47A7B9C95258132E337EE701E901011 /* DZNEmptyDataSet.modulemap */,
-				D417632D0E507472FAE9F39D9F84DBE6 /* DZNEmptyDataSet.xcconfig */,
-				943E272D65B2506453B4F4602C5A23C7 /* DZNEmptyDataSet-dummy.m */,
-				6303D2B802E8050C50E7269840A95FF7 /* DZNEmptyDataSet-prefix.pch */,
-				C3D283A43993C6E638F4A88FD1A608CF /* DZNEmptyDataSet-umbrella.h */,
-				3F3BA976D443FE986D222BFF930C3354 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DZNEmptyDataSet";
-			sourceTree = "<group>";
-		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		275CF775A2B235056E111DB910E10E0A /* SFFocusViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-				0E0864DB33F4471E11C6F825EFC3A0C0 /* SFFocusViewLayout.h */,
-				A15087938183B22C62263CFF7E9CFD7F /* SFFocusViewLayout.m */,
-				69F063FE032B2624FEFB2939B20531C6 /* Support Files */,
-			);
-			path = SFFocusViewLayout;
-			sourceTree = "<group>";
-		};
-		5D7E5A8673CD58B56513734AFCF3AD37 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A1DE0D4648E9A435CD3611437E5FA9C3 /* JGProgressHUD Resources.bundle */,
+				85ABE21C62BE37AB03BAEB0B55224094 /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		5E880B0E5705D26E1D14219CD52F177A /* Products */ = {
+		0BD35E06DA12DC7A7C61CDAE0BE10AF2 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				99F2024F2DF7943D5AFD357FC426E373 /* DZNEmptyDataSet.framework */,
-				F753384F7CBCD96FBB0F7DEDBEAFF6C3 /* HexColors.framework */,
-				58EBCE0A31E171D352EE2E39AA57D0E9 /* JGProgressHUD.framework */,
-				02DF58E4BF4B91141AB5A81F299FA8A3 /* Pods_photohop.framework */,
-				8308839D9D2EE67030DA119D91CD75ED /* SFFocusViewLayout.framework */,
+				BD5DB19AA88AC2E982D18AEA7269C128 /* SVIndefiniteAnimatedView.h */,
+				FDA5EF86CB650D3620E63CBBA4FBE4EF /* SVIndefiniteAnimatedView.m */,
+				E40A523A78D4A23DE7E9CA856729DB46 /* SVProgressHUD.h */,
+				14AAD6B11EDA9CC7123A43570DC5604C /* SVProgressHUD.m */,
+				E537DAE654809917EDFF2A9A26C98D90 /* SVRadialGradientLayer.h */,
+				D7FD59B6285B97D46223D7D3AD9F47A3 /* SVRadialGradientLayer.m */,
+				08A1E28AD65D5D73CD6473BDA32588DC /* Resources */,
+				DE2DC807578C3788FDF8CA681E622DF0 /* Support Files */,
 			);
-			name = Products;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		10BFEC7D064BDDB32A5B58736CD82BAA /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				A5C15420EAD9D1D18DBA89839497CAE8 /* Chameleon.h */,
+				4FC6EBAAC4FDDBC1DCD7DED1FE36C0E7 /* Chameleon_.h */,
+				9EF190D9AA46A67A0E12BAB3B8BB5495 /* Chameleon_.m */,
+				CB4FF4626DFCBD1D6972744CCF181CA9 /* ChameleonConstants.h */,
+				F82F38B731F5A8873B02B05AF16DAF4C /* ChameleonConstants.m */,
+				FDFBA335D20AC3D1EAC8CFFF44CC7F74 /* ChameleonEnums.h */,
+				7DFB5CB9EC430994935933054EEEE2DD /* ChameleonMacros.h */,
+				11BC126D2810065474CE6B740EAED468 /* NSArray+Chameleon.h */,
+				B73C814E3D16A6204391F0321CD59512 /* NSArray+Chameleon.m */,
+				047E56CBCFBB24141E94E01749A49061 /* UIAppearance+Swift.h */,
+				997C11F44E7333F99D426ED3CE4C24E0 /* UIAppearance+Swift.m */,
+				8C9F07FC9118CD875F381D27E0124944 /* UIButton+Chameleon.h */,
+				266FE07C9C0B71C0B908BF7F5025E557 /* UIButton+Chameleon.m */,
+				CB8D3AC674A2D7A370664AC5E2EDE9D9 /* UIColor+Chameleon.h */,
+				CD61982C5569848F333ADEADC5C35A58 /* UIColor+Chameleon.m */,
+				4DF89648DA6C5E365346BBC4FAA2EF44 /* UIColor+ChameleonPrivate.h */,
+				B99C03C4651B9216E478CAF8D22788A4 /* UIColor+ChameleonPrivate.m */,
+				68740E4DDEA1C4CB200558719DA8DEC1 /* UIImage+ChameleonPrivate.h */,
+				598FFDE6F2FD52F432DE6600C676530E /* UIImage+ChameleonPrivate.m */,
+				4DD19AABE6F0B3DA98CA6EA9260B895E /* UILabel+Chameleon.h */,
+				443EC587835EEEA12AE497087FCE0AAA /* UILabel+Chameleon.m */,
+				E6E372CEE9250807F38E8587BCD50B7B /* UINavigationController+Chameleon.h */,
+				AA408CD9F0FFDD853E605D2AE5F44F7E /* UINavigationController+Chameleon.m */,
+				F67E87A3FD56383CAEDC7C119A3D21F5 /* UIView+ChameleonPrivate.h */,
+				1F89ED243B4392294B896F3282BF5694 /* UIView+ChameleonPrivate.m */,
+				E323B313261976BA3325CA845C262FCB /* UIViewController+Chameleon.h */,
+				5BBE1038C66866CE063DCC440C848470 /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9203A0FF197B8764CD853B6EE3A159E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		290BBFBBF3AA164C0BEF67EA180183F8 /* DZNEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				630723D507A318CFB1DF2C92BF723011 /* UIScrollView+EmptyDataSet.h */,
+				77871B44654450CFB6D271279C8769DB /* UIScrollView+EmptyDataSet.m */,
+				FF782D8798911471F04E3099CCB658D9 /* Support Files */,
+			);
+			path = DZNEmptyDataSet;
+			sourceTree = "<group>";
+		};
+		3207B5D604E27BAD20E407A26583CFB4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A17FFB4ACC1401FB1D2B2AD4544AA20F /* ChameleonFramework.modulemap */,
+				976E9A58A29539BB6A4D0EEAC8ACF3A5 /* ChameleonFramework.xcconfig */,
+				FFA9F40520C78FDE74356ADE438A59AD /* ChameleonFramework-dummy.m */,
+				38C0FCE3D61480FBE5D30915E41DE064 /* ChameleonFramework-prefix.pch */,
+				999B7F20CF2C5CB3311F33D94996C4AC /* ChameleonFramework-umbrella.h */,
+				6C9D2CEA55AE9FD8A7B771E77DB6709D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
+			sourceTree = "<group>";
+		};
+		547BCADC47E51BE11EDCECC8C3E9BEAB /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				244D937C2205532F42A0C3E3353F96E1 /* HexColors.h */,
+				3C54973DF91EFEE34C5720CDAE68C4B1 /* HexColors.m */,
+				65009E63DBD8982E7A09AF4B077CDD15 /* Support Files */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		6127F6F7C0B78633C98F36054D548816 /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				10BFEC7D064BDDB32A5B58736CD82BAA /* Default */,
+				3207B5D604E27BAD20E407A26583CFB4 /* Support Files */,
+			);
+			path = ChameleonFramework;
 			sourceTree = "<group>";
 		};
 		62006F499F4208E7BC3C55EAE310CB24 /* Targets Support Files */ = {
@@ -287,47 +393,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		635071D249EC87F08A3AA63DEAE376ED /* DZNEmptyDataSet */ = {
+		65009E63DBD8982E7A09AF4B077CDD15 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C02566A31900E0A1F20713A57864A640 /* UIScrollView+EmptyDataSet.h */,
-				29A3D7578DDF3C36DEB05241D96A1522 /* UIScrollView+EmptyDataSet.m */,
-				11FEE465281C55ED7AD20878EAD8A0FA /* Support Files */,
-			);
-			path = DZNEmptyDataSet;
-			sourceTree = "<group>";
-		};
-		63BA1229A1EBC7750F5AF664BDE21AA2 /* HexColors */ = {
-			isa = PBXGroup;
-			children = (
-				A7CE6E5E4A6D5353D687B37CAA11C982 /* HexColors.h */,
-				5B9091B3E3CB7A03F414F95BF5E9D8DC /* HexColors.m */,
-				0A778DE135210B41FC1A73B16AF53115 /* Support Files */,
-			);
-			path = HexColors;
-			sourceTree = "<group>";
-		};
-		69F063FE032B2624FEFB2939B20531C6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2D745EC52A70F0A1F7060B87E93265E8 /* Info.plist */,
-				E418AD3234412640D57A59B28C425251 /* SFFocusViewLayout.modulemap */,
-				6FC380D634B29DE75036385F8D08FD42 /* SFFocusViewLayout.xcconfig */,
-				7B8A3FC0EC4EB7E89512008B4812803C /* SFFocusViewLayout-dummy.m */,
-				309779F797AB84639B3A88928F979E91 /* SFFocusViewLayout-prefix.pch */,
-				7CA05FA42D23B8D3144D9A1E034C27E0 /* SFFocusViewLayout-umbrella.h */,
+				BFCD7DA67318691B6A5B0E1B30F0D29F /* HexColors.modulemap */,
+				6796ED40A08F6FBE9D0C23F23441EC96 /* HexColors.xcconfig */,
+				77BBF0CFEC4DF4D463A709A7A2E2E8F6 /* HexColors-dummy.m */,
+				9D47C656172192F37ACABDED687DCEC4 /* HexColors-prefix.pch */,
+				091C3D595E97A79891840471597F3EC3 /* HexColors-umbrella.h */,
+				5E2DAE8728368F73CA60DB5C81973A25 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SFFocusViewLayout";
+			path = "../Target Support Files/HexColors";
+			sourceTree = "<group>";
+		};
+		7D84FBBC441F00D20B272775CA5E4F7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6127F6F7C0B78633C98F36054D548816 /* ChameleonFramework */,
+				290BBFBBF3AA164C0BEF67EA180183F8 /* DZNEmptyDataSet */,
+				547BCADC47E51BE11EDCECC8C3E9BEAB /* HexColors */,
+				E2559636D5C7176B8118CF3AF8BFCD3E /* SFFocusViewLayout */,
+				0BD35E06DA12DC7A7C61CDAE0BE10AF2 /* SVProgressHUD */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				E841386037AE637F6AB5345BAEBF2B47 /* Pods */,
-				5E880B0E5705D26E1D14219CD52F177A /* Products */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				7D84FBBC441F00D20B272775CA5E4F7D /* Pods */,
+				FFA60146EA166513E903745DBBB1B02C /* Products */,
 				62006F499F4208E7BC3C55EAE310CB24 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -350,76 +448,111 @@
 			path = "Target Support Files/Pods-photohop";
 			sourceTree = "<group>";
 		};
-		DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */ = {
+		A9203A0FF197B8764CD853B6EE3A159E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				91413329813FA6FE5A78842159E69621 /* Foundation.framework */,
-				E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */,
-				D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */,
+				4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */,
+				CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */,
+				0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */,
+				ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E841386037AE637F6AB5345BAEBF2B47 /* Pods */ = {
+		DE2DC807578C3788FDF8CA681E622DF0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				635071D249EC87F08A3AA63DEAE376ED /* DZNEmptyDataSet */,
-				63BA1229A1EBC7750F5AF664BDE21AA2 /* HexColors */,
-				F23518EE139FFB7A58824BF116DBC8C2 /* JGProgressHUD */,
-				275CF775A2B235056E111DB910E10E0A /* SFFocusViewLayout */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F045AF14BD6D02A22FBC937798EFBB0F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				856214F512D89659BA0B736A387F48AF /* Info.plist */,
-				380D29EFB966C19ECAFDC5ED0F13C92D /* JGProgressHUD.modulemap */,
-				E111462897C3EE38E58C2A5462FBA002 /* JGProgressHUD.xcconfig */,
-				E10011C275E64E97C048D1A7059C6B8D /* JGProgressHUD-dummy.m */,
-				9DF93180047FFD6E1357BACFD6A55DD3 /* JGProgressHUD-prefix.pch */,
-				2E1B94DAA2F3304A20F524E8897FBF40 /* JGProgressHUD-umbrella.h */,
+				CE3BF43E6607B26645A9B373A5925C78 /* Info.plist */,
+				712344A25993FF66BD3B14698C52FDD0 /* SVProgressHUD.modulemap */,
+				CE622FDD71389791C07A7DF007F5E228 /* SVProgressHUD.xcconfig */,
+				7930172D54FD18DFC5F37A8E8198E2F7 /* SVProgressHUD-dummy.m */,
+				154E63A9C761C05A519873224E2D78F8 /* SVProgressHUD-prefix.pch */,
+				8D99F5551ACFC8A75E2FD52B408280AD /* SVProgressHUD-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/JGProgressHUD";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
-		F23518EE139FFB7A58824BF116DBC8C2 /* JGProgressHUD */ = {
+		E2559636D5C7176B8118CF3AF8BFCD3E /* SFFocusViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				32316D0E294AE72F7BE085C103654F0B /* JGProgressHUD.h */,
-				F26A9E74077BA9D5F26AC788B4E406A0 /* JGProgressHUD.m */,
-				4E3CAC845593F4EB563F1E4ACD3A649A /* JGProgressHUD-Defines.h */,
-				64E5BF9C7601DE14F78A47D63E95D1F4 /* JGProgressHUDAnimation.h */,
-				A12E00CAA9EB583BABCFD7211D4D879C /* JGProgressHUDAnimation.m */,
-				D91139D2601A64DD3A2A06911C621672 /* JGProgressHUDErrorIndicatorView.h */,
-				2506438D6FD12BC71F63E7BF905A5A57 /* JGProgressHUDErrorIndicatorView.m */,
-				6BF3ED324B6EE2C10FE53A9E2DB68318 /* JGProgressHUDFadeAnimation.h */,
-				92A627700443C5961DBFF079A30D2F94 /* JGProgressHUDFadeAnimation.m */,
-				67F17522F247A04F2589994B5CC2579B /* JGProgressHUDFadeZoomAnimation.h */,
-				C03224C4C8777FAE60E512210012A52B /* JGProgressHUDFadeZoomAnimation.m */,
-				4183A6C28F51F781F64B730B12595F6D /* JGProgressHUDImageIndicatorView.h */,
-				D4C8EFDE628B87CD3CA12FA1DBEAAB1A /* JGProgressHUDImageIndicatorView.m */,
-				B087D536FE1AB522145659CCFFF02DAC /* JGProgressHUDIndeterminateIndicatorView.h */,
-				E0E7630A75942F93FAA6D6CCB9542BB1 /* JGProgressHUDIndeterminateIndicatorView.m */,
-				EAB2BC0085C48BA917FC7C8DC4869DCE /* JGProgressHUDIndicatorView.h */,
-				440414AECA128714DC8D4F647CD3A531 /* JGProgressHUDIndicatorView.m */,
-				A4C10180AB6C5A09DD6AABEC4E3C923C /* JGProgressHUDPieIndicatorView.h */,
-				C4153144E36C5369FB979F34D383370B /* JGProgressHUDPieIndicatorView.m */,
-				D538E2A315752C85CE4DB3CC17199DE6 /* JGProgressHUDRingIndicatorView.h */,
-				895FFAF75889C64B2EA856A6F9413EB7 /* JGProgressHUDRingIndicatorView.m */,
-				36D5BBD1F9753D021895DC54B5FACA8D /* JGProgressHUDSuccessIndicatorView.h */,
-				4632D02FAB24ACE219DDF4C25021053B /* JGProgressHUDSuccessIndicatorView.m */,
-				5D7E5A8673CD58B56513734AFCF3AD37 /* Resources */,
-				F045AF14BD6D02A22FBC937798EFBB0F /* Support Files */,
+				615A2A46724791BE0FBF7DFD317E0A75 /* SFFocusViewLayout.h */,
+				ABF6A589F55ECF330867313E12D214C7 /* SFFocusViewLayout.m */,
+				07B388E7D862242A1B3FDAAB26CF7A8C /* Support Files */,
 			);
-			path = JGProgressHUD;
+			path = SFFocusViewLayout;
+			sourceTree = "<group>";
+		};
+		FF782D8798911471F04E3099CCB658D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				279C87ED940DD31EC8F72538D0A2D4A3 /* DZNEmptyDataSet.modulemap */,
+				2F523D84DFB9761DECC2608EAE78D130 /* DZNEmptyDataSet.xcconfig */,
+				D538F0AFC356D91EB405A56041CB95AC /* DZNEmptyDataSet-dummy.m */,
+				73E913F2D3E81E8D74A6B7177C84EC03 /* DZNEmptyDataSet-prefix.pch */,
+				D5E50EE603E2A48EAD8D8104E8B19CF6 /* DZNEmptyDataSet-umbrella.h */,
+				A28A3365800FAA0979967399312DA8C0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DZNEmptyDataSet";
+			sourceTree = "<group>";
+		};
+		FFA60146EA166513E903745DBBB1B02C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEB28354DD526A3829598A4AB090A623 /* ChameleonFramework.framework */,
+				49D2EAD290D56685AD62390FA4FDE503 /* DZNEmptyDataSet.framework */,
+				A77FD654769D6D9CB6A852DC7656FC88 /* HexColors.framework */,
+				11DBB4EBE88C0F0C6FA0838B1BA888DD /* Pods_photohop.framework */,
+				18B54701886FA0045778DCD44B6DCD92 /* SFFocusViewLayout.framework */,
+				FE2AE78FB716605F6579D4E10B664906 /* SVProgressHUD.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		37B31672C18222A5BA058376BA8A2C46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94589A47D4E708DDE92C416033C1B66 /* SFFocusViewLayout-umbrella.h in Headers */,
+				10D5BE2917726FB877BFE065F2F52014 /* SFFocusViewLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D4266F1A87FD7F5303F634DD0E81C50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB87077CB9227C321F62EE54941ACCF /* Pods-photohop-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F639DE65D946A85FEBA9C514E7C1F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CC9B27F3CF472FE72A905E8C2D7A9D /* Chameleon.h in Headers */,
+				E04963F0C6D76377186361A0AF79A4C6 /* Chameleon_.h in Headers */,
+				4B181B0AC8894DE05050B3F6718D392C /* ChameleonConstants.h in Headers */,
+				E53E2CD0E939A133E73880E7B3BB4DBF /* ChameleonEnums.h in Headers */,
+				FA90B7D6EBE7A289796856FF2B310FC0 /* ChameleonFramework-umbrella.h in Headers */,
+				41E19345B5C2331DAA02119D782F4E5F /* ChameleonMacros.h in Headers */,
+				C61ED2CF225C6D9872D34F5455C945D4 /* NSArray+Chameleon.h in Headers */,
+				F85099F6E9B7DB837BAB856EB61A6F07 /* UIAppearance+Swift.h in Headers */,
+				3CCCC6F0C10F65283522C54CF1D6E761 /* UIButton+Chameleon.h in Headers */,
+				C5D22B9D6600C31DC02CEC59BDA086B0 /* UIColor+Chameleon.h in Headers */,
+				CC51E5C010ABC87B9CAAA1CB721A6A94 /* UIColor+ChameleonPrivate.h in Headers */,
+				1DE26E57570167EE496080D68F855A01 /* UIImage+ChameleonPrivate.h in Headers */,
+				3132A9EBC1F85B6971B934C88914CD58 /* UILabel+Chameleon.h in Headers */,
+				C84DFC79CACF46C6275670861ADBA6D4 /* UINavigationController+Chameleon.h in Headers */,
+				B3429381360BE9C37D00301284E4B63A /* UIView+ChameleonPrivate.h in Headers */,
+				7EDDB8F47291F592694D7135A10DAFFF /* UIViewController+Chameleon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D9C9A2043A53A3AE91808894C7E05FB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,40 +562,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63DEAE352873FE188F2EA9DA724D3001 /* Headers */ = {
+		BDA4317253EADBCD0A98840C96514312 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47687FC7E616654C7A37EAE88C14BF5F /* SFFocusViewLayout-umbrella.h in Headers */,
-				60C7284F233162FBCD908582DA813895 /* SFFocusViewLayout.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0D4DCBE026224E4099EEEEB94DD045E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2AA21748F66B4A7AC8930D6F63D4AC56 /* Pods-photohop-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDD6A6F15B989D7122CCC8B534CC0E63 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3210552EE14BF09797714D00F55D075B /* JGProgressHUD-Defines.h in Headers */,
-				0AF03BEB17B21617DAE72E1DB2AA6239 /* JGProgressHUD-umbrella.h in Headers */,
-				8AB97551B3EC56D58DB1B40042D6A441 /* JGProgressHUD.h in Headers */,
-				C48DB1A4001B5B8B8B50A7C453163AD0 /* JGProgressHUDAnimation.h in Headers */,
-				476E30A7475DCC20F88BE4982A8E4924 /* JGProgressHUDErrorIndicatorView.h in Headers */,
-				9EBA127F90CA19F3F427C10900E5DB5C /* JGProgressHUDFadeAnimation.h in Headers */,
-				7845BE0FF876B96E5FF8D9513E928CAF /* JGProgressHUDFadeZoomAnimation.h in Headers */,
-				ED854B70B070D7FDDA5911CA815043C2 /* JGProgressHUDImageIndicatorView.h in Headers */,
-				FEA21DBE90FFFA123BD5B1B18F356A60 /* JGProgressHUDIndeterminateIndicatorView.h in Headers */,
-				72E250C04949942C751C0B61CA3CFFD1 /* JGProgressHUDIndicatorView.h in Headers */,
-				89564C6D85AE2A4DF13AF536497AD603 /* JGProgressHUDPieIndicatorView.h in Headers */,
-				3EBA98EEF1A580EC8BF2CE2E7903ECC4 /* JGProgressHUDRingIndicatorView.h in Headers */,
-				7807E4544CE620CD6AB2561ADC0425EC /* JGProgressHUDSuccessIndicatorView.h in Headers */,
+				D33ED72DE0A9C46DB0614F59D2ED05BF /* SVIndefiniteAnimatedView.h in Headers */,
+				D43D856D7A951AE72D28A271FE399110 /* SVProgressHUD-umbrella.h in Headers */,
+				7AC6A834FA57B36D28F89E0DB6B10730 /* SVProgressHUD.h in Headers */,
+				CFE128CC77A6E92EC556F5730EDBD337 /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +585,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		00BAA52C391B79C9D0D710EC32B80CE3 /* Pods-photohop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309EB58724D35D91CE1E3BEE6BAC466E /* Build configuration list for PBXNativeTarget "Pods-photohop" */;
+			buildPhases = (
+				B9A1195071E3CDE6A3E5DC2347863CE6 /* Sources */,
+				3641AADEE9F84704B84C97F7C809773C /* Frameworks */,
+				3D4266F1A87FD7F5303F634DD0E81C50 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FE6AAC0420640E2211755B7D2ACF0DF /* PBXTargetDependency */,
+				D3E370FA13365B93E8063BBDDE391716 /* PBXTargetDependency */,
+				333896D77388B6995C2412BEED2219CC /* PBXTargetDependency */,
+				1BAAC9F0EFF066585B0B7B13D029CEF0 /* PBXTargetDependency */,
+				8F4280DFEF0D17E3B756F8A285DDE58A /* PBXTargetDependency */,
+			);
+			name = "Pods-photohop";
+			productName = "Pods-photohop";
+			productReference = 11DBB4EBE88C0F0C6FA0838B1BA888DD /* Pods_photohop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		16FB872D0D2D4BA0F378AB34D47CF95F /* DZNEmptyDataSet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3ECB532EC0EA88D6927C7A7673C25700 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */;
@@ -492,34 +621,16 @@
 			);
 			name = DZNEmptyDataSet;
 			productName = DZNEmptyDataSet;
-			productReference = 99F2024F2DF7943D5AFD357FC426E373 /* DZNEmptyDataSet.framework */;
+			productReference = 49D2EAD290D56685AD62390FA4FDE503 /* DZNEmptyDataSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		617B0FC57CCB604D47A24E6198763D04 /* JGProgressHUD */ = {
+		7E86CA3A283C0BBACB76FEE17FCA8E89 /* SFFocusViewLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC9E5B9863A4B1806E2877DEC3DCC3CC /* Build configuration list for PBXNativeTarget "JGProgressHUD" */;
+			buildConfigurationList = 891667B0B28EF5981638A3E3A965A715 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */;
 			buildPhases = (
-				57B5BE77009E2336A3F528DF0BA29F2D /* Sources */,
-				B4F81A8DC304E3E266FD1B1C14108FE7 /* Frameworks */,
-				CDD6A6F15B989D7122CCC8B534CC0E63 /* Headers */,
-				E33B68998E410D3B8FC5808F7B4259A0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JGProgressHUD;
-			productName = JGProgressHUD;
-			productReference = 58EBCE0A31E171D352EE2E39AA57D0E9 /* JGProgressHUD.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B6E9497D7033FA912E80DA5A719880CF /* SFFocusViewLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C01785F9D6D3602BC8BE773C39D2FAB1 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */;
-			buildPhases = (
-				D1649E632256567E00CE94676115C113 /* Sources */,
-				909E324AF6AA8ECD899D988B95EE7BD9 /* Frameworks */,
-				63DEAE352873FE188F2EA9DA724D3001 /* Headers */,
+				7302D7DA47EDFD0D6E59B4F5026CB23C /* Sources */,
+				976E725756F63FE4881D11C8D7C6A83D /* Frameworks */,
+				37B31672C18222A5BA058376BA8A2C46 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -527,7 +638,24 @@
 			);
 			name = SFFocusViewLayout;
 			productName = SFFocusViewLayout;
-			productReference = 8308839D9D2EE67030DA119D91CD75ED /* SFFocusViewLayout.framework */;
+			productReference = 18B54701886FA0045778DCD44B6DCD92 /* SFFocusViewLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B57F4EE4746045CEAE2D933A3C8EC9E /* ChameleonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085A04470B2B1DFD89B69ED30150E0C0 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
+			buildPhases = (
+				89476504D00DCE7D76865152A8267270 /* Sources */,
+				3D0E661242C853E94F4299270086801D /* Frameworks */,
+				40F639DE65D946A85FEBA9C514E7C1F4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChameleonFramework;
+			productName = ChameleonFramework;
+			productReference = FEB28354DD526A3829598A4AB090A623 /* ChameleonFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C408D4E183A88B763793C217A66A1950 /* HexColors */ = {
@@ -544,28 +672,25 @@
 			);
 			name = HexColors;
 			productName = HexColors;
-			productReference = F753384F7CBCD96FBB0F7DEDBEAFF6C3 /* HexColors.framework */;
+			productReference = A77FD654769D6D9CB6A852DC7656FC88 /* HexColors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DAB26F8F958E052960E48D53EF7C432D /* Pods-photohop */ = {
+		D7B0206D4070BD33136CB9F4E80104BD /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 532C4687C41695A41247A80C843996F9 /* Build configuration list for PBXNativeTarget "Pods-photohop" */;
+			buildConfigurationList = 014B915E07CB829D76C38F9EF6E8E5E1 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				3D3014CE7EC9BF49BF1060BB7CE1E1F6 /* Sources */,
-				C7B881EDE4396E4AEF33E76EF498A776 /* Frameworks */,
-				B0D4DCBE026224E4099EEEEB94DD045E /* Headers */,
+				B255FA224F3D69528B950628862608B3 /* Sources */,
+				6697BC56109DFC14DD06A572A5D587A7 /* Frameworks */,
+				BDA4317253EADBCD0A98840C96514312 /* Headers */,
+				ED10BDF24CC09384AAEB2BFA3B6830D0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E1DC6217BE4B022763627C7622DA2D11 /* PBXTargetDependency */,
-				AC3A3F0C95A3EDBF6A8305C9508EAB18 /* PBXTargetDependency */,
-				74C1FA99576047C072489575309449F0 /* PBXTargetDependency */,
-				22B0187A88AB7AD587122AD3533CC004 /* PBXTargetDependency */,
 			);
-			name = "Pods-photohop";
-			productName = "Pods-photohop";
-			productReference = 02DF58E4BF4B91141AB5A81F299FA8A3 /* Pods_photohop.framework */;
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = FE2AE78FB716605F6579D4E10B664906 /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -585,64 +710,86 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5E880B0E5705D26E1D14219CD52F177A /* Products */;
+			productRefGroup = FFA60146EA166513E903745DBBB1B02C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				9B57F4EE4746045CEAE2D933A3C8EC9E /* ChameleonFramework */,
 				16FB872D0D2D4BA0F378AB34D47CF95F /* DZNEmptyDataSet */,
 				C408D4E183A88B763793C217A66A1950 /* HexColors */,
-				617B0FC57CCB604D47A24E6198763D04 /* JGProgressHUD */,
-				DAB26F8F958E052960E48D53EF7C432D /* Pods-photohop */,
-				B6E9497D7033FA912E80DA5A719880CF /* SFFocusViewLayout */,
+				00BAA52C391B79C9D0D710EC32B80CE3 /* Pods-photohop */,
+				7E86CA3A283C0BBACB76FEE17FCA8E89 /* SFFocusViewLayout */,
+				D7B0206D4070BD33136CB9F4E80104BD /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E33B68998E410D3B8FC5808F7B4259A0 /* Resources */ = {
+		ED10BDF24CC09384AAEB2BFA3B6830D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				112F63A968D2B1E3103BE1D0957DF597 /* JGProgressHUD Resources.bundle in Resources */,
+				BBAF679B62332C972CF0E73893EE0E65 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D3014CE7EC9BF49BF1060BB7CE1E1F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0D901285F728E0C7CF17DC6ED3810351 /* Pods-photohop-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57B5BE77009E2336A3F528DF0BA29F2D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21E4FA84A3EB446470A904B9F3A78B0 /* JGProgressHUD-dummy.m in Sources */,
-				9DB9BC32D9ECF36192E43A6FC728CACF /* JGProgressHUD.m in Sources */,
-				7019D2587E0AA201AEF8C09319D1FF55 /* JGProgressHUDAnimation.m in Sources */,
-				D883F171D2C7A40FC3DE6EB57A446DF7 /* JGProgressHUDErrorIndicatorView.m in Sources */,
-				5597298A201CB095F76D36B6A8C8811E /* JGProgressHUDFadeAnimation.m in Sources */,
-				0781C0E9971BCD97C52F1A053EB97DDA /* JGProgressHUDFadeZoomAnimation.m in Sources */,
-				56A54DEE7567ACC08FC79D6C4E554BFB /* JGProgressHUDImageIndicatorView.m in Sources */,
-				46196B61BABC54BA463AD72064D898D6 /* JGProgressHUDIndeterminateIndicatorView.m in Sources */,
-				38082DAABEC61FA8F13A507963AE3205 /* JGProgressHUDIndicatorView.m in Sources */,
-				780A2BE87454E8209CB1FF7F5B339CA3 /* JGProgressHUDPieIndicatorView.m in Sources */,
-				2DF9B5866AD77B64B15536DA4E04296D /* JGProgressHUDRingIndicatorView.m in Sources */,
-				D1DCC96C235AF48AFABD6317E54926F5 /* JGProgressHUDSuccessIndicatorView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		67EF9044B76E629170DD09EE2E94E76D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8DCF5C0EE6AC7543935C51AA756864C0 /* HexColors-dummy.m in Sources */,
 				4E5B4EEA50BEF0B4D0FE2394D3EB119A /* HexColors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7302D7DA47EDFD0D6E59B4F5026CB23C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2A79213DC65661D7BE37BE589F0F99 /* SFFocusViewLayout-dummy.m in Sources */,
+				C0FD7C79EC924F23C9A2FC82C540CDF3 /* SFFocusViewLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89476504D00DCE7D76865152A8267270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1FF907F6AD5186FAF926C0F20083AE /* Chameleon_.m in Sources */,
+				5BF38591007E7E4ADAD878E405949598 /* ChameleonConstants.m in Sources */,
+				DDD470435EE37EBA46CD0FF081559295 /* ChameleonFramework-dummy.m in Sources */,
+				160634C0F5454A32E810DDF5BA9E5985 /* NSArray+Chameleon.m in Sources */,
+				7A8C05065D9F9BA2C218F75AD6B1F798 /* UIAppearance+Swift.m in Sources */,
+				1716FA0939818C49FE4BBE6A658E9834 /* UIButton+Chameleon.m in Sources */,
+				4E53C48294089DC928E3A7BD1C2DE4D7 /* UIColor+Chameleon.m in Sources */,
+				00E3A68D030F24BE47B99D1D1A1720E2 /* UIColor+ChameleonPrivate.m in Sources */,
+				072BEEF7E71F00675E87028A9A668B84 /* UIImage+ChameleonPrivate.m in Sources */,
+				9EEBF7B1602C1C17236C4EA0DD9717E2 /* UILabel+Chameleon.m in Sources */,
+				23795D7EC1AF274A6AFF4233B1E84C4C /* UINavigationController+Chameleon.m in Sources */,
+				F32D7BD1DA58639964C91FA86A002AB4 /* UIView+ChameleonPrivate.m in Sources */,
+				2E2946436612A5B920BE18E09BF80CAF /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B255FA224F3D69528B950628862608B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7B7FAA855B1C97BECB7651AC9584C4 /* SVIndefiniteAnimatedView.m in Sources */,
+				C8F5D883246ECEF0F939E9F02AAB9C05 /* SVProgressHUD-dummy.m in Sources */,
+				039FF2090242B4B4CB29EBBB0B6CDA00 /* SVProgressHUD.m in Sources */,
+				094F2EC0A53F64D5A99B85D3E0CF4D17 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A1195071E3CDE6A3E5DC2347863CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E1065208C5B2417E306235ED5CABC2B /* Pods-photohop-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,48 +802,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1649E632256567E00CE94676115C113 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69222EABD062DDE82BD26D0804F9366B /* SFFocusViewLayout-dummy.m in Sources */,
-				9449D2693EF02E46F7BFAABDA5BBCA4D /* SFFocusViewLayout.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		22B0187A88AB7AD587122AD3533CC004 /* PBXTargetDependency */ = {
+		1BAAC9F0EFF066585B0B7B13D029CEF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SFFocusViewLayout;
-			target = B6E9497D7033FA912E80DA5A719880CF /* SFFocusViewLayout */;
-			targetProxy = 1D3466DB41C3431B21E9E1BDDB1FADB6 /* PBXContainerItemProxy */;
+			target = 7E86CA3A283C0BBACB76FEE17FCA8E89 /* SFFocusViewLayout */;
+			targetProxy = B343736070DE7E4F2DEF4FAC62B921A1 /* PBXContainerItemProxy */;
 		};
-		74C1FA99576047C072489575309449F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JGProgressHUD;
-			target = 617B0FC57CCB604D47A24E6198763D04 /* JGProgressHUD */;
-			targetProxy = 30A22F94B04CEE21B84216CEE437AB04 /* PBXContainerItemProxy */;
-		};
-		AC3A3F0C95A3EDBF6A8305C9508EAB18 /* PBXTargetDependency */ = {
+		333896D77388B6995C2412BEED2219CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HexColors;
 			target = C408D4E183A88B763793C217A66A1950 /* HexColors */;
-			targetProxy = D404C3C23D971DB6C1E0E876BC68C290 /* PBXContainerItemProxy */;
+			targetProxy = C8CDC0A36BC0558215FA5027FDBE8632 /* PBXContainerItemProxy */;
 		};
-		E1DC6217BE4B022763627C7622DA2D11 /* PBXTargetDependency */ = {
+		8F4280DFEF0D17E3B756F8A285DDE58A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = D7B0206D4070BD33136CB9F4E80104BD /* SVProgressHUD */;
+			targetProxy = A6ABF86456B4F1D39851F580FF24830A /* PBXContainerItemProxy */;
+		};
+		9FE6AAC0420640E2211755B7D2ACF0DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChameleonFramework;
+			target = 9B57F4EE4746045CEAE2D933A3C8EC9E /* ChameleonFramework */;
+			targetProxy = B1C05790749484925CD061E81EFB996F /* PBXContainerItemProxy */;
+		};
+		D3E370FA13365B93E8063BBDDE391716 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DZNEmptyDataSet;
 			target = 16FB872D0D2D4BA0F378AB34D47CF95F /* DZNEmptyDataSet */;
-			targetProxy = B7DFFA707BD08671DF96D0C70CC3FB94 /* PBXContainerItemProxy */;
+			targetProxy = 35EE99E9991041E9623D847C879A58DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		44182AAFF9E5828EED590F28B2810656 /* Debug */ = {
+		4E2FCD36B8C2F455CA4DC454C5CF8698 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E111462897C3EE38E58C2A5462FBA002 /* JGProgressHUD.xcconfig */;
+			baseConfigurationReference = CE622FDD71389791C07A7DF007F5E228 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -705,14 +849,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JGProgressHUD/JGProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JGProgressHUD/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JGProgressHUD/JGProgressHUD.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = JGProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -721,9 +865,36 @@
 			};
 			name = Debug;
 		};
+		50DC23C33730A7F084CCEC09B2247E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75E1D289A746128387C08472CE0A2BCF /* SFFocusViewLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SFFocusViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SFFocusViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		65B827D88DB532B751DE295A53C4451F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D417632D0E507472FAE9F39D9F84DBE6 /* DZNEmptyDataSet.xcconfig */;
+			baseConfigurationReference = 2F523D84DFB9761DECC2608EAE78D130 /* DZNEmptyDataSet.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -750,7 +921,7 @@
 		};
 		87633C35115B9FBD987374E19A691C5E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D417632D0E507472FAE9F39D9F84DBE6 /* DZNEmptyDataSet.xcconfig */;
+			baseConfigurationReference = 2F523D84DFB9761DECC2608EAE78D130 /* DZNEmptyDataSet.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -775,9 +946,9 @@
 			};
 			name = Debug;
 		};
-		9F35E42D940B080C12CC7041B4713397 /* Release */ = {
+		98CA06FB00FF54D7CDAE564F44C8A54C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB59B770013046691AA3F9A68836C893 /* Pods-photohop.release.xcconfig */;
+			baseConfigurationReference = CE622FDD71389791C07A7DF007F5E228 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -786,17 +957,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-photohop/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-photohop/Pods-photohop.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_photohop;
+				PRODUCT_NAME = SVProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -844,61 +1012,7 @@
 			};
 			name = Debug;
 		};
-		A9CCD651D4D4C7E3881CE8F15DACB379 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FC380D634B29DE75036385F8D08FD42 /* SFFocusViewLayout.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SFFocusViewLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SFFocusViewLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CB84DB12E4B0A12A00A0E3D523AA5018 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E111462897C3EE38E58C2A5462FBA002 /* JGProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JGProgressHUD/JGProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JGProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JGProgressHUD/JGProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = JGProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D6913096B3BABEC97E8896926910DA61 /* Debug */ = {
+		AFF64EDE75F5623BEDA5DF9F5227B1F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81749E828920DB6BE32470F2406D03F9 /* Pods-photohop.debug.xcconfig */;
 			buildSettings = {
@@ -928,9 +1042,9 @@
 			};
 			name = Debug;
 		};
-		DEC0DD4D251EB50A12A1EEA53F7948D0 /* Release */ = {
+		BB053BE677FAED89E3857B5365ACA9C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FC380D634B29DE75036385F8D08FD42 /* SFFocusViewLayout.xcconfig */;
+			baseConfigurationReference = FB59B770013046691AA3F9A68836C893 /* Pods-photohop.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -939,14 +1053,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SFFocusViewLayout/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-photohop/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-photohop/Pods-photohop.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SFFocusViewLayout;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_photohop;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -957,7 +1074,7 @@
 		};
 		E10B75F4FD9BE5631AEBE3B699CB24D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDB9044E9E58AA582E8417820C742833 /* HexColors.xcconfig */;
+			baseConfigurationReference = 6796ED40A08F6FBE9D0C23F23441EC96 /* HexColors.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -984,7 +1101,7 @@
 		};
 		E5D2448F42F9B1B54F9B3FA3A2E605F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDB9044E9E58AA582E8417820C742833 /* HexColors.xcconfig */;
+			baseConfigurationReference = 6796ED40A08F6FBE9D0C23F23441EC96 /* HexColors.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1008,6 +1125,60 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		F27D9348905234428B8B320185ADDB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75E1D289A746128387C08472CE0A2BCF /* SFFocusViewLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SFFocusViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SFFocusViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FADEC2CC3BC2EB66021583BCD5240111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976E9A58A29539BB6A4D0EEAC8ACF3A5 /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1043,9 +1214,54 @@
 			};
 			name = Release;
 		};
+		FF1A73998293E0367D47A8396A2852C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976E9A58A29539BB6A4D0EEAC8ACF3A5 /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		014B915E07CB829D76C38F9EF6E8E5E1 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E2FCD36B8C2F455CA4DC454C5CF8698 /* Debug */,
+				98CA06FB00FF54D7CDAE564F44C8A54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		085A04470B2B1DFD89B69ED30150E0C0 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADEC2CC3BC2EB66021583BCD5240111 /* Debug */,
+				FF1A73998293E0367D47A8396A2852C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		120D0B17EB9DEF64F2E1BC979F24A556 /* Build configuration list for PBXNativeTarget "HexColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1064,6 +1280,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		309EB58724D35D91CE1E3BEE6BAC466E /* Build configuration list for PBXNativeTarget "Pods-photohop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF64EDE75F5623BEDA5DF9F5227B1F5 /* Debug */,
+				BB053BE677FAED89E3857B5365ACA9C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3ECB532EC0EA88D6927C7A7673C25700 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1073,29 +1298,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		532C4687C41695A41247A80C843996F9 /* Build configuration list for PBXNativeTarget "Pods-photohop" */ = {
+		891667B0B28EF5981638A3E3A965A715 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6913096B3BABEC97E8896926910DA61 /* Debug */,
-				9F35E42D940B080C12CC7041B4713397 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C01785F9D6D3602BC8BE773C39D2FAB1 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9CCD651D4D4C7E3881CE8F15DACB379 /* Debug */,
-				DEC0DD4D251EB50A12A1EEA53F7948D0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC9E5B9863A4B1806E2877DEC3DCC3CC /* Build configuration list for PBXNativeTarget "JGProgressHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44182AAFF9E5828EED590F28B2810656 /* Debug */,
-				CB84DB12E4B0A12A00A0E3D523AA5018 /* Release */,
+				F27D9348905234428B8B320185ADDB21 /* Debug */,
+				50DC23C33730A7F084CCEC09B2247E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

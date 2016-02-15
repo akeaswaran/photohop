@@ -1,19 +1,33 @@
 PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - DZNEmptyDataSet (1.7.3)
   - HexColors (3.1.1)
-  - JGProgressHUD (1.3.1)
   - SFFocusViewLayout (2.0.0)
+  - SVProgressHUD (2.0-beta8)
 
 DEPENDENCIES:
+  - ChameleonFramework
   - DZNEmptyDataSet
   - HexColors
-  - JGProgressHUD
   - SFFocusViewLayout (~> 2.0)
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: 8d25b659df56ef86ce8b03e532c2278cfc3cb294
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
 
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
   HexColors: d837cebe691e52c867d401ecd2374111add5445f
-  JGProgressHUD: 153053a21d81208cb5f659691996bcefce6a9885
   SFFocusViewLayout: bb580b208a791c075f9e0f7021dd961e8c4cfaf7
+  SVProgressHUD: 6e48a1dda09ce3b58adc41d013baed3a8e8980ff
 
 COCOAPODS: 0.39.0

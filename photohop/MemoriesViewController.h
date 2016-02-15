@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+static UIColor *kPHBaseColor;
+static UIColor *kPHContrastTextColor;
+static UIColor *kPHButtonColor;
+
 @import Photos;
 
 @interface MemoriesViewController : UIViewController
