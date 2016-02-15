@@ -11,12 +11,15 @@
 #import "SettingsViewController.h"
 #import <Photos/Photos.h>
 #import "AppDelegate.h"
+#import "PhotoMemory.h"
 
 #import <SFFocusViewLayout/SFFocusViewLayout.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "UIScrollView+EmptyDataSet.h"
 #import "HexColors.h"
 #import "Chameleon.h"
+#import <NYTPhotoViewer/NYTPhotosViewController.h>
+#import <NYTPhotoViewer/NYTPhotosOverlayView.h>
 
 #ifdef NDEBUG
     #define PHPLog(...)
@@ -24,7 +27,7 @@
     #define PHPLog NSLog
 #endif
 
-@interface MemoriesViewController () <UICollectionViewDataSource, UICollectionViewDelegate,DZNEmptyDataSetDelegate, DZNEmptyDataSetSource> {
+@interface MemoriesViewController () <UICollectionViewDataSource, UICollectionViewDelegate,DZNEmptyDataSetDelegate, DZNEmptyDataSetSource, NYTPhotosViewControllerDelegate> {
     UILabel *titleLabel;
 }
 @property (strong, nonatomic) NSDate *today;
@@ -192,7 +195,8 @@
                     [SVProgressHUD showProgress:(CGFloat)j / (CGFloat)todayAssets.count status:[NSString stringWithFormat:@"Getting image %i of %lu", j, (unsigned long)todayAssets.count]];
                     NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:curAsset.creationDate];
                     if (result) {
-                        [_todayMedia addObject:@{@"media" : result, @"date" : curAsset.creationDate, @"year" : @(creationDateComps.year)}];
+                       // [_todayMedia addObject:@{@"asset" : curAsset, @"media" : result, @"date" : curAsset.creationDate, @"year" : @(creationDateComps.year)}];
+                        [_todayMedia addObject:[PhotoMemory memoryWithDictionary:@{@"asset" : curAsset, @"media" : result, @"date" : curAsset.creationDate, @"year" : @(creationDateComps.year)}]];
                     }
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
@@ -367,9 +371,10 @@
     PhotoViewCell *cell = (PhotoViewCell*)longPress.view;
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     if (self.presentedViewController == nil) {
-        NSDictionary *infoDict = _todayMedia[indexPath.item];
-        NSString *message = [NSString stringWithFormat:@"My memory from %@ today!",[self formatDateString:infoDict[@"year"]]];
-        UIImage *image = infoDict[@"media"];
+        //NSDictionary *infoDict = _todayMedia[indexPath.item];
+        PhotoMemory *memory = _todayMedia[indexPath.item];
+        NSString *message = [NSString stringWithFormat:@"My memory from %@ today!",[self formatDateString:memory.year]];
+        UIImage *image = memory.media;
         
         NSArray *shareItems = @[message, image];
         
@@ -377,15 +382,15 @@
         
         [self presentViewController:avc animated:YES completion:nil];
     }
-   
 }
 
 -(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
     PhotoViewCell *photoCell = (PhotoViewCell*)cell;
-    NSDictionary *infoDict = _todayMedia[indexPath.item];
-    photoCell.titleLabel.text = [self formatDateString:infoDict[@"year"]];
+    //NSDictionary *infoDict = _todayMedia[indexPath.item];
+    PhotoMemory *memory = _todayMedia[indexPath.item];
+    photoCell.titleLabel.text = [self formatDateString:memory.year];
     photoCell.descriptionLabel.text = @"";
-    UIImage *media = infoDict[@"media"];
+    UIImage *media = memory.media;
     [photoCell.backgroundImageView setImage:media];
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(shareMemory:)];
     longPress.cancelsTouchesInView = YES;
@@ -409,7 +414,35 @@
     CGFloat offset = focusViewLayout.dragOffset * indexPath.item;
     if (collectionView.contentOffset.y != offset) {
         [collectionView setContentOffset:CGPointMake(0, offset) animated:YES];
+    } else {
+        //navigate to image full view
+        //NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:@[[PhotoMemory memoryWithDictionary:_todayMedia[indexPath.item]]]];
+         NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:@[_todayMedia[indexPath.item]]];
+        [photosViewController setDelegate:self];
+        UIApplication *application = [UIApplication sharedApplication];
+        application.statusBarStyle = UIStatusBarStyleDefault;
+        [self presentViewController:photosViewController animated:YES completion:nil];
     }
+}
+
+- (void)photosViewControllerWillDismiss:(NYTPhotosViewController *)photosViewController; {
+    UIApplication *application = [UIApplication sharedApplication];
+    application.statusBarStyle = UIStatusBarStyleLightContent;
+}
+
+- (BOOL)photosViewController:(NYTPhotosViewController *)photosViewController handleActionButtonTappedForPhoto:(id <NYTPhoto>)photo {
+    
+    PhotoMemory *memory = (PhotoMemory*)photo;
+    NSString *message = [NSString stringWithFormat:@"My memory from %@ today!",[self formatDateString:memory.year]];
+    UIImage *image = memory.media;
+    
+    NSArray *shareItems = @[message, image];
+    
+    UIActivityViewController *avc = [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
+    
+    [photosViewController presentViewController:avc animated:YES completion:nil];
+    
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -113,7 +113,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return 5;
+        return 8;
     } else {
         return 2;
     }
@@ -142,10 +142,14 @@
         } else if (indexPath.row == 1) {
             [cell.textLabel setText:@"DZNEmptyDataSet"];
         } else if (indexPath.row == 2) {
-            [cell.textLabel setText:@"HexColors"];
+            [cell.textLabel setText:@"FLAnimatedImage"];
         } else if (indexPath.row == 3) {
-            [cell.textLabel setText:@"SFFocusViewLayout"];
+            [cell.textLabel setText:@"HexColors"];
         } else if (indexPath.row == 4) {
+            [cell.textLabel setText:@"NYTPhotoViewer"];
+        } else if (indexPath.row == 5) {
+            [cell.textLabel setText:@"SFFocusViewLayout"];
+        } else if (indexPath.row == 6) {
             [cell.textLabel setText:@"SVProgressHUD"];
         } else {
             [cell.textLabel setText:@"Icons8"];
@@ -181,10 +185,14 @@
         } else if (indexPath.row == 1) {
             url = @"https://github.com/dzenbot/DZNEmptyDataSet";
         } else if (indexPath.row == 2) {
-            url = @"https://github.com/mRs-/HexColors";
+            url = @"https://github.com/Flipboard/FLAnimatedImage";
         } else if (indexPath.row == 3) {
-            url = @"https://github.com/fdzsergio/SFFocusViewLayout";
+            url = @"https://github.com/mRs-/HexColors";
         } else if (indexPath.row == 4) {
+            url = @"https://github.com/NYTimes/NYTPhotoViewer";
+        } else if (indexPath.row == 5) {
+            url = @"https://github.com/fdzsergio/SFFocusViewLayout";
+        } else if (indexPath.row == 6) {
             url = @"https://github.com/SVProgressHUD/SVProgressHUD";
         } else {
             url = @"http://icons8.com";

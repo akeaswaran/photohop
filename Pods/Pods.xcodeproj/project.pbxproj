@@ -7,210 +7,338 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E3A68D030F24BE47B99D1D1A1720E2 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = B99C03C4651B9216E478CAF8D22788A4 /* UIColor+ChameleonPrivate.m */; };
-		039FF2090242B4B4CB29EBBB0B6CDA00 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AAD6B11EDA9CC7123A43570DC5604C /* SVProgressHUD.m */; };
-		072BEEF7E71F00675E87028A9A668B84 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 598FFDE6F2FD52F432DE6600C676530E /* UIImage+ChameleonPrivate.m */; };
-		094F2EC0A53F64D5A99B85D3E0CF4D17 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD59B6285B97D46223D7D3AD9F47A3 /* SVRadialGradientLayer.m */; };
-		0B8C824736914715CF75EB1083A7A104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		10D5BE2917726FB877BFE065F2F52014 /* SFFocusViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 615A2A46724791BE0FBF7DFD317E0A75 /* SFFocusViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		160634C0F5454A32E810DDF5BA9E5985 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = B73C814E3D16A6204391F0321CD59512 /* NSArray+Chameleon.m */; };
-		1716FA0939818C49FE4BBE6A658E9834 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 266FE07C9C0B71C0B908BF7F5025E557 /* UIButton+Chameleon.m */; };
-		1DE26E57570167EE496080D68F855A01 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 68740E4DDEA1C4CB200558719DA8DEC1 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2139B6A9B4241F53BB478C43D51921CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */; };
-		22DC2D74E9117167CD17FD04C327EB9D /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D538F0AFC356D91EB405A56041CB95AC /* DZNEmptyDataSet-dummy.m */; };
-		23795D7EC1AF274A6AFF4233B1E84C4C /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = AA408CD9F0FFDD853E605D2AE5F44F7E /* UINavigationController+Chameleon.m */; };
-		2B2CDF28A19D251BE61300A42473F377 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
-		2E2946436612A5B920BE18E09BF80CAF /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE1038C66866CE063DCC440C848470 /* UIViewController+Chameleon.m */; };
-		3132A9EBC1F85B6971B934C88914CD58 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD19AABE6F0B3DA98CA6EA9260B895E /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B2A79213DC65661D7BE37BE589F0F99 /* SFFocusViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C6A50F3AE3414E12ED58F9EA35729E /* SFFocusViewLayout-dummy.m */; };
-		3BC49A2B50306C45D4EBCAA50600EBE7 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 77871B44654450CFB6D271279C8769DB /* UIScrollView+EmptyDataSet.m */; };
-		3CCCC6F0C10F65283522C54CF1D6E761 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C9F07FC9118CD875F381D27E0124944 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D1FF907F6AD5186FAF926C0F20083AE /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF190D9AA46A67A0E12BAB3B8BB5495 /* Chameleon_.m */; };
-		3EB87077CB9227C321F62EE54941ACCF /* Pods-photohop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADA59317FD179F55D1CE65459D8779B /* Pods-photohop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41E19345B5C2331DAA02119D782F4E5F /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFB5CB9EC430994935933054EEEE2DD /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42B81612C22744B21A3AC57DC36F7DD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		4B181B0AC8894DE05050B3F6718D392C /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4FF4626DFCBD1D6972744CCF181CA9 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E1065208C5B2417E306235ED5CABC2B /* Pods-photohop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4C8461CEB0336444B35DE99215EDB4 /* Pods-photohop-dummy.m */; };
-		4E53C48294089DC928E3A7BD1C2DE4D7 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CD61982C5569848F333ADEADC5C35A58 /* UIColor+Chameleon.m */; };
-		4E5B4EEA50BEF0B4D0FE2394D3EB119A /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C54973DF91EFEE34C5720CDAE68C4B1 /* HexColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		596758BBEC68789E6C8928ECE3FC341C /* HexColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 244D937C2205532F42A0C3E3353F96E1 /* HexColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BF38591007E7E4ADAD878E405949598 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F82F38B731F5A8873B02B05AF16DAF4C /* ChameleonConstants.m */; };
-		7A8C05065D9F9BA2C218F75AD6B1F798 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 997C11F44E7333F99D426ED3CE4C24E0 /* UIAppearance+Swift.m */; };
-		7AC6A834FA57B36D28F89E0DB6B10730 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E40A523A78D4A23DE7E9CA856729DB46 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EDDB8F47291F592694D7135A10DAFFF /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = E323B313261976BA3325CA845C262FCB /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D7B7FAA855B1C97BECB7651AC9584C4 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA5EF86CB650D3620E63CBBA4FBE4EF /* SVIndefiniteAnimatedView.m */; };
-		8DCF5C0EE6AC7543935C51AA756864C0 /* HexColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF0CFEC4DF4D463A709A7A2E2E8F6 /* HexColors-dummy.m */; };
-		9EEBF7B1602C1C17236C4EA0DD9717E2 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 443EC587835EEEA12AE497087FCE0AAA /* UILabel+Chameleon.m */; };
-		A96F59F26A96FF08FC2E9C6284B48A63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		B116B651388E34E3CE3E9097BC83D47F /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E50EE603E2A48EAD8D8104E8B19CF6 /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3429381360BE9C37D00301284E4B63A /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F67E87A3FD56383CAEDC7C119A3D21F5 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B768EAA4F040B54F0CC187469BE9DEC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		B7FDAC105AB53E3D878BCF26E2860012 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		BBAF679B62332C972CF0E73893EE0E65 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85ABE21C62BE37AB03BAEB0B55224094 /* SVProgressHUD.bundle */; };
-		C0FD7C79EC924F23C9A2FC82C540CDF3 /* SFFocusViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF6A589F55ECF330867313E12D214C7 /* SFFocusViewLayout.m */; };
-		C5D22B9D6600C31DC02CEC59BDA086B0 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = CB8D3AC674A2D7A370664AC5E2EDE9D9 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C61ED2CF225C6D9872D34F5455C945D4 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 11BC126D2810065474CE6B740EAED468 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C67E03EC22D124DE998695EF86B99E25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
-		C84DFC79CACF46C6275670861ADBA6D4 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E372CEE9250807F38E8587BCD50B7B /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8F5D883246ECEF0F939E9F02AAB9C05 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7930172D54FD18DFC5F37A8E8198E2F7 /* SVProgressHUD-dummy.m */; };
-		C94589A47D4E708DDE92C416033C1B66 /* SFFocusViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1F9E3431F2572D1531616A575C0678 /* SFFocusViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAAD45C4CF53ECB0A96811C4CCCFAA2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
-		CC51E5C010ABC87B9CAAA1CB721A6A94 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF89648DA6C5E365346BBC4FAA2EF44 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFE128CC77A6E92EC556F5730EDBD337 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E537DAE654809917EDFF2A9A26C98D90 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1E92AEC9F093E10C69F2B89A14F49F5 /* HexColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 091C3D595E97A79891840471597F3EC3 /* HexColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D33ED72DE0A9C46DB0614F59D2ED05BF /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5DB19AA88AC2E982D18AEA7269C128 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D43D856D7A951AE72D28A271FE399110 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D99F5551ACFC8A75E2FD52B408280AD /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDD470435EE37EBA46CD0FF081559295 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA9F40520C78FDE74356ADE438A59AD /* ChameleonFramework-dummy.m */; };
-		E04963F0C6D76377186361A0AF79A4C6 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FC6EBAAC4FDDBC1DCD7DED1FE36C0E7 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E14B01B2BDDA7C86AC2EBC45FCFEF52E /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 630723D507A318CFB1DF2C92BF723011 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E53E2CD0E939A133E73880E7B3BB4DBF /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFBA335D20AC3D1EAC8CFFF44CC7F74 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED545537CDC6C83EBA629FE6524D550A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */; };
-		F32D7BD1DA58639964C91FA86A002AB4 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F89ED243B4392294B896F3282BF5694 /* UIView+ChameleonPrivate.m */; };
-		F5CC9B27F3CF472FE72A905E8C2D7A9D /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A5C15420EAD9D1D18DBA89839497CAE8 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F85099F6E9B7DB837BAB856EB61A6F07 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 047E56CBCFBB24141E94E01749A49061 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F977C86364E276C18C68EBD6BF2A409E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
-		FA90B7D6EBE7A289796856FF2B310FC0 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 999B7F20CF2C5CB3311F33D94996C4AC /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDF66181555E540FD4362F5F9E145740 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */; };
+		00E3A68D030F24BE47B99D1D1A1720E2 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409D0D837CBA44554CDB831144BF2905 /* UIColor+ChameleonPrivate.m */; };
+		014F0861EE98EE6B8AC4376C27727BF1 /* Pods-photohop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4C8461CEB0336444B35DE99215EDB4 /* Pods-photohop-dummy.m */; };
+		05ADBA69B89830C78EDA6E2A6FE44D24 /* NYTPhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB9B559037A5C7280DFE320C92F512C /* NYTPhotosDataSource.m */; };
+		072BEEF7E71F00675E87028A9A668B84 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9FCD7A929E4EC3B1994524BC42F69F /* UIImage+ChameleonPrivate.m */; };
+		0DE9CF6DC44815676C38B7523D8401DE /* NYTPhotosOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E12C6BCA955AE53AEBCAC1099375F5 /* NYTPhotosOverlayView.m */; };
+		0F3F105A44BE2D96412CB067EB037A01 /* SFFocusViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1BE544FD55E12020A92CA2A3A4F012 /* SFFocusViewLayout.m */; };
+		1189EAF8629BBC643571D11D34430FF4 /* NYTPhotoViewerCloseButtonXLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD542A0B11C07F59405B4B7AF5E59C6 /* NYTPhotoViewerCloseButtonXLandscape.png */; };
+		1374EEC7E67FB73F9240545AC0D66ACA /* FLAnimatedImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A93FA736A0D488601C0EA91B2422FC96 /* FLAnimatedImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		147A75C05B2C20C6275DDCDB2E6D7CAD /* NYTScalingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D80799DCD708F6453E39FE6887DFC9 /* NYTScalingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		160634C0F5454A32E810DDF5BA9E5985 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = A56A5E96EFC724629216DFCBDF6BEE33 /* NSArray+Chameleon.m */; };
+		1716FA0939818C49FE4BBE6A658E9834 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CD01E4650B42B6495C49A75EA412A /* UIButton+Chameleon.m */; };
+		1B6DBB7D4EDF238AA2D89608A3F51C03 /* FLAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1327D9F8B9F11109CF4713692761F486 /* FLAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DE26E57570167EE496080D68F855A01 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B883FA0DCABF2C4CBBD34728118A8B3 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2076EE9ABC998E885ED1D3BF6888A3CF /* NYTPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 253FD4A65E7B81C30D4395A5B9B2BDA8 /* NYTPhotoViewController.m */; };
+		2139B6A9B4241F53BB478C43D51921CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9447DF4B5A222DB8E243F177D77590EE /* QuartzCore.framework */; };
+		22DC2D74E9117167CD17FD04C327EB9D /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE50C873AA9936B9D1D7376F2BBC3C2 /* DZNEmptyDataSet-dummy.m */; };
+		23795D7EC1AF274A6AFF4233B1E84C4C /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AC034FA39148E8F4613D544B54E1F1 /* UINavigationController+Chameleon.m */; };
+		23C38574DD71EE0FD5F9BB962528DD65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C8F43D1A1421B9073A0BE2C468EAB4 /* CoreGraphics.framework */; };
+		25E1967A64EE442EA4935B385B52B1D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */; };
+		2A7B6FEB31641F9BB00061EFADBC6402 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B79B2037978E62BF126C3CE49F633B /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B94C6A5A514837CC4242F0E7B59AE87 /* NSBundle+NYTPhotoViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CB1A89EEF1576A08033DAA641AB83A /* NSBundle+NYTPhotoViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E2946436612A5B920BE18E09BF80CAF /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D76FEFB8C03C5448191727268AE2D /* UIViewController+Chameleon.m */; };
+		306CB8E54F034EE4C10CC9A88035EE32 /* NYTPhotosOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 112ACB5A896549DDED2B5B0CB4D8B366 /* NYTPhotosOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3132A9EBC1F85B6971B934C88914CD58 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E52BAD164A68D7C81AAD422565D2034 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A45120A5BCA016ADB8648C0535A828C /* NYTPhotoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 40B3B7533BB97A80B48E8A3477BD0C95 /* NYTPhotoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BC49A2B50306C45D4EBCAA50600EBE7 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD1FE923A6FE7CD218D8A667D03CF9 /* UIScrollView+EmptyDataSet.m */; };
+		3BF01704E7F58B9439D4B2F7D4812BE1 /* NYTPhotosDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F96FE432221DA5CC6DF7F7748355AA7D /* NYTPhotosDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCCC6F0C10F65283522C54CF1D6E761 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BC74C3663A11D69B85C59D7C403C52 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D1FF907F6AD5186FAF926C0F20083AE /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F90964FD53E406F1C6E01BE578E50 /* Chameleon_.m */; };
+		41E19345B5C2331DAA02119D782F4E5F /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A66F822617D6612CA20752B2C2B61F31 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		422AFB5945146A1A66915CC6BEE277E0 /* NYTPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C00B5F61FA5998AA3E706E7B1A680 /* NYTPhotosViewController.m */; };
+		42B81612C22744B21A3AC57DC36F7DD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */; };
+		4B181B0AC8894DE05050B3F6718D392C /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CD52BB3302AF05E419686253B0B7E0 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E53C48294089DC928E3A7BD1C2DE4D7 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = A98CBCFA115AB733E09E2BBE5F0DB8AC /* UIColor+Chameleon.m */; };
+		4E5B4EEA50BEF0B4D0FE2394D3EB119A /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 628D27C6DBCF3520BB9C57DE1A8BE733 /* HexColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		57F6CA8786125C49C9152DDCF8707211 /* NYTPhotoCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1000E1494EC04AEF29AAFB5C3060FCD /* NYTPhotoCaptionView.m */; };
+		596758BBEC68789E6C8928ECE3FC341C /* HexColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FCB7723659B8AA466304C268588D58B /* HexColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59C91353117C8358BF5040461B826F7A /* SFFocusViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 41803A43B5A2D4DDA08E68B0C3343A50 /* SFFocusViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A197B8FC3232DC35A87E0585E3FE12A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */; };
+		5A536E34E7D5F0B39A8CEA90D75B702F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */; };
+		5AB2758EA53FD0D6446D1500817231BB /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8C156671EB5BEFCAD354081C080B3BE /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BF38591007E7E4ADAD878E405949598 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F3FAFF739D37821283202395DD8BDB /* ChameleonConstants.m */; };
+		5F352726FD1DFFAEB82B216CC42E00F9 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F50402DF67FA57C1117E261D77BD499 /* SVRadialGradientLayer.m */; };
+		604B53EFE4EED9A3090DE434125798DA /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAED2A3609AD744291A597EB913DA54 /* SVProgressHUD-dummy.m */; };
+		646612640E7891635613E02C34E01C12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B08A3FF72135334B26BE46E5081D676 /* UIKit.framework */; };
+		64EF446A26955E14E2BB5F730975E7E3 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84B76705E4BE2A3406350A81B6BEB03C /* SVProgressHUD.bundle */; };
+		65E9F144D4D06DD6BD3D9A9B22C4FAF5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9447DF4B5A222DB8E243F177D77590EE /* QuartzCore.framework */; };
+		694E9EF448880F6119C97B73454DAA91 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBFA92D3DC4F590BE13A9AC3957650B /* ImageIO.framework */; };
+		6F49C401259D388F4CEC04D6764D3045 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 30651B49B63FE129AC6C94B2AC4B3F7B /* SVProgressHUD.m */; };
+		748E9560469EE40357F5FE3EE63AF472 /* NYTPhotoTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F37F2705CF7A3E4F35F8C80425CB7D47 /* NYTPhotoTransitionController.m */; };
+		793B3BC18A6BD80D99ACFBE8917F9F89 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A5B14858CC1F2840E9948F6C89594D /* FLAnimatedImageView.m */; };
+		7A8C05065D9F9BA2C218F75AD6B1F798 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = D240BDE173686CF1C25BF4A3893483AB /* UIAppearance+Swift.m */; };
+		7ED86E54613709248357F9DE85B6D76C /* SFFocusViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8BE81C77F4887805E2F42EA5E1AB28 /* SFFocusViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EDDB8F47291F592694D7135A10DAFFF /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = D293B466D54016F4FD652593E4CE4AC2 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F3A17D7F1C00F958EC5017E471E3A30 /* Pods-photohop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADA59317FD179F55D1CE65459D8779B /* Pods-photohop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FF455FC30D6A7E720157E7974CBA459 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */; };
+		819913E86E2E33348AAEA9ACDBC40EB2 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C6AA2264F6CB0C1B37699AC22E30F6 /* FLAnimatedImage.framework */; };
+		87B0903C6A7EBC6FCB35166349C75793 /* SFFocusViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FAB42F25996CFA5F08DFCC663B5858 /* SFFocusViewLayout-dummy.m */; };
+		8A18DD5830AA47C6737361A062BBD802 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 8421B274272420EEEFD0753FFDEF2629 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AA9541169EFB247C2D8443006945E42 /* FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9B995CFB7C50ED49E6076529AAB9EC /* FLAnimatedImage-dummy.m */; };
+		8DCF5C0EE6AC7543935C51AA756864C0 /* HexColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CF37E20D1DD2FAB6636CD48E0EAEF /* HexColors-dummy.m */; };
+		902AADDCCC48381511DCF083CD9E20C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9447DF4B5A222DB8E243F177D77590EE /* QuartzCore.framework */; };
+		95D63728E5AEBB7509EF11FE74168CCB /* NYTPhotoViewerCloseButtonXLandscape@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A623A5B9228997AEC019A08043B239 /* NYTPhotoViewerCloseButtonXLandscape@3x.png */; };
+		96233753A3B50F0DBC7E9B25BF383D59 /* NYTPhotoTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BB0D0CD63410641E0196917AB0CCF6 /* NYTPhotoTransitionAnimator.m */; };
+		989AE28EBBDA14648F9D3253D6B4A2D5 /* NYTPhotoViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13429671847CC2511CD6B233F550E49A /* NYTPhotoViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A4877D997489B7B57EC8BE555C156F5 /* NYTPhotoViewer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B60147149F07E473B8D8E613EF7F411A /* NYTPhotoViewer.bundle */; };
+		9EEBF7B1602C1C17236C4EA0DD9717E2 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 599057698990966D419AF199FA291851 /* UILabel+Chameleon.m */; };
+		A747BCDF6BD73B4EC0AE06E7E789668B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */; };
+		B0225E79716DD8081D82346A3F8EFE28 /* NYTPhotoTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = E824A890DDB198E0DB2EA1CF688A72BC /* NYTPhotoTransitionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B116B651388E34E3CE3E9097BC83D47F /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2469AF1ED4C621538B9263F78BA6F03 /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3429381360BE9C37D00301284E4B63A /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB85CD8743D929D75BF77A418F07D68 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B768EAA4F040B54F0CC187469BE9DEC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */; };
+		B78966A3CE155409F2E531658DA04EE9 /* NYTPhotosViewControllerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7822DE7772D5129A54F5F9DEA5E480 /* NYTPhotosViewControllerDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7FDAC105AB53E3D878BCF26E2860012 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */; };
+		B8A82F85675D3B4FB30DCC98CD46BD45 /* NYTPhotoDismissalInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0255ACAEAE863ABD68071A7D346E564A /* NYTPhotoDismissalInteractionController.m */; };
+		B9238977DCF3ED4109DFCACD471AF8F9 /* FLAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DD1F357B7A9693908D026C11FC96FB4 /* FLAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDE765147085345EE5EE3A5B01FED1BD /* NYTPhotoViewerCloseButtonX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C34F4D8857056A8A69138B8D6E511E /* NYTPhotoViewerCloseButtonX@3x.png */; };
+		BFB69555A4EC472F07DD43A29A4DA56E /* NYTScalingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED8155A97E429CCEBAB4621364AE04 /* NYTScalingImageView.m */; };
+		C5B9CA1D7F1517B31E4C6970C8EC3DCF /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BED161CEF6457ACA74775C943E4C7 /* FLAnimatedImage.m */; };
+		C5D22B9D6600C31DC02CEC59BDA086B0 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 67861BE8F41776F579D89950ED53D58C /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C61ED2CF225C6D9872D34F5455C945D4 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = FC84E9A866B9061717B052AEA9CD29FB /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C67E03EC22D124DE998695EF86B99E25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B08A3FF72135334B26BE46E5081D676 /* UIKit.framework */; };
+		C84DFC79CACF46C6275670861ADBA6D4 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F6C273FED30B939236B3E6E179DB6C /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAAD45C4CF53ECB0A96811C4CCCFAA2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B08A3FF72135334B26BE46E5081D676 /* UIKit.framework */; };
+		CC51E5C010ABC87B9CAAA1CB721A6A94 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 278270B4C8034B5461FBCE0398BEB9E8 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEE6AC7C1D2685A7BE9A56E2AAE51FD8 /* NYTPhotoDismissalInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = FD656F30271B967FCC644725C8308061 /* NYTPhotoDismissalInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A8D5A79202CAE2B12564B7B1D1CDB5 /* NYTPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E27FE0C1E167E2BA96EFE535501E87A /* NYTPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E92AEC9F093E10C69F2B89A14F49F5 /* HexColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5599129FCFA6A24BE63C1C9369ADD330 /* HexColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D587BA2C8AFD2C9A5217486D06CBBD7C /* NYTPhotoViewerCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA809A287377259AA43C25941496547 /* NYTPhotoViewerCloseButtonX@2x.png */; };
+		D9B24C2694E25EA143B3EA01DE5682D1 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE43B05AF02C68B0E5181DF69E3347 /* SVIndefiniteAnimatedView.m */; };
+		DDD470435EE37EBA46CD0FF081559295 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1B12EAB1C1AB740ED3282859D34BE7 /* ChameleonFramework-dummy.m */; };
+		E04963F0C6D76377186361A0AF79A4C6 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB20BC8DF9AB16312ACF6B3CE69447E /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E14B01B2BDDA7C86AC2EBC45FCFEF52E /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B8AEC49BE40784EBFA07517E6C05F8 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E317AAB1E32AB89C260DFB2AC08AD386 /* NYTPhotoTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9578DF4550EDF8E64F2AB3FDA2EF6C49 /* NYTPhotoTransitionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E53E2CD0E939A133E73880E7B3BB4DBF /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD53E034FD91E4D76A2D15546036420 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E56F82B763ED87D3A022F5ECA4179824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B08A3FF72135334B26BE46E5081D676 /* UIKit.framework */; };
+		E988B211B6FBB36DD26048749564E588 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F5B63D5A6EEA773279ECE7E7C06E78 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA63AE429B37EB621E3572FA06893342 /* NYTPhotosViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A1F3BCB2CDCB52E7ECE50DEE86B4C3C /* NYTPhotosViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED545537CDC6C83EBA629FE6524D550A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C8F43D1A1421B9073A0BE2C468EAB4 /* CoreGraphics.framework */; };
+		EE09522753AFB36FD4850A440061292D /* NYTPhotoCaptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77056C780822A15D53AB50534866F056 /* NYTPhotoCaptionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF76A72D59965EE923C2E1082B02E711 /* NYTPhotoViewerCloseButtonXLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A05A022A8C5C07937432E3E37FD932 /* NYTPhotoViewerCloseButtonXLandscape@2x.png */; };
+		F02364A18B2D33B0D9A9AE2A64E29F50 /* NSBundle+NYTPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF5F51E1A914CFE9292E58407D65D8B /* NSBundle+NYTPhotoViewer.m */; };
+		F32D7BD1DA58639964C91FA86A002AB4 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE075A1F9164AF9EAB3CC0680DE23AD6 /* UIView+ChameleonPrivate.m */; };
+		F4937EF654EEC148BC5AE9438251D422 /* NYTPhotoCaptionViewLayoutWidthHinting.h in Headers */ = {isa = PBXBuildFile; fileRef = 593399C730211140A38A3923911B8337 /* NYTPhotoCaptionViewLayoutWidthHinting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5CC9B27F3CF472FE72A905E8C2D7A9D /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B3002BCD70FEA1EA8454FFF764BBC1 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F61C4AF45361F0B4E70DE9030B3344F4 /* NYTPhotoViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6C0C768F4726A4CF3D447B2FDA8E69 /* NYTPhotoViewer-dummy.m */; };
+		F85099F6E9B7DB837BAB856EB61A6F07 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = B417075BC6551097B4015A5F20DF4C30 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA90B7D6EBE7A289796856FF2B310FC0 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B835B32D87B26059FAFC65170FB0A1 /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB0F77C7778B80972A628569149E8A7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C72AA8386093FD49624FFF39C64617 /* MobileCoreServices.framework */; };
+		FF5131A02E826A02D4706360D59699AF /* NYTPhotoContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = EB900F70C439A90B56F13D15032BF529 /* NYTPhotoContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFEC57AA108A42B3A583FA0AB982B2A5 /* NYTPhotoViewerCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = E27CEE7B575108BBD6BFE9A296BF57E0 /* NYTPhotoViewerCloseButtonX.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		35EE99E9991041E9623D847C879A58DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 16FB872D0D2D4BA0F378AB34D47CF95F;
-			remoteInfo = DZNEmptyDataSet;
-		};
-		A6ABF86456B4F1D39851F580FF24830A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D7B0206D4070BD33136CB9F4E80104BD;
-			remoteInfo = SVProgressHUD;
-		};
-		B1C05790749484925CD061E81EFB996F /* PBXContainerItemProxy */ = {
+		11E52E12372F9E81584B5A5BA040CDDD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9B57F4EE4746045CEAE2D933A3C8EC9E;
 			remoteInfo = ChameleonFramework;
 		};
-		B343736070DE7E4F2DEF4FAC62B921A1 /* PBXContainerItemProxy */ = {
+		391918AB2A073EBB0BB4D8596BBAD561 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7E86CA3A283C0BBACB76FEE17FCA8E89;
+			remoteGlobalIDString = DA889BD2632D07C9BF642BFD69260A96;
+			remoteInfo = SVProgressHUD;
+		};
+		648896CDC8B707DE888F9823381C1262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8023EE9A45E7052B1A55974AE8EF38D2;
 			remoteInfo = SFFocusViewLayout;
 		};
-		C8CDC0A36BC0558215FA5027FDBE8632 /* PBXContainerItemProxy */ = {
+		6D1E17C01DB5E9376054E950410B7B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE113CEF81C16AA59EC049ACE130BCB2;
+			remoteInfo = FLAnimatedImage;
+		};
+		7DCEBCC89AC4886ADC8740686B0D0C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1966D1D93475A8B1DDD5A3B153568842;
+			remoteInfo = "NYTPhotoViewer-NYTPhotoViewer";
+		};
+		80F06BB44072C68E8A667DFDFDD051ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FB872D0D2D4BA0F378AB34D47CF95F;
+			remoteInfo = DZNEmptyDataSet;
+		};
+		9B72ACB66FECDA6207114067164D7478 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C408D4E183A88B763793C217A66A1950;
 			remoteInfo = HexColors;
 		};
+		A6370555CCDF6DC419AA59A9AB102149 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0481F19E1296373CB3E8D78FD008253B;
+			remoteInfo = NYTPhotoViewer;
+		};
+		CAF0A92EA569367984AF6AC66F998002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE113CEF81C16AA59EC049ACE130BCB2;
+			remoteInfo = FLAnimatedImage;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003BC3775D8C8BC2FB87E45C1F897A89 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		047E56CBCFBB24141E94E01749A49061 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
-		091C3D595E97A79891840471597F3EC3 /* HexColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-umbrella.h"; sourceTree = "<group>"; };
-		0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		11BC126D2810065474CE6B740EAED468 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		11DBB4EBE88C0F0C6FA0838B1BA888DD /* Pods_photohop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photohop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14AAD6B11EDA9CC7123A43570DC5604C /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		154E63A9C761C05A519873224E2D78F8 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		18B54701886FA0045778DCD44B6DCD92 /* SFFocusViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFFocusViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F89ED243B4392294B896F3282BF5694 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		244D937C2205532F42A0C3E3353F96E1 /* HexColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HexColors.h; path = Classes/HexColors.h; sourceTree = "<group>"; };
-		266FE07C9C0B71C0B908BF7F5025E557 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
-		279C87ED940DD31EC8F72538D0A2D4A3 /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
+		0255ACAEAE863ABD68071A7D346E564A /* NYTPhotoDismissalInteractionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotoDismissalInteractionController.m; path = Pod/Classes/ios/NYTPhotoDismissalInteractionController.m; sourceTree = "<group>"; };
+		033E919BC15ABC4B6987557D26469665 /* HexColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HexColors.modulemap; sourceTree = "<group>"; };
+		07F97C890E2963C2664ECC901EAFE878 /* FLAnimatedImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FLAnimatedImage.modulemap; sourceTree = "<group>"; };
+		08542383FE2211E589F1621181B4C673 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09A05A022A8C5C07937432E3E37FD932 /* NYTPhotoViewerCloseButtonXLandscape@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NYTPhotoViewerCloseButtonXLandscape@2x.png"; path = "Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape@2x.png"; sourceTree = "<group>"; };
+		0ABD1FE923A6FE7CD218D8A667D03CF9 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		0E27FE0C1E167E2BA96EFE535501E87A /* NYTPhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhoto.h; path = Pod/Classes/ios/Protocols/NYTPhoto.h; sourceTree = "<group>"; };
+		0F1B12EAB1C1AB740ED3282859D34BE7 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		10CB1A89EEF1576A08033DAA641AB83A /* NSBundle+NYTPhotoViewer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+NYTPhotoViewer.h"; path = "Pod/Classes/ios/Resource Loading/NSBundle+NYTPhotoViewer.h"; sourceTree = "<group>"; };
+		10F6C273FED30B939236B3E6E179DB6C /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		112ACB5A896549DDED2B5B0CB4D8B366 /* NYTPhotosOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotosOverlayView.h; path = Pod/Classes/ios/NYTPhotosOverlayView.h; sourceTree = "<group>"; };
+		12BB0D0CD63410641E0196917AB0CCF6 /* NYTPhotoTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotoTransitionAnimator.m; path = Pod/Classes/ios/NYTPhotoTransitionAnimator.m; sourceTree = "<group>"; };
+		1327D9F8B9F11109CF4713692761F486 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImageView.h; path = FLAnimatedImage/FLAnimatedImageView.h; sourceTree = "<group>"; };
+		13429671847CC2511CD6B233F550E49A /* NYTPhotoViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NYTPhotoViewer-umbrella.h"; sourceTree = "<group>"; };
+		136CD01E4650B42B6495C49A75EA412A /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		161B0DE11F5CD54F3F24B029F34E786A /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		19C6AA2264F6CB0C1B37699AC22E30F6 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD1F357B7A9693908D026C11FC96FB4 /* FLAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImage.h; path = FLAnimatedImage/FLAnimatedImage.h; sourceTree = "<group>"; };
+		1E52BAD164A68D7C81AAD422565D2034 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		1E7B3CC7A92219B40529E7297545E0D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB09A652877D5BA2ADA0BB7CF5E45A8 /* FLAnimatedImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLAnimatedImage.xcconfig; sourceTree = "<group>"; };
+		24AC034FA39148E8F4613D544B54E1F1 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		253FD4A65E7B81C30D4395A5B9B2BDA8 /* NYTPhotoViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotoViewController.m; path = Pod/Classes/ios/NYTPhotoViewController.m; sourceTree = "<group>"; };
+		278270B4C8034B5461FBCE0398BEB9E8 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		28F0C043C988625E9BEA18649B10E6FB /* Pods-photohop-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-photohop-frameworks.sh"; sourceTree = "<group>"; };
-		2F523D84DFB9761DECC2608EAE78D130 /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
-		38C0FCE3D61480FBE5D30915E41DE064 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
-		3C54973DF91EFEE34C5720CDAE68C4B1 /* HexColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HexColors.m; path = Classes/HexColors.m; sourceTree = "<group>"; };
-		3D1F9E3431F2572D1531616A575C0678 /* SFFocusViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		2A1F3BCB2CDCB52E7ECE50DEE86B4C3C /* NYTPhotosViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotosViewController.h; path = Pod/Classes/ios/NYTPhotosViewController.h; sourceTree = "<group>"; };
+		2AD53E034FD91E4D76A2D15546036420 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		2AEC90B33F8633BE1404A268BE9A206D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD542A0B11C07F59405B4B7AF5E59C6 /* NYTPhotoViewerCloseButtonXLandscape.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NYTPhotoViewerCloseButtonXLandscape.png; path = Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape.png; sourceTree = "<group>"; };
+		2E8603124424329D7089CF7F490A2148 /* SFFocusViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFFocusViewLayout.xcconfig; sourceTree = "<group>"; };
+		2F50402DF67FA57C1117E261D77BD499 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		30651B49B63FE129AC6C94B2AC4B3F7B /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		37C8F43D1A1421B9073A0BE2C468EAB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		38C92C5E9C75E072C8B26EB0358CD5D4 /* NYTPhotoViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NYTPhotoViewer.modulemap; sourceTree = "<group>"; };
+		409D0D837CBA44554CDB831144BF2905 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		40B3B7533BB97A80B48E8A3477BD0C95 /* NYTPhotoViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotoViewController.h; path = Pod/Classes/ios/NYTPhotoViewController.h; sourceTree = "<group>"; };
+		41803A43B5A2D4DDA08E68B0C3343A50 /* SFFocusViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFFocusViewLayout.h; path = Classes/SFFocusViewLayout.h; sourceTree = "<group>"; };
 		439010847AEE3E45458BC2742EDCAE49 /* Pods-photohop-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-photohop-acknowledgements.plist"; sourceTree = "<group>"; };
-		443EC587835EEEA12AE497087FCE0AAA /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
-		49D2EAD290D56685AD62390FA4FDE503 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		4DD19AABE6F0B3DA98CA6EA9260B895E /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
-		4DF89648DA6C5E365346BBC4FAA2EF44 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		4FC6EBAAC4FDDBC1DCD7DED1FE36C0E7 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
-		598FFDE6F2FD52F432DE6600C676530E /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		5BBE1038C66866CE063DCC440C848470 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		5E2DAE8728368F73CA60DB5C81973A25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		615A2A46724791BE0FBF7DFD317E0A75 /* SFFocusViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFFocusViewLayout.h; path = Classes/SFFocusViewLayout.h; sourceTree = "<group>"; };
-		630723D507A318CFB1DF2C92BF723011 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
-		6796ED40A08F6FBE9D0C23F23441EC96 /* HexColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HexColors.xcconfig; sourceTree = "<group>"; };
+		453CBDCBCA92E9681094AE00418AC97E /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45533EE1932467D46F3F2F2FED697D55 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		47660E447EA9DCAB87010720F0BD06AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47B8AEC49BE40784EBFA07517E6C05F8 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		4AF5F51E1A914CFE9292E58407D65D8B /* NSBundle+NYTPhotoViewer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+NYTPhotoViewer.m"; path = "Pod/Classes/ios/Resource Loading/NSBundle+NYTPhotoViewer.m"; sourceTree = "<group>"; };
+		4D273921839D44D99E53D1650CF64533 /* SFFocusViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFFocusViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8BED161CEF6457ACA74775C943E4C7 /* FLAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImage.m; path = FLAnimatedImage/FLAnimatedImage.m; sourceTree = "<group>"; };
+		4FA809A287377259AA43C25941496547 /* NYTPhotoViewerCloseButtonX@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NYTPhotoViewerCloseButtonX@2x.png"; path = "Pod/Assets/ios/NYTPhotoViewerCloseButtonX@2x.png"; sourceTree = "<group>"; };
+		51D80799DCD708F6453E39FE6887DFC9 /* NYTScalingImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTScalingImageView.h; path = Pod/Classes/ios/NYTScalingImageView.h; sourceTree = "<group>"; };
+		5599129FCFA6A24BE63C1C9369ADD330 /* HexColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-umbrella.h"; sourceTree = "<group>"; };
+		55F5B63D5A6EEA773279ECE7E7C06E78 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		5649FC4EE0A13D260D9EFFDAD3D03DCC /* NYTPhotoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYTPhotoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CBA143BB9562D677081BBB688B6232 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FAB42F25996CFA5F08DFCC663B5858 /* SFFocusViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFFocusViewLayout-dummy.m"; sourceTree = "<group>"; };
+		58677C15B152DBB7A36D233257EC0E4B /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
+		593399C730211140A38A3923911B8337 /* NYTPhotoCaptionViewLayoutWidthHinting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotoCaptionViewLayoutWidthHinting.h; path = Pod/Classes/ios/Protocols/NYTPhotoCaptionViewLayoutWidthHinting.h; sourceTree = "<group>"; };
+		599057698990966D419AF199FA291851 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		5B7822DE7772D5129A54F5F9DEA5E480 /* NYTPhotosViewControllerDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotosViewControllerDataSource.h; path = Pod/Classes/ios/Protocols/NYTPhotosViewControllerDataSource.h; sourceTree = "<group>"; };
+		5CB85CD8743D929D75BF77A418F07D68 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		5FCB7723659B8AA466304C268588D58B /* HexColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HexColors.h; path = Classes/HexColors.h; sourceTree = "<group>"; };
+		61CDAB71E697B1AB06E7B371624A6E70 /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
+		628D27C6DBCF3520BB9C57DE1A8BE733 /* HexColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HexColors.m; path = Classes/HexColors.m; sourceTree = "<group>"; };
+		63A57EFD4BE62CC08C8EA4B321FFD9EF /* NYTPhotoViewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NYTPhotoViewer.xcconfig; sourceTree = "<group>"; };
+		67861BE8F41776F579D89950ED53D58C /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
 		67DBC4AFF3D25EA5F9D6281B25568235 /* Pods-photohop-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-photohop-resources.sh"; sourceTree = "<group>"; };
-		68740E4DDEA1C4CB200558719DA8DEC1 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		6C9D2CEA55AE9FD8A7B771E77DB6709D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		712344A25993FF66BD3B14698C52FDD0 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		73E913F2D3E81E8D74A6B7177C84EC03 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
-		75E1D289A746128387C08472CE0A2BCF /* SFFocusViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFFocusViewLayout.xcconfig; sourceTree = "<group>"; };
-		77871B44654450CFB6D271279C8769DB /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
-		77BBF0CFEC4DF4D463A709A7A2E2E8F6 /* HexColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HexColors-dummy.m"; sourceTree = "<group>"; };
-		7930172D54FD18DFC5F37A8E8198E2F7 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		7DFB5CB9EC430994935933054EEEE2DD /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
-		7E028C59699DB170CB213FBD79A93777 /* SFFocusViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout-prefix.pch"; sourceTree = "<group>"; };
+		683E89ADD7F7661198700A1299F47413 /* SFFocusViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SFFocusViewLayout.modulemap; sourceTree = "<group>"; };
+		77056C780822A15D53AB50534866F056 /* NYTPhotoCaptionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotoCaptionView.h; path = Pod/Classes/ios/NYTPhotoCaptionView.h; sourceTree = "<group>"; };
+		7B9B995CFB7C50ED49E6076529AAB9EC /* FLAnimatedImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImage-dummy.m"; sourceTree = "<group>"; };
+		7BB20BC8DF9AB16312ACF6B3CE69447E /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		7C0C00B5F61FA5998AA3E706E7B1A680 /* NYTPhotosViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotosViewController.m; path = Pod/Classes/ios/NYTPhotosViewController.m; sourceTree = "<group>"; };
+		7E1437CE8DFDF95E23A0C41BA403F39C /* Pods_photohop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photohop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA3C291CB27534C9C7325718B418781 /* FLAnimatedImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-prefix.pch"; sourceTree = "<group>"; };
+		7FE50C873AA9936B9D1D7376F2BBC3C2 /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
 		81749E828920DB6BE32470F2406D03F9 /* Pods-photohop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-photohop.debug.xcconfig"; sourceTree = "<group>"; };
-		81C6A50F3AE3414E12ED58F9EA35729E /* SFFocusViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFFocusViewLayout-dummy.m"; sourceTree = "<group>"; };
-		85ABE21C62BE37AB03BAEB0B55224094 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		82B79B2037978E62BF126C3CE49F633B /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8421B274272420EEEFD0753FFDEF2629 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		84B76705E4BE2A3406350A81B6BEB03C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		84CE43B05AF02C68B0E5181DF69E3347 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		85B3002BCD70FEA1EA8454FFF764BBC1 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
 		86DB3E8EAA1C94D3EBBBB49AF7968A02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C9F07FC9118CD875F381D27E0124944 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
-		8D99F5551ACFC8A75E2FD52B408280AD /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		87C72AA8386093FD49624FFF39C64617 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		8B08A3FF72135334B26BE46E5081D676 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8B883FA0DCABF2C4CBBD34728118A8B3 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		904AF07B2952A7AB9070FF7EA2A27A87 /* Pods-photohop-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-photohop-acknowledgements.markdown"; sourceTree = "<group>"; };
-		976E9A58A29539BB6A4D0EEAC8ACF3A5 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
-		997C11F44E7333F99D426ED3CE4C24E0 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
-		999B7F20CF2C5CB3311F33D94996C4AC /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		92FBF57792299EF4967BC13E4B3C5549 /* HexColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HexColors.xcconfig; sourceTree = "<group>"; };
+		930CE847D4F6868F8C0E2535CD0BA866 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9447DF4B5A222DB8E243F177D77590EE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		9578DF4550EDF8E64F2AB3FDA2EF6C49 /* NYTPhotoTransitionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotoTransitionController.h; path = Pod/Classes/ios/NYTPhotoTransitionController.h; sourceTree = "<group>"; };
 		9ADA59317FD179F55D1CE65459D8779B /* Pods-photohop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-photohop-umbrella.h"; sourceTree = "<group>"; };
-		9D47C656172192F37ACABDED687DCEC4 /* HexColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-prefix.pch"; sourceTree = "<group>"; };
-		9EF190D9AA46A67A0E12BAB3B8BB5495 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
-		A17FFB4ACC1401FB1D2B2AD4544AA20F /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
-		A28A3365800FAA0979967399312DA8C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5C15420EAD9D1D18DBA89839497CAE8 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
-		A77FD654769D6D9CB6A852DC7656FC88 /* HexColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HexColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA408CD9F0FFDD853E605D2AE5F44F7E /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		A0744145681C0E06FF0AF3BF1C1DFBF1 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		A2B835B32D87B26059FAFC65170FB0A1 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		A2FF7CB4870D94B4F3778348E888FF38 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		A56A5E96EFC724629216DFCBDF6BEE33 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		A66F822617D6612CA20752B2C2B61F31 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		A81D76FEFB8C03C5448191727268AE2D /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		A8407002A510EE6524130FE61016FC74 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
+		A93FA736A0D488601C0EA91B2422FC96 /* FLAnimatedImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-umbrella.h"; sourceTree = "<group>"; };
+		A98CBCFA115AB733E09E2BBE5F0DB8AC /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
 		AA4C8461CEB0336444B35DE99215EDB4 /* Pods-photohop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-photohop-dummy.m"; sourceTree = "<group>"; };
-		ABF6A589F55ECF330867313E12D214C7 /* SFFocusViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFFocusViewLayout.m; path = Classes/SFFocusViewLayout.m; sourceTree = "<group>"; };
-		B73C814E3D16A6204391F0321CD59512 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		B78672A60F17E0D23EF24ABC4257704A /* SFFocusViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SFFocusViewLayout.modulemap; sourceTree = "<group>"; };
-		B99C03C4651B9216E478CAF8D22788A4 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		B0C34F4D8857056A8A69138B8D6E511E /* NYTPhotoViewerCloseButtonX@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NYTPhotoViewerCloseButtonX@3x.png"; path = "Pod/Assets/ios/NYTPhotoViewerCloseButtonX@3x.png"; sourceTree = "<group>"; };
+		B417075BC6551097B4015A5F20DF4C30 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		B60147149F07E473B8D8E613EF7F411A /* NYTPhotoViewer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTPhotoViewer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7395C6CA75A6E0FA18F040EF76D6D60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8F3FAFF739D37821283202395DD8BDB /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		B9A5B14858CC1F2840E9948F6C89594D /* FLAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImageView.m; path = FLAnimatedImage/FLAnimatedImageView.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BD5DB19AA88AC2E982D18AEA7269C128 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		BFCD7DA67318691B6A5B0E1B30F0D29F /* HexColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HexColors.modulemap; sourceTree = "<group>"; };
-		CB4FF4626DFCBD1D6972744CCF181CA9 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
-		CB8D3AC674A2D7A370664AC5E2EDE9D9 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		CD61982C5569848F333ADEADC5C35A58 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		CE3BF43E6607B26645A9B373A5925C78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CE622FDD71389791C07A7DF007F5E228 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		D538F0AFC356D91EB405A56041CB95AC /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
-		D5E50EE603E2A48EAD8D8104E8B19CF6 /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
-		D7FD59B6285B97D46223D7D3AD9F47A3 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		BB6C0C768F4726A4CF3D447B2FDA8E69 /* NYTPhotoViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NYTPhotoViewer-dummy.m"; sourceTree = "<group>"; };
+		BEB9B559037A5C7280DFE320C92F512C /* NYTPhotosDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotosDataSource.m; path = Pod/Classes/ios/NYTPhotosDataSource.m; sourceTree = "<group>"; };
+		BF1BE544FD55E12020A92CA2A3A4F012 /* SFFocusViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFFocusViewLayout.m; path = Classes/SFFocusViewLayout.m; sourceTree = "<group>"; };
+		C2469AF1ED4C621538B9263F78BA6F03 /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
+		C3A76C5AF446E6E8B635473D1E885722 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F744AEE2F2D389BFC482DF8C57E981 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		C8C156671EB5BEFCAD354081C080B3BE /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		C8CD52BB3302AF05E419686253B0B7E0 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		C8E12C6BCA955AE53AEBCAC1099375F5 /* NYTPhotosOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotosOverlayView.m; path = Pod/Classes/ios/NYTPhotosOverlayView.m; sourceTree = "<group>"; };
+		C92CF37E20D1DD2FAB6636CD48E0EAEF /* HexColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HexColors-dummy.m"; sourceTree = "<group>"; };
+		CA2897141BCFBAB74B5040BF8A3DB617 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
+		CB9FCD7A929E4EC3B1994524BC42F69F /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		D03F90964FD53E406F1C6E01BE578E50 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		D240BDE173686CF1C25BF4A3893483AB /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		D293B466D54016F4FD652593E4CE4AC2 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		DC8BE81C77F4887805E2F42EA5E1AB28 /* SFFocusViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		E05CF121251D81A1B69F52D3E854B302 /* NYTPhotoViewer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NYTPhotoViewer-prefix.pch"; sourceTree = "<group>"; };
 		E1204833D4579C8876BDC2AC3804A409 /* Pods-photohop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-photohop.modulemap"; sourceTree = "<group>"; };
-		E323B313261976BA3325CA845C262FCB /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		E40A523A78D4A23DE7E9CA856729DB46 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		E537DAE654809917EDFF2A9A26C98D90 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		E6E372CEE9250807F38E8587BCD50B7B /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
-		ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F67E87A3FD56383CAEDC7C119A3D21F5 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		F82F38B731F5A8873B02B05AF16DAF4C /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		E1BC74C3663A11D69B85C59D7C403C52 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		E27CEE7B575108BBD6BFE9A296BF57E0 /* NYTPhotoViewerCloseButtonX.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NYTPhotoViewerCloseButtonX.png; path = Pod/Assets/ios/NYTPhotoViewerCloseButtonX.png; sourceTree = "<group>"; };
+		E39103E73D9A0B7B5890ACE857B4F08E /* HexColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HexColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E824A890DDB198E0DB2EA1CF688A72BC /* NYTPhotoTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotoTransitionAnimator.h; path = Pod/Classes/ios/NYTPhotoTransitionAnimator.h; sourceTree = "<group>"; };
+		EB900F70C439A90B56F13D15032BF529 /* NYTPhotoContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotoContainer.h; path = Pod/Classes/ios/Protocols/NYTPhotoContainer.h; sourceTree = "<group>"; };
+		ED2313516A3D417AFBB2E7068918AD4A /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBFA92D3DC4F590BE13A9AC3957650B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		EE075A1F9164AF9EAB3CC0680DE23AD6 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		EEBA42158578E14D0A3DC2E927F90ACA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6B32B1A4458364A569D69BDE8074B5 /* HexColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HexColors-prefix.pch"; sourceTree = "<group>"; };
+		F1000E1494EC04AEF29AAFB5C3060FCD /* NYTPhotoCaptionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotoCaptionView.m; path = Pod/Classes/ios/NYTPhotoCaptionView.m; sourceTree = "<group>"; };
+		F2A623A5B9228997AEC019A08043B239 /* NYTPhotoViewerCloseButtonXLandscape@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NYTPhotoViewerCloseButtonXLandscape@3x.png"; path = "Pod/Assets/ios/NYTPhotoViewerCloseButtonXLandscape@3x.png"; sourceTree = "<group>"; };
+		F37F2705CF7A3E4F35F8C80425CB7D47 /* NYTPhotoTransitionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotoTransitionController.m; path = Pod/Classes/ios/NYTPhotoTransitionController.m; sourceTree = "<group>"; };
+		F96FE432221DA5CC6DF7F7748355AA7D /* NYTPhotosDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotosDataSource.h; path = Pod/Classes/ios/NYTPhotosDataSource.h; sourceTree = "<group>"; };
 		FB59B770013046691AA3F9A68836C893 /* Pods-photohop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-photohop.release.xcconfig"; sourceTree = "<group>"; };
-		FDA5EF86CB650D3620E63CBBA4FBE4EF /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		FDFBA335D20AC3D1EAC8CFFF44CC7F74 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
-		FE2AE78FB716605F6579D4E10B664906 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEB28354DD526A3829598A4AB090A623 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFA9F40520C78FDE74356ADE438A59AD /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		FBAED2A3609AD744291A597EB913DA54 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		FBED8155A97E429CCEBAB4621364AE04 /* NYTScalingImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTScalingImageView.m; path = Pod/Classes/ios/NYTScalingImageView.m; sourceTree = "<group>"; };
+		FBEE4072E03BAEEB98C4D16B9D991297 /* SFFocusViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFFocusViewLayout-prefix.pch"; sourceTree = "<group>"; };
+		FC84E9A866B9061717B052AEA9CD29FB /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		FD656F30271B967FCC644725C8308061 /* NYTPhotoDismissalInteractionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotoDismissalInteractionController.h; path = Pod/Classes/ios/NYTPhotoDismissalInteractionController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3641AADEE9F84704B84C97F7C809773C /* Frameworks */ = {
+		3883DDA361DE47670C66E028A5DA8985 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B8C824736914715CF75EB1083A7A104 /* Foundation.framework in Frameworks */,
+				A747BCDF6BD73B4EC0AE06E7E789668B /* Foundation.framework in Frameworks */,
+				65E9F144D4D06DD6BD3D9A9B22C4FAF5 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,21 +361,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6697BC56109DFC14DD06A572A5D587A7 /* Frameworks */ = {
+		5A059799B5BD8AA6CAFB241FBF72E85F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A96F59F26A96FF08FC2E9C6284B48A63 /* Foundation.framework in Frameworks */,
-				FDF66181555E540FD4362F5F9E145740 /* QuartzCore.framework in Frameworks */,
+				5A536E34E7D5F0B39A8CEA90D75B702F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		976E725756F63FE4881D11C8D7C6A83D /* Frameworks */ = {
+		806E34C74202766A4A491103FA555AF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F977C86364E276C18C68EBD6BF2A409E /* Foundation.framework in Frameworks */,
-				2B2CDF28A19D251BE61300A42473F377 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19D10745E44BBDCE373B12D7C604EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C38574DD71EE0FD5F9BB962528DD65 /* CoreGraphics.framework in Frameworks */,
+				25E1967A64EE442EA4935B385B52B1D2 /* Foundation.framework in Frameworks */,
+				694E9EF448880F6119C97B73454DAA91 /* ImageIO.framework in Frameworks */,
+				FCB0F77C7778B80972A628569149E8A7 /* MobileCoreServices.framework in Frameworks */,
+				902AADDCCC48381511DCF083CD9E20C6 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF18FAFA3A0228706E5BE62CBCB3A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819913E86E2E33348AAEA9ACDBC40EB2 /* FLAnimatedImage.framework in Frameworks */,
+				5A197B8FC3232DC35A87E0585E3FE12A /* Foundation.framework in Frameworks */,
+				646612640E7891635613E02C34E01C12 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6E2BE979C88E70DDCF6D25C33FA6EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF455FC30D6A7E720157E7974CBA459 /* Foundation.framework in Frameworks */,
+				E56F82B763ED87D3A022F5ECA4179824 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,126 +419,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07B388E7D862242A1B3FDAAB26CF7A8C /* Support Files */ = {
+		080CB4941031657CAFA87996442F9EE8 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				003BC3775D8C8BC2FB87E45C1F897A89 /* Info.plist */,
-				B78672A60F17E0D23EF24ABC4257704A /* SFFocusViewLayout.modulemap */,
-				75E1D289A746128387C08472CE0A2BCF /* SFFocusViewLayout.xcconfig */,
-				81C6A50F3AE3414E12ED58F9EA35729E /* SFFocusViewLayout-dummy.m */,
-				7E028C59699DB170CB213FBD79A93777 /* SFFocusViewLayout-prefix.pch */,
-				3D1F9E3431F2572D1531616A575C0678 /* SFFocusViewLayout-umbrella.h */,
+				37C8F43D1A1421B9073A0BE2C468EAB4 /* CoreGraphics.framework */,
+				83498C23C1F2532428A2FB821CBF3217 /* Foundation.framework */,
+				EDBFA92D3DC4F590BE13A9AC3957650B /* ImageIO.framework */,
+				87C72AA8386093FD49624FFF39C64617 /* MobileCoreServices.framework */,
+				9447DF4B5A222DB8E243F177D77590EE /* QuartzCore.framework */,
+				8B08A3FF72135334B26BE46E5081D676 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		17E8416AF9E0C4825DA176D7778E71F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7395C6CA75A6E0FA18F040EF76D6D60 /* Info.plist */,
+				45533EE1932467D46F3F2F2FED697D55 /* SVProgressHUD.modulemap */,
+				161B0DE11F5CD54F3F24B029F34E786A /* SVProgressHUD.xcconfig */,
+				FBAED2A3609AD744291A597EB913DA54 /* SVProgressHUD-dummy.m */,
+				C3F744AEE2F2D389BFC482DF8C57E981 /* SVProgressHUD-prefix.pch */,
+				C8C156671EB5BEFCAD354081C080B3BE /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		1BF1D21E27090308AFBC83294F424CDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E7B3CC7A92219B40529E7297545E0D1 /* Info.plist */,
+				683E89ADD7F7661198700A1299F47413 /* SFFocusViewLayout.modulemap */,
+				2E8603124424329D7089CF7F490A2148 /* SFFocusViewLayout.xcconfig */,
+				57FAB42F25996CFA5F08DFCC663B5858 /* SFFocusViewLayout-dummy.m */,
+				FBEE4072E03BAEEB98C4D16B9D991297 /* SFFocusViewLayout-prefix.pch */,
+				DC8BE81C77F4887805E2F42EA5E1AB28 /* SFFocusViewLayout-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SFFocusViewLayout";
 			sourceTree = "<group>";
 		};
-		08A1E28AD65D5D73CD6473BDA32588DC /* Resources */ = {
+		2E2408B899389008B441AAF4F1ABBF81 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				85ABE21C62BE37AB03BAEB0B55224094 /* SVProgressHUD.bundle */,
+				A9E7476654C82FF365887CEA44BAD1D8 /* ChameleonFramework */,
+				5C30EFDE426151586825FC2C418784D3 /* DZNEmptyDataSet */,
+				CE2A54E2B451EA3F536978CF6DD1F8F4 /* FLAnimatedImage */,
+				B2727B87F4C5BC8248791091BEB63069 /* HexColors */,
+				7E0706264088D6B8ACB49E14BD22FFD7 /* NYTPhotoViewer */,
+				99E6FE598D185B0A0F97D61814452357 /* SFFocusViewLayout */,
+				E44C229C2A40691962DA0A04EDC14499 /* SVProgressHUD */,
 			);
-			name = Resources;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		0BD35E06DA12DC7A7C61CDAE0BE10AF2 /* SVProgressHUD */ = {
+		41878FF012E66DA1E5075047C7AD7CC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD5DB19AA88AC2E982D18AEA7269C128 /* SVIndefiniteAnimatedView.h */,
-				FDA5EF86CB650D3620E63CBBA4FBE4EF /* SVIndefiniteAnimatedView.m */,
-				E40A523A78D4A23DE7E9CA856729DB46 /* SVProgressHUD.h */,
-				14AAD6B11EDA9CC7123A43570DC5604C /* SVProgressHUD.m */,
-				E537DAE654809917EDFF2A9A26C98D90 /* SVRadialGradientLayer.h */,
-				D7FD59B6285B97D46223D7D3AD9F47A3 /* SVRadialGradientLayer.m */,
-				08A1E28AD65D5D73CD6473BDA32588DC /* Resources */,
-				DE2DC807578C3788FDF8CA681E622DF0 /* Support Files */,
-			);
-			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
-		10BFEC7D064BDDB32A5B58736CD82BAA /* Default */ = {
-			isa = PBXGroup;
-			children = (
-				A5C15420EAD9D1D18DBA89839497CAE8 /* Chameleon.h */,
-				4FC6EBAAC4FDDBC1DCD7DED1FE36C0E7 /* Chameleon_.h */,
-				9EF190D9AA46A67A0E12BAB3B8BB5495 /* Chameleon_.m */,
-				CB4FF4626DFCBD1D6972744CCF181CA9 /* ChameleonConstants.h */,
-				F82F38B731F5A8873B02B05AF16DAF4C /* ChameleonConstants.m */,
-				FDFBA335D20AC3D1EAC8CFFF44CC7F74 /* ChameleonEnums.h */,
-				7DFB5CB9EC430994935933054EEEE2DD /* ChameleonMacros.h */,
-				11BC126D2810065474CE6B740EAED468 /* NSArray+Chameleon.h */,
-				B73C814E3D16A6204391F0321CD59512 /* NSArray+Chameleon.m */,
-				047E56CBCFBB24141E94E01749A49061 /* UIAppearance+Swift.h */,
-				997C11F44E7333F99D426ED3CE4C24E0 /* UIAppearance+Swift.m */,
-				8C9F07FC9118CD875F381D27E0124944 /* UIButton+Chameleon.h */,
-				266FE07C9C0B71C0B908BF7F5025E557 /* UIButton+Chameleon.m */,
-				CB8D3AC674A2D7A370664AC5E2EDE9D9 /* UIColor+Chameleon.h */,
-				CD61982C5569848F333ADEADC5C35A58 /* UIColor+Chameleon.m */,
-				4DF89648DA6C5E365346BBC4FAA2EF44 /* UIColor+ChameleonPrivate.h */,
-				B99C03C4651B9216E478CAF8D22788A4 /* UIColor+ChameleonPrivate.m */,
-				68740E4DDEA1C4CB200558719DA8DEC1 /* UIImage+ChameleonPrivate.h */,
-				598FFDE6F2FD52F432DE6600C676530E /* UIImage+ChameleonPrivate.m */,
-				4DD19AABE6F0B3DA98CA6EA9260B895E /* UILabel+Chameleon.h */,
-				443EC587835EEEA12AE497087FCE0AAA /* UILabel+Chameleon.m */,
-				E6E372CEE9250807F38E8587BCD50B7B /* UINavigationController+Chameleon.h */,
-				AA408CD9F0FFDD853E605D2AE5F44F7E /* UINavigationController+Chameleon.m */,
-				F67E87A3FD56383CAEDC7C119A3D21F5 /* UIView+ChameleonPrivate.h */,
-				1F89ED243B4392294B896F3282BF5694 /* UIView+ChameleonPrivate.m */,
-				E323B313261976BA3325CA845C262FCB /* UIViewController+Chameleon.h */,
-				5BBE1038C66866CE063DCC440C848470 /* UIViewController+Chameleon.m */,
-			);
-			name = Default;
-			sourceTree = "<group>";
-		};
-		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A9203A0FF197B8764CD853B6EE3A159E /* iOS */,
+				19C6AA2264F6CB0C1B37699AC22E30F6 /* FLAnimatedImage.framework */,
+				080CB4941031657CAFA87996442F9EE8 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		290BBFBBF3AA164C0BEF67EA180183F8 /* DZNEmptyDataSet */ = {
+		5B2FEA55BE884EDD4F217E32384EEB73 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				630723D507A318CFB1DF2C92BF723011 /* UIScrollView+EmptyDataSet.h */,
-				77871B44654450CFB6D271279C8769DB /* UIScrollView+EmptyDataSet.m */,
-				FF782D8798911471F04E3099CCB658D9 /* Support Files */,
-			);
-			path = DZNEmptyDataSet;
-			sourceTree = "<group>";
-		};
-		3207B5D604E27BAD20E407A26583CFB4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A17FFB4ACC1401FB1D2B2AD4544AA20F /* ChameleonFramework.modulemap */,
-				976E9A58A29539BB6A4D0EEAC8ACF3A5 /* ChameleonFramework.xcconfig */,
-				FFA9F40520C78FDE74356ADE438A59AD /* ChameleonFramework-dummy.m */,
-				38C0FCE3D61480FBE5D30915E41DE064 /* ChameleonFramework-prefix.pch */,
-				999B7F20CF2C5CB3311F33D94996C4AC /* ChameleonFramework-umbrella.h */,
-				6C9D2CEA55AE9FD8A7B771E77DB6709D /* Info.plist */,
+				07F97C890E2963C2664ECC901EAFE878 /* FLAnimatedImage.modulemap */,
+				1EB09A652877D5BA2ADA0BB7CF5E45A8 /* FLAnimatedImage.xcconfig */,
+				7B9B995CFB7C50ED49E6076529AAB9EC /* FLAnimatedImage-dummy.m */,
+				7EA3C291CB27534C9C7325718B418781 /* FLAnimatedImage-prefix.pch */,
+				A93FA736A0D488601C0EA91B2422FC96 /* FLAnimatedImage-umbrella.h */,
+				EEBA42158578E14D0A3DC2E927F90ACA /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ChameleonFramework";
+			path = "../Target Support Files/FLAnimatedImage";
 			sourceTree = "<group>";
 		};
-		547BCADC47E51BE11EDCECC8C3E9BEAB /* HexColors */ = {
+		5C30EFDE426151586825FC2C418784D3 /* DZNEmptyDataSet */ = {
 			isa = PBXGroup;
 			children = (
-				244D937C2205532F42A0C3E3353F96E1 /* HexColors.h */,
-				3C54973DF91EFEE34C5720CDAE68C4B1 /* HexColors.m */,
-				65009E63DBD8982E7A09AF4B077CDD15 /* Support Files */,
+				47B8AEC49BE40784EBFA07517E6C05F8 /* UIScrollView+EmptyDataSet.h */,
+				0ABD1FE923A6FE7CD218D8A667D03CF9 /* UIScrollView+EmptyDataSet.m */,
+				BC41F522D73B184B6D15C7BF86D40E8A /* Support Files */,
 			);
-			path = HexColors;
-			sourceTree = "<group>";
-		};
-		6127F6F7C0B78633C98F36054D548816 /* ChameleonFramework */ = {
-			isa = PBXGroup;
-			children = (
-				10BFEC7D064BDDB32A5B58736CD82BAA /* Default */,
-				3207B5D604E27BAD20E407A26583CFB4 /* Support Files */,
-			);
-			path = ChameleonFramework;
+			path = DZNEmptyDataSet;
 			sourceTree = "<group>";
 		};
 		62006F499F4208E7BC3C55EAE310CB24 /* Targets Support Files */ = {
@@ -393,41 +515,37 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		65009E63DBD8982E7A09AF4B077CDD15 /* Support Files */ = {
+		7ADC1EAE448C95185F66C3F58F3E7D99 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BFCD7DA67318691B6A5B0E1B30F0D29F /* HexColors.modulemap */,
-				6796ED40A08F6FBE9D0C23F23441EC96 /* HexColors.xcconfig */,
-				77BBF0CFEC4DF4D463A709A7A2E2E8F6 /* HexColors-dummy.m */,
-				9D47C656172192F37ACABDED687DCEC4 /* HexColors-prefix.pch */,
-				091C3D595E97A79891840471597F3EC3 /* HexColors-umbrella.h */,
-				5E2DAE8728368F73CA60DB5C81973A25 /* Info.plist */,
+				E27CEE7B575108BBD6BFE9A296BF57E0 /* NYTPhotoViewerCloseButtonX.png */,
+				4FA809A287377259AA43C25941496547 /* NYTPhotoViewerCloseButtonX@2x.png */,
+				B0C34F4D8857056A8A69138B8D6E511E /* NYTPhotoViewerCloseButtonX@3x.png */,
+				2CD542A0B11C07F59405B4B7AF5E59C6 /* NYTPhotoViewerCloseButtonXLandscape.png */,
+				09A05A022A8C5C07937432E3E37FD932 /* NYTPhotoViewerCloseButtonXLandscape@2x.png */,
+				F2A623A5B9228997AEC019A08043B239 /* NYTPhotoViewerCloseButtonXLandscape@3x.png */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/HexColors";
-			sourceTree = "<group>";
-		};
-		7D84FBBC441F00D20B272775CA5E4F7D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6127F6F7C0B78633C98F36054D548816 /* ChameleonFramework */,
-				290BBFBBF3AA164C0BEF67EA180183F8 /* DZNEmptyDataSet */,
-				547BCADC47E51BE11EDCECC8C3E9BEAB /* HexColors */,
-				E2559636D5C7176B8118CF3AF8BFCD3E /* SFFocusViewLayout */,
-				0BD35E06DA12DC7A7C61CDAE0BE10AF2 /* SVProgressHUD */,
-			);
-			name = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				7D84FBBC441F00D20B272775CA5E4F7D /* Pods */,
-				FFA60146EA166513E903745DBBB1B02C /* Products */,
+				41878FF012E66DA1E5075047C7AD7CC1 /* Frameworks */,
+				2E2408B899389008B441AAF4F1ABBF81 /* Pods */,
+				EB947F510212083273B81C77C031B93A /* Products */,
 				62006F499F4208E7BC3C55EAE310CB24 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7E0706264088D6B8ACB49E14BD22FFD7 /* NYTPhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				D295EE9400C8EA5DFECB6BAF5ECA9EF4 /* Core */,
+				A8A54FF8310BA572E9DA5D57BB6FAFFC /* Support Files */,
+			);
+			path = NYTPhotoViewer;
 			sourceTree = "<group>";
 		};
 		84ED54550A8143E8A14334927CB590AE /* Pods-photohop */ = {
@@ -448,64 +566,204 @@
 			path = "Target Support Files/Pods-photohop";
 			sourceTree = "<group>";
 		};
-		A9203A0FF197B8764CD853B6EE3A159E /* iOS */ = {
+		8D131B19D6FEC3AD8BE65E87820AB5CA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */,
-				CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */,
-				0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */,
-				ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DE2DC807578C3788FDF8CA681E622DF0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE3BF43E6607B26645A9B373A5925C78 /* Info.plist */,
-				712344A25993FF66BD3B14698C52FDD0 /* SVProgressHUD.modulemap */,
-				CE622FDD71389791C07A7DF007F5E228 /* SVProgressHUD.xcconfig */,
-				7930172D54FD18DFC5F37A8E8198E2F7 /* SVProgressHUD-dummy.m */,
-				154E63A9C761C05A519873224E2D78F8 /* SVProgressHUD-prefix.pch */,
-				8D99F5551ACFC8A75E2FD52B408280AD /* SVProgressHUD-umbrella.h */,
+				033E919BC15ABC4B6987557D26469665 /* HexColors.modulemap */,
+				92FBF57792299EF4967BC13E4B3C5549 /* HexColors.xcconfig */,
+				C92CF37E20D1DD2FAB6636CD48E0EAEF /* HexColors-dummy.m */,
+				EF6B32B1A4458364A569D69BDE8074B5 /* HexColors-prefix.pch */,
+				5599129FCFA6A24BE63C1C9369ADD330 /* HexColors-umbrella.h */,
+				08542383FE2211E589F1621181B4C673 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
+			path = "../Target Support Files/HexColors";
 			sourceTree = "<group>";
 		};
-		E2559636D5C7176B8118CF3AF8BFCD3E /* SFFocusViewLayout */ = {
+		99E6FE598D185B0A0F97D61814452357 /* SFFocusViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				615A2A46724791BE0FBF7DFD317E0A75 /* SFFocusViewLayout.h */,
-				ABF6A589F55ECF330867313E12D214C7 /* SFFocusViewLayout.m */,
-				07B388E7D862242A1B3FDAAB26CF7A8C /* Support Files */,
+				41803A43B5A2D4DDA08E68B0C3343A50 /* SFFocusViewLayout.h */,
+				BF1BE544FD55E12020A92CA2A3A4F012 /* SFFocusViewLayout.m */,
+				1BF1D21E27090308AFBC83294F424CDC /* Support Files */,
 			);
 			path = SFFocusViewLayout;
 			sourceTree = "<group>";
 		};
-		FF782D8798911471F04E3099CCB658D9 /* Support Files */ = {
+		A8A54FF8310BA572E9DA5D57BB6FAFFC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				279C87ED940DD31EC8F72538D0A2D4A3 /* DZNEmptyDataSet.modulemap */,
-				2F523D84DFB9761DECC2608EAE78D130 /* DZNEmptyDataSet.xcconfig */,
-				D538F0AFC356D91EB405A56041CB95AC /* DZNEmptyDataSet-dummy.m */,
-				73E913F2D3E81E8D74A6B7177C84EC03 /* DZNEmptyDataSet-prefix.pch */,
-				D5E50EE603E2A48EAD8D8104E8B19CF6 /* DZNEmptyDataSet-umbrella.h */,
-				A28A3365800FAA0979967399312DA8C0 /* Info.plist */,
+				47660E447EA9DCAB87010720F0BD06AB /* Info.plist */,
+				38C92C5E9C75E072C8B26EB0358CD5D4 /* NYTPhotoViewer.modulemap */,
+				63A57EFD4BE62CC08C8EA4B321FFD9EF /* NYTPhotoViewer.xcconfig */,
+				BB6C0C768F4726A4CF3D447B2FDA8E69 /* NYTPhotoViewer-dummy.m */,
+				E05CF121251D81A1B69F52D3E854B302 /* NYTPhotoViewer-prefix.pch */,
+				13429671847CC2511CD6B233F550E49A /* NYTPhotoViewer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NYTPhotoViewer";
+			sourceTree = "<group>";
+		};
+		A9E7476654C82FF365887CEA44BAD1D8 /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E826553D72BBED0A6A4AC7762EB0F918 /* Default */,
+				B05EE419BDDA420AC8475AEA34A2F02C /* Support Files */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		B05EE419BDDA420AC8475AEA34A2F02C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0744145681C0E06FF0AF3BF1C1DFBF1 /* ChameleonFramework.modulemap */,
+				CA2897141BCFBAB74B5040BF8A3DB617 /* ChameleonFramework.xcconfig */,
+				0F1B12EAB1C1AB740ED3282859D34BE7 /* ChameleonFramework-dummy.m */,
+				A2FF7CB4870D94B4F3778348E888FF38 /* ChameleonFramework-prefix.pch */,
+				A2B835B32D87B26059FAFC65170FB0A1 /* ChameleonFramework-umbrella.h */,
+				2AEC90B33F8633BE1404A268BE9A206D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
+			sourceTree = "<group>";
+		};
+		B2727B87F4C5BC8248791091BEB63069 /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				5FCB7723659B8AA466304C268588D58B /* HexColors.h */,
+				628D27C6DBCF3520BB9C57DE1A8BE733 /* HexColors.m */,
+				8D131B19D6FEC3AD8BE65E87820AB5CA /* Support Files */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		B97C1D7E6A595665CDDF172623ABDDB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84B76705E4BE2A3406350A81B6BEB03C /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC41F522D73B184B6D15C7BF86D40E8A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58677C15B152DBB7A36D233257EC0E4B /* DZNEmptyDataSet.modulemap */,
+				61CDAB71E697B1AB06E7B371624A6E70 /* DZNEmptyDataSet.xcconfig */,
+				7FE50C873AA9936B9D1D7376F2BBC3C2 /* DZNEmptyDataSet-dummy.m */,
+				A8407002A510EE6524130FE61016FC74 /* DZNEmptyDataSet-prefix.pch */,
+				C2469AF1ED4C621538B9263F78BA6F03 /* DZNEmptyDataSet-umbrella.h */,
+				C3A76C5AF446E6E8B635473D1E885722 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DZNEmptyDataSet";
 			sourceTree = "<group>";
 		};
-		FFA60146EA166513E903745DBBB1B02C /* Products */ = {
+		CE2A54E2B451EA3F536978CF6DD1F8F4 /* FLAnimatedImage */ = {
 			isa = PBXGroup;
 			children = (
-				FEB28354DD526A3829598A4AB090A623 /* ChameleonFramework.framework */,
-				49D2EAD290D56685AD62390FA4FDE503 /* DZNEmptyDataSet.framework */,
-				A77FD654769D6D9CB6A852DC7656FC88 /* HexColors.framework */,
-				11DBB4EBE88C0F0C6FA0838B1BA888DD /* Pods_photohop.framework */,
-				18B54701886FA0045778DCD44B6DCD92 /* SFFocusViewLayout.framework */,
-				FE2AE78FB716605F6579D4E10B664906 /* SVProgressHUD.framework */,
+				1DD1F357B7A9693908D026C11FC96FB4 /* FLAnimatedImage.h */,
+				4E8BED161CEF6457ACA74775C943E4C7 /* FLAnimatedImage.m */,
+				1327D9F8B9F11109CF4713692761F486 /* FLAnimatedImageView.h */,
+				B9A5B14858CC1F2840E9948F6C89594D /* FLAnimatedImageView.m */,
+				5B2FEA55BE884EDD4F217E32384EEB73 /* Support Files */,
+			);
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		D295EE9400C8EA5DFECB6BAF5ECA9EF4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				10CB1A89EEF1576A08033DAA641AB83A /* NSBundle+NYTPhotoViewer.h */,
+				4AF5F51E1A914CFE9292E58407D65D8B /* NSBundle+NYTPhotoViewer.m */,
+				0E27FE0C1E167E2BA96EFE535501E87A /* NYTPhoto.h */,
+				77056C780822A15D53AB50534866F056 /* NYTPhotoCaptionView.h */,
+				F1000E1494EC04AEF29AAFB5C3060FCD /* NYTPhotoCaptionView.m */,
+				593399C730211140A38A3923911B8337 /* NYTPhotoCaptionViewLayoutWidthHinting.h */,
+				EB900F70C439A90B56F13D15032BF529 /* NYTPhotoContainer.h */,
+				FD656F30271B967FCC644725C8308061 /* NYTPhotoDismissalInteractionController.h */,
+				0255ACAEAE863ABD68071A7D346E564A /* NYTPhotoDismissalInteractionController.m */,
+				F96FE432221DA5CC6DF7F7748355AA7D /* NYTPhotosDataSource.h */,
+				BEB9B559037A5C7280DFE320C92F512C /* NYTPhotosDataSource.m */,
+				112ACB5A896549DDED2B5B0CB4D8B366 /* NYTPhotosOverlayView.h */,
+				C8E12C6BCA955AE53AEBCAC1099375F5 /* NYTPhotosOverlayView.m */,
+				2A1F3BCB2CDCB52E7ECE50DEE86B4C3C /* NYTPhotosViewController.h */,
+				7C0C00B5F61FA5998AA3E706E7B1A680 /* NYTPhotosViewController.m */,
+				5B7822DE7772D5129A54F5F9DEA5E480 /* NYTPhotosViewControllerDataSource.h */,
+				E824A890DDB198E0DB2EA1CF688A72BC /* NYTPhotoTransitionAnimator.h */,
+				12BB0D0CD63410641E0196917AB0CCF6 /* NYTPhotoTransitionAnimator.m */,
+				9578DF4550EDF8E64F2AB3FDA2EF6C49 /* NYTPhotoTransitionController.h */,
+				F37F2705CF7A3E4F35F8C80425CB7D47 /* NYTPhotoTransitionController.m */,
+				40B3B7533BB97A80B48E8A3477BD0C95 /* NYTPhotoViewController.h */,
+				253FD4A65E7B81C30D4395A5B9B2BDA8 /* NYTPhotoViewController.m */,
+				51D80799DCD708F6453E39FE6887DFC9 /* NYTScalingImageView.h */,
+				FBED8155A97E429CCEBAB4621364AE04 /* NYTScalingImageView.m */,
+				7ADC1EAE448C95185F66C3F58F3E7D99 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E44C229C2A40691962DA0A04EDC14499 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				82B79B2037978E62BF126C3CE49F633B /* SVIndefiniteAnimatedView.h */,
+				84CE43B05AF02C68B0E5181DF69E3347 /* SVIndefiniteAnimatedView.m */,
+				8421B274272420EEEFD0753FFDEF2629 /* SVProgressHUD.h */,
+				30651B49B63FE129AC6C94B2AC4B3F7B /* SVProgressHUD.m */,
+				55F5B63D5A6EEA773279ECE7E7C06E78 /* SVRadialGradientLayer.h */,
+				2F50402DF67FA57C1117E261D77BD499 /* SVRadialGradientLayer.m */,
+				B97C1D7E6A595665CDDF172623ABDDB5 /* Resources */,
+				17E8416AF9E0C4825DA176D7778E71F5 /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		E826553D72BBED0A6A4AC7762EB0F918 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				85B3002BCD70FEA1EA8454FFF764BBC1 /* Chameleon.h */,
+				7BB20BC8DF9AB16312ACF6B3CE69447E /* Chameleon_.h */,
+				D03F90964FD53E406F1C6E01BE578E50 /* Chameleon_.m */,
+				C8CD52BB3302AF05E419686253B0B7E0 /* ChameleonConstants.h */,
+				B8F3FAFF739D37821283202395DD8BDB /* ChameleonConstants.m */,
+				2AD53E034FD91E4D76A2D15546036420 /* ChameleonEnums.h */,
+				A66F822617D6612CA20752B2C2B61F31 /* ChameleonMacros.h */,
+				FC84E9A866B9061717B052AEA9CD29FB /* NSArray+Chameleon.h */,
+				A56A5E96EFC724629216DFCBDF6BEE33 /* NSArray+Chameleon.m */,
+				B417075BC6551097B4015A5F20DF4C30 /* UIAppearance+Swift.h */,
+				D240BDE173686CF1C25BF4A3893483AB /* UIAppearance+Swift.m */,
+				E1BC74C3663A11D69B85C59D7C403C52 /* UIButton+Chameleon.h */,
+				136CD01E4650B42B6495C49A75EA412A /* UIButton+Chameleon.m */,
+				67861BE8F41776F579D89950ED53D58C /* UIColor+Chameleon.h */,
+				A98CBCFA115AB733E09E2BBE5F0DB8AC /* UIColor+Chameleon.m */,
+				278270B4C8034B5461FBCE0398BEB9E8 /* UIColor+ChameleonPrivate.h */,
+				409D0D837CBA44554CDB831144BF2905 /* UIColor+ChameleonPrivate.m */,
+				8B883FA0DCABF2C4CBBD34728118A8B3 /* UIImage+ChameleonPrivate.h */,
+				CB9FCD7A929E4EC3B1994524BC42F69F /* UIImage+ChameleonPrivate.m */,
+				1E52BAD164A68D7C81AAD422565D2034 /* UILabel+Chameleon.h */,
+				599057698990966D419AF199FA291851 /* UILabel+Chameleon.m */,
+				10F6C273FED30B939236B3E6E179DB6C /* UINavigationController+Chameleon.h */,
+				24AC034FA39148E8F4613D544B54E1F1 /* UINavigationController+Chameleon.m */,
+				5CB85CD8743D929D75BF77A418F07D68 /* UIView+ChameleonPrivate.h */,
+				EE075A1F9164AF9EAB3CC0680DE23AD6 /* UIView+ChameleonPrivate.m */,
+				D293B466D54016F4FD652593E4CE4AC2 /* UIViewController+Chameleon.h */,
+				A81D76FEFB8C03C5448191727268AE2D /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		EB947F510212083273B81C77C031B93A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED2313516A3D417AFBB2E7068918AD4A /* ChameleonFramework.framework */,
+				453CBDCBCA92E9681094AE00418AC97E /* DZNEmptyDataSet.framework */,
+				930CE847D4F6868F8C0E2535CD0BA866 /* FLAnimatedImage.framework */,
+				E39103E73D9A0B7B5890ACE857B4F08E /* HexColors.framework */,
+				B60147149F07E473B8D8E613EF7F411A /* NYTPhotoViewer.bundle */,
+				5649FC4EE0A13D260D9EFFDAD3D03DCC /* NYTPhotoViewer.framework */,
+				7E1437CE8DFDF95E23A0C41BA403F39C /* Pods_photohop.framework */,
+				4D273921839D44D99E53D1650CF64533 /* SFFocusViewLayout.framework */,
+				57CBA143BB9562D677081BBB688B6232 /* SVProgressHUD.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -513,20 +771,55 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		37B31672C18222A5BA058376BA8A2C46 /* Headers */ = {
+		0F53437C86350F7BE134DC397F3E0C67 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C94589A47D4E708DDE92C416033C1B66 /* SFFocusViewLayout-umbrella.h in Headers */,
-				10D5BE2917726FB877BFE065F2F52014 /* SFFocusViewLayout.h in Headers */,
+				1374EEC7E67FB73F9240545AC0D66ACA /* FLAnimatedImage-umbrella.h in Headers */,
+				B9238977DCF3ED4109DFCACD471AF8F9 /* FLAnimatedImage.h in Headers */,
+				1B6DBB7D4EDF238AA2D89608A3F51C03 /* FLAnimatedImageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D4266F1A87FD7F5303F634DD0E81C50 /* Headers */ = {
+		1893D4CFD5A34573E10FAA21F94C4114 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EB87077CB9227C321F62EE54941ACCF /* Pods-photohop-umbrella.h in Headers */,
+				2A7B6FEB31641F9BB00061EFADBC6402 /* SVIndefiniteAnimatedView.h in Headers */,
+				5AB2758EA53FD0D6446D1500817231BB /* SVProgressHUD-umbrella.h in Headers */,
+				8A18DD5830AA47C6737361A062BBD802 /* SVProgressHUD.h in Headers */,
+				E988B211B6FBB36DD26048749564E588 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B562C9B1E596E33EE9C7354724257B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B94C6A5A514837CC4242F0E7B59AE87 /* NSBundle+NYTPhotoViewer.h in Headers */,
+				D0A8D5A79202CAE2B12564B7B1D1CDB5 /* NYTPhoto.h in Headers */,
+				EE09522753AFB36FD4850A440061292D /* NYTPhotoCaptionView.h in Headers */,
+				F4937EF654EEC148BC5AE9438251D422 /* NYTPhotoCaptionViewLayoutWidthHinting.h in Headers */,
+				FF5131A02E826A02D4706360D59699AF /* NYTPhotoContainer.h in Headers */,
+				CEE6AC7C1D2685A7BE9A56E2AAE51FD8 /* NYTPhotoDismissalInteractionController.h in Headers */,
+				3BF01704E7F58B9439D4B2F7D4812BE1 /* NYTPhotosDataSource.h in Headers */,
+				306CB8E54F034EE4C10CC9A88035EE32 /* NYTPhotosOverlayView.h in Headers */,
+				EA63AE429B37EB621E3572FA06893342 /* NYTPhotosViewController.h in Headers */,
+				B78966A3CE155409F2E531658DA04EE9 /* NYTPhotosViewControllerDataSource.h in Headers */,
+				B0225E79716DD8081D82346A3F8EFE28 /* NYTPhotoTransitionAnimator.h in Headers */,
+				E317AAB1E32AB89C260DFB2AC08AD386 /* NYTPhotoTransitionController.h in Headers */,
+				3A45120A5BCA016ADB8648C0535A828C /* NYTPhotoViewController.h in Headers */,
+				989AE28EBBDA14648F9D3253D6B4A2D5 /* NYTPhotoViewer-umbrella.h in Headers */,
+				147A75C05B2C20C6275DDCDB2E6D7CAD /* NYTScalingImageView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D45874F31CD9CF587AE3471EB4B0CC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED86E54613709248357F9DE85B6D76C /* SFFocusViewLayout-umbrella.h in Headers */,
+				59C91353117C8358BF5040461B826F7A /* SFFocusViewLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,14 +855,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDA4317253EADBCD0A98840C96514312 /* Headers */ = {
+		530251882241945E6BFAB55CDFB0A5DD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D33ED72DE0A9C46DB0614F59D2ED05BF /* SVIndefiniteAnimatedView.h in Headers */,
-				D43D856D7A951AE72D28A271FE399110 /* SVProgressHUD-umbrella.h in Headers */,
-				7AC6A834FA57B36D28F89E0DB6B10730 /* SVProgressHUD.h in Headers */,
-				CFE128CC77A6E92EC556F5730EDBD337 /* SVRadialGradientLayer.h in Headers */,
+				7F3A17D7F1C00F958EC5017E471E3A30 /* Pods-photohop-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,26 +875,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		00BAA52C391B79C9D0D710EC32B80CE3 /* Pods-photohop */ = {
+		0481F19E1296373CB3E8D78FD008253B /* NYTPhotoViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 309EB58724D35D91CE1E3BEE6BAC466E /* Build configuration list for PBXNativeTarget "Pods-photohop" */;
+			buildConfigurationList = F9C647E3D35AFD76944958D9B53EC9E7 /* Build configuration list for PBXNativeTarget "NYTPhotoViewer" */;
 			buildPhases = (
-				B9A1195071E3CDE6A3E5DC2347863CE6 /* Sources */,
-				3641AADEE9F84704B84C97F7C809773C /* Frameworks */,
-				3D4266F1A87FD7F5303F634DD0E81C50 /* Headers */,
+				6F6A8B1B0CDCE097F4FC6F2FCBECCC1F /* Sources */,
+				FCF18FAFA3A0228706E5BE62CBCB3A50 /* Frameworks */,
+				AD344744E8203D8B2CD9ADCE67906DCD /* Resources */,
+				2B562C9B1E596E33EE9C7354724257B1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9FE6AAC0420640E2211755B7D2ACF0DF /* PBXTargetDependency */,
-				D3E370FA13365B93E8063BBDDE391716 /* PBXTargetDependency */,
-				333896D77388B6995C2412BEED2219CC /* PBXTargetDependency */,
-				1BAAC9F0EFF066585B0B7B13D029CEF0 /* PBXTargetDependency */,
-				8F4280DFEF0D17E3B756F8A285DDE58A /* PBXTargetDependency */,
+				53E32AEB142B25BA13329FD3C1D7E4D9 /* PBXTargetDependency */,
+				6AF13883A9F443C32AD0CC1AB1A62D0B /* PBXTargetDependency */,
 			);
-			name = "Pods-photohop";
-			productName = "Pods-photohop";
-			productReference = 11DBB4EBE88C0F0C6FA0838B1BA888DD /* Pods_photohop.framework */;
+			name = NYTPhotoViewer;
+			productName = NYTPhotoViewer;
+			productReference = 5649FC4EE0A13D260D9EFFDAD3D03DCC /* NYTPhotoViewer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		16FB872D0D2D4BA0F378AB34D47CF95F /* DZNEmptyDataSet */ = {
@@ -621,16 +909,33 @@
 			);
 			name = DZNEmptyDataSet;
 			productName = DZNEmptyDataSet;
-			productReference = 49D2EAD290D56685AD62390FA4FDE503 /* DZNEmptyDataSet.framework */;
+			productReference = 453CBDCBCA92E9681094AE00418AC97E /* DZNEmptyDataSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7E86CA3A283C0BBACB76FEE17FCA8E89 /* SFFocusViewLayout */ = {
+		1966D1D93475A8B1DDD5A3B153568842 /* NYTPhotoViewer-NYTPhotoViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 891667B0B28EF5981638A3E3A965A715 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */;
+			buildConfigurationList = CE4601787A2F9E870556E96E54260906 /* Build configuration list for PBXNativeTarget "NYTPhotoViewer-NYTPhotoViewer" */;
 			buildPhases = (
-				7302D7DA47EDFD0D6E59B4F5026CB23C /* Sources */,
-				976E725756F63FE4881D11C8D7C6A83D /* Frameworks */,
-				37B31672C18222A5BA058376BA8A2C46 /* Headers */,
+				CB64BB9A59CA72A66DF3EF8E72F444A6 /* Sources */,
+				806E34C74202766A4A491103FA555AF9 /* Frameworks */,
+				FC60A0748E2DE6D8E484933FFCC28098 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NYTPhotoViewer-NYTPhotoViewer";
+			productName = "NYTPhotoViewer-NYTPhotoViewer";
+			productReference = B60147149F07E473B8D8E613EF7F411A /* NYTPhotoViewer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8023EE9A45E7052B1A55974AE8EF38D2 /* SFFocusViewLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7887B199E057EC58FCFC673E4A834DE7 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */;
+			buildPhases = (
+				D25D4392A249CA92249EAA80B70905EB /* Sources */,
+				FD6E2BE979C88E70DDCF6D25C33FA6EA /* Frameworks */,
+				2D45874F31CD9CF587AE3471EB4B0CC0 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -638,7 +943,7 @@
 			);
 			name = SFFocusViewLayout;
 			productName = SFFocusViewLayout;
-			productReference = 18B54701886FA0045778DCD44B6DCD92 /* SFFocusViewLayout.framework */;
+			productReference = 4D273921839D44D99E53D1650CF64533 /* SFFocusViewLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9B57F4EE4746045CEAE2D933A3C8EC9E /* ChameleonFramework */ = {
@@ -655,7 +960,7 @@
 			);
 			name = ChameleonFramework;
 			productName = ChameleonFramework;
-			productReference = FEB28354DD526A3829598A4AB090A623 /* ChameleonFramework.framework */;
+			productReference = ED2313516A3D417AFBB2E7068918AD4A /* ChameleonFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C408D4E183A88B763793C217A66A1950 /* HexColors */ = {
@@ -672,17 +977,17 @@
 			);
 			name = HexColors;
 			productName = HexColors;
-			productReference = A77FD654769D6D9CB6A852DC7656FC88 /* HexColors.framework */;
+			productReference = E39103E73D9A0B7B5890ACE857B4F08E /* HexColors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D7B0206D4070BD33136CB9F4E80104BD /* SVProgressHUD */ = {
+		DA889BD2632D07C9BF642BFD69260A96 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 014B915E07CB829D76C38F9EF6E8E5E1 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildConfigurationList = 783FA4916948E3C7832207CA6E074B6A /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				B255FA224F3D69528B950628862608B3 /* Sources */,
-				6697BC56109DFC14DD06A572A5D587A7 /* Frameworks */,
-				BDA4317253EADBCD0A98840C96514312 /* Headers */,
-				ED10BDF24CC09384AAEB2BFA3B6830D0 /* Resources */,
+				53E45C5476973CF8D435CC570AAC4016 /* Sources */,
+				3883DDA361DE47670C66E028A5DA8985 /* Frameworks */,
+				1893D4CFD5A34573E10FAA21F94C4114 /* Headers */,
+				7966FA227467405B2B4F3E4A6AB812DD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -690,7 +995,48 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = FE2AE78FB716605F6579D4E10B664906 /* SVProgressHUD.framework */;
+			productReference = 57CBA143BB9562D677081BBB688B6232 /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE4CD3B4894941C7348443E3DDEC687A /* Pods-photohop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E69A67E47590ED13D2494BEC55F455B /* Build configuration list for PBXNativeTarget "Pods-photohop" */;
+			buildPhases = (
+				C879ECD02FF77C9E6D769CEC1462230C /* Sources */,
+				5A059799B5BD8AA6CAFB241FBF72E85F /* Frameworks */,
+				530251882241945E6BFAB55CDFB0A5DD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC87935A02936460C8454E754AD0A7A0 /* PBXTargetDependency */,
+				09D8DEEDF52B3EA584FA9C52133BB52E /* PBXTargetDependency */,
+				7E07E6452F677D12DEDC6F1145658549 /* PBXTargetDependency */,
+				BDA049BF3B4C577FFF5A94785ADD67AC /* PBXTargetDependency */,
+				22A8F350A2ACCBF2789B05D5022D98B0 /* PBXTargetDependency */,
+				A4EEFAA2E3508258CD98859ED7BC75F4 /* PBXTargetDependency */,
+				5239F48D6CB8D9F97BCD6C9BF54DC5EA /* PBXTargetDependency */,
+			);
+			name = "Pods-photohop";
+			productName = "Pods-photohop";
+			productReference = 7E1437CE8DFDF95E23A0C41BA403F39C /* Pods_photohop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE113CEF81C16AA59EC049ACE130BCB2 /* FLAnimatedImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E4AFDEDCC47C4415CB9B5B395C41321 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */;
+			buildPhases = (
+				F63393576B334501224376DB8B339904 /* Sources */,
+				E19D10745E44BBDCE373B12D7C604EAC /* Frameworks */,
+				0F53437C86350F7BE134DC397F3E0C67 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLAnimatedImage;
+			productName = FLAnimatedImage;
+			productReference = 930CE847D4F6868F8C0E2535CD0BA866 /* FLAnimatedImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -710,32 +1056,67 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FFA60146EA166513E903745DBBB1B02C /* Products */;
+			productRefGroup = EB947F510212083273B81C77C031B93A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9B57F4EE4746045CEAE2D933A3C8EC9E /* ChameleonFramework */,
 				16FB872D0D2D4BA0F378AB34D47CF95F /* DZNEmptyDataSet */,
+				FE113CEF81C16AA59EC049ACE130BCB2 /* FLAnimatedImage */,
 				C408D4E183A88B763793C217A66A1950 /* HexColors */,
-				00BAA52C391B79C9D0D710EC32B80CE3 /* Pods-photohop */,
-				7E86CA3A283C0BBACB76FEE17FCA8E89 /* SFFocusViewLayout */,
-				D7B0206D4070BD33136CB9F4E80104BD /* SVProgressHUD */,
+				0481F19E1296373CB3E8D78FD008253B /* NYTPhotoViewer */,
+				1966D1D93475A8B1DDD5A3B153568842 /* NYTPhotoViewer-NYTPhotoViewer */,
+				EE4CD3B4894941C7348443E3DDEC687A /* Pods-photohop */,
+				8023EE9A45E7052B1A55974AE8EF38D2 /* SFFocusViewLayout */,
+				DA889BD2632D07C9BF642BFD69260A96 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ED10BDF24CC09384AAEB2BFA3B6830D0 /* Resources */ = {
+		7966FA227467405B2B4F3E4A6AB812DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBAF679B62332C972CF0E73893EE0E65 /* SVProgressHUD.bundle in Resources */,
+				64EF446A26955E14E2BB5F730975E7E3 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD344744E8203D8B2CD9ADCE67906DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4877D997489B7B57EC8BE555C156F5 /* NYTPhotoViewer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC60A0748E2DE6D8E484933FFCC28098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFEC57AA108A42B3A583FA0AB982B2A5 /* NYTPhotoViewerCloseButtonX.png in Resources */,
+				D587BA2C8AFD2C9A5217486D06CBBD7C /* NYTPhotoViewerCloseButtonX@2x.png in Resources */,
+				BDE765147085345EE5EE3A5B01FED1BD /* NYTPhotoViewerCloseButtonX@3x.png in Resources */,
+				1189EAF8629BBC643571D11D34430FF4 /* NYTPhotoViewerCloseButtonXLandscape.png in Resources */,
+				EF76A72D59965EE923C2E1082B02E711 /* NYTPhotoViewerCloseButtonXLandscape@2x.png in Resources */,
+				95D63728E5AEBB7509EF11FE74168CCB /* NYTPhotoViewerCloseButtonXLandscape@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		53E45C5476973CF8D435CC570AAC4016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B24C2694E25EA143B3EA01DE5682D1 /* SVIndefiniteAnimatedView.m in Sources */,
+				604B53EFE4EED9A3090DE434125798DA /* SVProgressHUD-dummy.m in Sources */,
+				6F49C401259D388F4CEC04D6764D3045 /* SVProgressHUD.m in Sources */,
+				5F352726FD1DFFAEB82B216CC42E00F9 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67EF9044B76E629170DD09EE2E94E76D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -745,12 +1126,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7302D7DA47EDFD0D6E59B4F5026CB23C /* Sources */ = {
+		6F6A8B1B0CDCE097F4FC6F2FCBECCC1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2A79213DC65661D7BE37BE589F0F99 /* SFFocusViewLayout-dummy.m in Sources */,
-				C0FD7C79EC924F23C9A2FC82C540CDF3 /* SFFocusViewLayout.m in Sources */,
+				F02364A18B2D33B0D9A9AE2A64E29F50 /* NSBundle+NYTPhotoViewer.m in Sources */,
+				57F6CA8786125C49C9152DDCF8707211 /* NYTPhotoCaptionView.m in Sources */,
+				B8A82F85675D3B4FB30DCC98CD46BD45 /* NYTPhotoDismissalInteractionController.m in Sources */,
+				05ADBA69B89830C78EDA6E2A6FE44D24 /* NYTPhotosDataSource.m in Sources */,
+				0DE9CF6DC44815676C38B7523D8401DE /* NYTPhotosOverlayView.m in Sources */,
+				422AFB5945146A1A66915CC6BEE277E0 /* NYTPhotosViewController.m in Sources */,
+				96233753A3B50F0DBC7E9B25BF383D59 /* NYTPhotoTransitionAnimator.m in Sources */,
+				748E9560469EE40357F5FE3EE63AF472 /* NYTPhotoTransitionController.m in Sources */,
+				2076EE9ABC998E885ED1D3BF6888A3CF /* NYTPhotoViewController.m in Sources */,
+				F61C4AF45361F0B4E70DE9030B3344F4 /* NYTPhotoViewer-dummy.m in Sources */,
+				BFB69555A4EC472F07DD43A29A4DA56E /* NYTScalingImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,25 +1164,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B255FA224F3D69528B950628862608B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D7B7FAA855B1C97BECB7651AC9584C4 /* SVIndefiniteAnimatedView.m in Sources */,
-				C8F5D883246ECEF0F939E9F02AAB9C05 /* SVProgressHUD-dummy.m in Sources */,
-				039FF2090242B4B4CB29EBBB0B6CDA00 /* SVProgressHUD.m in Sources */,
-				094F2EC0A53F64D5A99B85D3E0CF4D17 /* SVRadialGradientLayer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9A1195071E3CDE6A3E5DC2347863CE6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E1065208C5B2417E306235ED5CABC2B /* Pods-photohop-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C5EE2B8C478333F5942E30C6FF944370 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -802,45 +1173,103 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C879ECD02FF77C9E6D769CEC1462230C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014F0861EE98EE6B8AC4376C27727BF1 /* Pods-photohop-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB64BB9A59CA72A66DF3EF8E72F444A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25D4392A249CA92249EAA80B70905EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B0903C6A7EBC6FCB35166349C75793 /* SFFocusViewLayout-dummy.m in Sources */,
+				0F3F105A44BE2D96412CB067EB037A01 /* SFFocusViewLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63393576B334501224376DB8B339904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AA9541169EFB247C2D8443006945E42 /* FLAnimatedImage-dummy.m in Sources */,
+				C5B9CA1D7F1517B31E4C6970C8EC3DCF /* FLAnimatedImage.m in Sources */,
+				793B3BC18A6BD80D99ACFBE8917F9F89 /* FLAnimatedImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1BAAC9F0EFF066585B0B7B13D029CEF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SFFocusViewLayout;
-			target = 7E86CA3A283C0BBACB76FEE17FCA8E89 /* SFFocusViewLayout */;
-			targetProxy = B343736070DE7E4F2DEF4FAC62B921A1 /* PBXContainerItemProxy */;
-		};
-		333896D77388B6995C2412BEED2219CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HexColors;
-			target = C408D4E183A88B763793C217A66A1950 /* HexColors */;
-			targetProxy = C8CDC0A36BC0558215FA5027FDBE8632 /* PBXContainerItemProxy */;
-		};
-		8F4280DFEF0D17E3B756F8A285DDE58A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = D7B0206D4070BD33136CB9F4E80104BD /* SVProgressHUD */;
-			targetProxy = A6ABF86456B4F1D39851F580FF24830A /* PBXContainerItemProxy */;
-		};
-		9FE6AAC0420640E2211755B7D2ACF0DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ChameleonFramework;
-			target = 9B57F4EE4746045CEAE2D933A3C8EC9E /* ChameleonFramework */;
-			targetProxy = B1C05790749484925CD061E81EFB996F /* PBXContainerItemProxy */;
-		};
-		D3E370FA13365B93E8063BBDDE391716 /* PBXTargetDependency */ = {
+		09D8DEEDF52B3EA584FA9C52133BB52E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DZNEmptyDataSet;
 			target = 16FB872D0D2D4BA0F378AB34D47CF95F /* DZNEmptyDataSet */;
-			targetProxy = 35EE99E9991041E9623D847C879A58DB /* PBXContainerItemProxy */;
+			targetProxy = 80F06BB44072C68E8A667DFDFDD051ED /* PBXContainerItemProxy */;
+		};
+		22A8F350A2ACCBF2789B05D5022D98B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NYTPhotoViewer;
+			target = 0481F19E1296373CB3E8D78FD008253B /* NYTPhotoViewer */;
+			targetProxy = A6370555CCDF6DC419AA59A9AB102149 /* PBXContainerItemProxy */;
+		};
+		5239F48D6CB8D9F97BCD6C9BF54DC5EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = DA889BD2632D07C9BF642BFD69260A96 /* SVProgressHUD */;
+			targetProxy = 391918AB2A073EBB0BB4D8596BBAD561 /* PBXContainerItemProxy */;
+		};
+		53E32AEB142B25BA13329FD3C1D7E4D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLAnimatedImage;
+			target = FE113CEF81C16AA59EC049ACE130BCB2 /* FLAnimatedImage */;
+			targetProxy = 6D1E17C01DB5E9376054E950410B7B8D /* PBXContainerItemProxy */;
+		};
+		6AF13883A9F443C32AD0CC1AB1A62D0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NYTPhotoViewer-NYTPhotoViewer";
+			target = 1966D1D93475A8B1DDD5A3B153568842 /* NYTPhotoViewer-NYTPhotoViewer */;
+			targetProxy = 7DCEBCC89AC4886ADC8740686B0D0C4D /* PBXContainerItemProxy */;
+		};
+		7E07E6452F677D12DEDC6F1145658549 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLAnimatedImage;
+			target = FE113CEF81C16AA59EC049ACE130BCB2 /* FLAnimatedImage */;
+			targetProxy = CAF0A92EA569367984AF6AC66F998002 /* PBXContainerItemProxy */;
+		};
+		A4EEFAA2E3508258CD98859ED7BC75F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SFFocusViewLayout;
+			target = 8023EE9A45E7052B1A55974AE8EF38D2 /* SFFocusViewLayout */;
+			targetProxy = 648896CDC8B707DE888F9823381C1262 /* PBXContainerItemProxy */;
+		};
+		BDA049BF3B4C577FFF5A94785ADD67AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HexColors;
+			target = C408D4E183A88B763793C217A66A1950 /* HexColors */;
+			targetProxy = 9B72ACB66FECDA6207114067164D7478 /* PBXContainerItemProxy */;
+		};
+		CC87935A02936460C8454E754AD0A7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChameleonFramework;
+			target = 9B57F4EE4746045CEAE2D933A3C8EC9E /* ChameleonFramework */;
+			targetProxy = 11E52E12372F9E81584B5A5BA040CDDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4E2FCD36B8C2F455CA4DC454C5CF8698 /* Debug */ = {
+		1D40A219EB1BEC12F664E154841CBA4B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE622FDD71389791C07A7DF007F5E228 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 1EB09A652877D5BA2ADA0BB7CF5E45A8 /* FLAnimatedImage.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -849,14 +1278,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SVProgressHUD;
+				PRODUCT_NAME = FLAnimatedImage;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -865,9 +1294,9 @@
 			};
 			name = Debug;
 		};
-		50DC23C33730A7F084CCEC09B2247E03 /* Release */ = {
+		3696E81766E91C056BFC297B15C582F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75E1D289A746128387C08472CE0A2BCF /* SFFocusViewLayout.xcconfig */;
+			baseConfigurationReference = 2E8603124424329D7089CF7F490A2148 /* SFFocusViewLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -892,9 +1321,90 @@
 			};
 			name = Release;
 		};
+		3FB0A33E2013492ECADF98719B3F9D0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A57EFD4BE62CC08C8EA4B321FFD9EF /* NYTPhotoViewer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NYTPhotoViewer/NYTPhotoViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NYTPhotoViewer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NYTPhotoViewer/NYTPhotoViewer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NYTPhotoViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5CCE789FFB362E287922BCFF5BE39473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB09A652877D5BA2ADA0BB7CF5E45A8 /* FLAnimatedImage.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FLAnimatedImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		619715355B9EBF098EE7C2701D6EF843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8603124424329D7089CF7F490A2148 /* SFFocusViewLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SFFocusViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SFFocusViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		65B827D88DB532B751DE295A53C4451F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F523D84DFB9761DECC2608EAE78D130 /* DZNEmptyDataSet.xcconfig */;
+			baseConfigurationReference = 61CDAB71E697B1AB06E7B371624A6E70 /* DZNEmptyDataSet.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -919,9 +1429,63 @@
 			};
 			name = Release;
 		};
+		66DF0CFCB0B5F4B3BE2D2372126B3465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161B0DE11F5CD54F3F24B029F34E786A /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82979BFF9138B455354617ECDBCF4742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161B0DE11F5CD54F3F24B029F34E786A /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		87633C35115B9FBD987374E19A691C5E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F523D84DFB9761DECC2608EAE78D130 /* DZNEmptyDataSet.xcconfig */;
+			baseConfigurationReference = 61CDAB71E697B1AB06E7B371624A6E70 /* DZNEmptyDataSet.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -946,9 +1510,9 @@
 			};
 			name = Debug;
 		};
-		98CA06FB00FF54D7CDAE564F44C8A54C /* Release */ = {
+		8A0C5FB0AF519F71AE8C8F37593E56C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE622FDD71389791C07A7DF007F5E228 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 63A57EFD4BE62CC08C8EA4B321FFD9EF /* NYTPhotoViewer.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -957,19 +1521,31 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NYTPhotoViewer/NYTPhotoViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NYTPhotoViewer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SVProgressHUD;
+				MODULEMAP_FILE = "Target Support Files/NYTPhotoViewer/NYTPhotoViewer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NYTPhotoViewer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F07897802EF2A6B8298D08D1A71AD76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A57EFD4BE62CC08C8EA4B321FFD9EF /* NYTPhotoViewer.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = NYTPhotoViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1012,7 +1588,7 @@
 			};
 			name = Debug;
 		};
-		AFF64EDE75F5623BEDA5DF9F5227B1F5 /* Debug */ = {
+		A91BA5B71A18DB1B7D5508A56C5C3E62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81749E828920DB6BE32470F2406D03F9 /* Pods-photohop.debug.xcconfig */;
 			buildSettings = {
@@ -1042,7 +1618,7 @@
 			};
 			name = Debug;
 		};
-		BB053BE677FAED89E3857B5365ACA9C2 /* Release */ = {
+		B8DB62FB5E0341E4A078A2894F8EAAC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB59B770013046691AA3F9A68836C893 /* Pods-photohop.release.xcconfig */;
 			buildSettings = {
@@ -1074,7 +1650,7 @@
 		};
 		E10B75F4FD9BE5631AEBE3B699CB24D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6796ED40A08F6FBE9D0C23F23441EC96 /* HexColors.xcconfig */;
+			baseConfigurationReference = 92FBF57792299EF4967BC13E4B3C5549 /* HexColors.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1101,7 +1677,7 @@
 		};
 		E5D2448F42F9B1B54F9B3FA3A2E605F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6796ED40A08F6FBE9D0C23F23441EC96 /* HexColors.xcconfig */;
+			baseConfigurationReference = 92FBF57792299EF4967BC13E4B3C5549 /* HexColors.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1126,36 +1702,21 @@
 			};
 			name = Release;
 		};
-		F27D9348905234428B8B320185ADDB21 /* Debug */ = {
+		F9C313FC5C57B44449910C3FD61E9D79 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75E1D289A746128387C08472CE0A2BCF /* SFFocusViewLayout.xcconfig */;
+			baseConfigurationReference = 63A57EFD4BE62CC08C8EA4B321FFD9EF /* NYTPhotoViewer.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SFFocusViewLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SFFocusViewLayout/SFFocusViewLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SFFocusViewLayout;
+				PRODUCT_NAME = NYTPhotoViewer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
 		FADEC2CC3BC2EB66021583BCD5240111 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 976E9A58A29539BB6A4D0EEAC8ACF3A5 /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = CA2897141BCFBAB74B5040BF8A3DB617 /* ChameleonFramework.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1216,7 +1777,7 @@
 		};
 		FF1A73998293E0367D47A8396A2852C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 976E9A58A29539BB6A4D0EEAC8ACF3A5 /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = CA2897141BCFBAB74B5040BF8A3DB617 /* ChameleonFramework.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1244,15 +1805,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		014B915E07CB829D76C38F9EF6E8E5E1 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4E2FCD36B8C2F455CA4DC454C5CF8698 /* Debug */,
-				98CA06FB00FF54D7CDAE564F44C8A54C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		085A04470B2B1DFD89B69ED30150E0C0 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1280,11 +1832,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		309EB58724D35D91CE1E3BEE6BAC466E /* Build configuration list for PBXNativeTarget "Pods-photohop" */ = {
+		3E4AFDEDCC47C4415CB9B5B395C41321 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFF64EDE75F5623BEDA5DF9F5227B1F5 /* Debug */,
-				BB053BE677FAED89E3857B5365ACA9C2 /* Release */,
+				1D40A219EB1BEC12F664E154841CBA4B /* Debug */,
+				5CCE789FFB362E287922BCFF5BE39473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1298,11 +1850,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		891667B0B28EF5981638A3E3A965A715 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */ = {
+		783FA4916948E3C7832207CA6E074B6A /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F27D9348905234428B8B320185ADDB21 /* Debug */,
-				50DC23C33730A7F084CCEC09B2247E03 /* Release */,
+				82979BFF9138B455354617ECDBCF4742 /* Debug */,
+				66DF0CFCB0B5F4B3BE2D2372126B3465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7887B199E057EC58FCFC673E4A834DE7 /* Build configuration list for PBXNativeTarget "SFFocusViewLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				619715355B9EBF098EE7C2701D6EF843 /* Debug */,
+				3696E81766E91C056BFC297B15C582F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E69A67E47590ED13D2494BEC55F455B /* Build configuration list for PBXNativeTarget "Pods-photohop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91BA5B71A18DB1B7D5508A56C5C3E62 /* Debug */,
+				B8DB62FB5E0341E4A078A2894F8EAAC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4601787A2F9E870556E96E54260906 /* Build configuration list for PBXNativeTarget "NYTPhotoViewer-NYTPhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9C313FC5C57B44449910C3FD61E9D79 /* Debug */,
+				8F07897802EF2A6B8298D08D1A71AD76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9C647E3D35AFD76944958D9B53EC9E7 /* Build configuration list for PBXNativeTarget "NYTPhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0C5FB0AF519F71AE8C8F37593E56C0 /* Debug */,
+				3FB0A33E2013492ECADF98719B3F9D0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,7 +3,15 @@ PODS:
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
   - DZNEmptyDataSet (1.7.3)
+  - FLAnimatedImage (1.0.10)
   - HexColors (3.1.1)
+  - NYTPhotoViewer (1.1.0):
+    - NYTPhotoViewer/AnimatedGifSupport (= 1.1.0)
+    - NYTPhotoViewer/Core (= 1.1.0)
+  - NYTPhotoViewer/AnimatedGifSupport (1.1.0):
+    - FLAnimatedImage (~> 1.0.8)
+    - NYTPhotoViewer/Core
+  - NYTPhotoViewer/Core (1.1.0)
   - SFFocusViewLayout (2.0.0)
   - SVProgressHUD (2.0-beta8)
 
@@ -11,6 +19,7 @@ DEPENDENCIES:
   - ChameleonFramework
   - DZNEmptyDataSet
   - HexColors
+  - NYTPhotoViewer (~> 1.1.0)
   - SFFocusViewLayout (~> 2.0)
   - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
 
@@ -26,7 +35,9 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  FLAnimatedImage: e16a1e1cef08e4c509b47e4acbe3923f65c16135
   HexColors: d837cebe691e52c867d401ecd2374111add5445f
+  NYTPhotoViewer: e80e8767f3780d2df37c6f72cbab15d6c7232911
   SFFocusViewLayout: bb580b208a791c075f9e0f7021dd961e8c4cfaf7
   SVProgressHUD: 6e48a1dda09ce3b58adc41d013baed3a8e8980ff
 

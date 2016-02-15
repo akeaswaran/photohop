@@ -9,4 +9,5 @@ pod 'SFFocusViewLayout', '~> 2.0'
 pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 pod 'DZNEmptyDataSet'
 pod 'ChameleonFramework'
+pod 'NYTPhotoViewer', '~> 1.1.0'
 end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F27F8971B102C4F8C2AF148 /* Pods_photohop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973E3E2B1EE2D1D10F52471C /* Pods_photohop.framework */; };
+		750790671C7250F1006AB7D4 /* PhotoMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 750790661C7250F1006AB7D4 /* PhotoMemory.m */; };
 		752C9F421C6CF0CC0060DE99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F411C6CF0CC0060DE99 /* main.m */; };
 		752C9F451C6CF0CC0060DE99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F441C6CF0CC0060DE99 /* AppDelegate.m */; };
 		752C9F481C6CF0CC0060DE99 /* MemoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F471C6CF0CC0060DE99 /* MemoriesViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750790651C7250F1006AB7D4 /* PhotoMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoMemory.h; sourceTree = "<group>"; };
+		750790661C7250F1006AB7D4 /* PhotoMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoMemory.m; sourceTree = "<group>"; };
 		752C9F3D1C6CF0CC0060DE99 /* photohop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photohop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752C9F411C6CF0CC0060DE99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		752C9F431C6CF0CC0060DE99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				752C9F461C6CF0CC0060DE99 /* MemoriesViewController.h */,
 				752C9F471C6CF0CC0060DE99 /* MemoriesViewController.m */,
 				753195B91C6D2F9C00D7C39E /* MemoriesViewController.xib */,
+				750790651C7250F1006AB7D4 /* PhotoMemory.h */,
+				750790661C7250F1006AB7D4 /* PhotoMemory.m */,
 				7553B0651C6E55A00099E700 /* SettingsViewController.h */,
 				7553B0661C6E55A00099E700 /* SettingsViewController.m */,
 				7553B0821C6E72800099E700 /* SettingsViewController.xib */,
@@ -292,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				752C9F481C6CF0CC0060DE99 /* MemoriesViewController.m in Sources */,
+				750790671C7250F1006AB7D4 /* PhotoMemory.m in Sources */,
 				752C9F451C6CF0CC0060DE99 /* AppDelegate.m in Sources */,
 				7553B0671C6E55A00099E700 /* SettingsViewController.m in Sources */,
 				752C9F421C6CF0CC0060DE99 /* main.m in Sources */,

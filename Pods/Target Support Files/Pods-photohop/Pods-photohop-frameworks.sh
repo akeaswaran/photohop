@@ -86,14 +86,18 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-photohop/ChameleonFramework.framework"
   install_framework "Pods-photohop/DZNEmptyDataSet.framework"
+  install_framework "Pods-photohop/FLAnimatedImage.framework"
   install_framework "Pods-photohop/HexColors.framework"
+  install_framework "Pods-photohop/NYTPhotoViewer.framework"
   install_framework "Pods-photohop/SFFocusViewLayout.framework"
   install_framework "Pods-photohop/SVProgressHUD.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-photohop/ChameleonFramework.framework"
   install_framework "Pods-photohop/DZNEmptyDataSet.framework"
+  install_framework "Pods-photohop/FLAnimatedImage.framework"
   install_framework "Pods-photohop/HexColors.framework"
+  install_framework "Pods-photohop/NYTPhotoViewer.framework"
   install_framework "Pods-photohop/SFFocusViewLayout.framework"
   install_framework "Pods-photohop/SVProgressHUD.framework"
 fi
