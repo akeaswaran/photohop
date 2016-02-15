@@ -404,7 +404,7 @@
 			baseConfigurationReference = 84036DB74B9CCD80A19E2494 /* Pods-photohop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 100000;
+				CURRENT_PROJECT_VERSION = 100001;
 				INFOPLIST_FILE = photohop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.akeaswaran.photohop;
@@ -418,7 +418,7 @@
 			baseConfigurationReference = A1359DF6F5E845F532FCBA17 /* Pods-photohop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 100000;
+				CURRENT_PROJECT_VERSION = 100001;
 				INFOPLIST_FILE = photohop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.akeaswaran.photohop;
