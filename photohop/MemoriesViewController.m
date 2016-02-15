@@ -157,63 +157,85 @@
 -(void)refreshMedia {
     _today = [NSDate date];
     _todayMedia = [NSMutableArray array];
+    NSMutableArray *todayAssets = [NSMutableArray array];
     [SVProgressHUD showWithStatus:@"Looking through your photos..."];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleLight];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        PHFetchOptions *options = [[PHFetchOptions alloc] init];
-        [options setIncludeHiddenAssets:NO];
-        [options setIncludeAllBurstAssets:NO];
-        [options setIncludeAssetSourceTypes:PHAssetSourceTypeUserLibrary];
-        //[options setFetchLimit:100];
-        _images = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
-        for (int i = 0; i < _images.count; i++) {
-            PHAsset *asset = _images[i];
-            PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-            options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
-            options.networkAccessAllowed = YES;
-            options.resizeMode = PHImageRequestOptionsResizeModeFast;
-            options.version = PHImageRequestOptionsVersionOriginal;
-            [[self imageManager] requestImageForAsset:asset targetSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 280) contentMode:PHImageContentModeAspectFill options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                [SVProgressHUD showProgress:(CGFloat)i / (CGFloat)_images.count status:[NSString stringWithFormat:@"Checking photo %i of %lu", i, (unsigned long)_images.count]];
-                //PHPLog(@"DICTIONARY: %@", info);
-                //PHPLog(@"PHAsset creationDate: %@", asset.creationDate);
-                NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:asset.creationDate];
-                NSDateComponents *todayDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self gmtFormatter] dateFromString:[[self gmtFormatter] stringFromDate:_today]]];
-                if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
-                    if (result) {
-                        [_todayMedia addObject:@{@"media" : result, @"date" : asset.creationDate, @"year" : @(creationDateComps.year)}];
-                    }
-                }
-                
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    if (i == _images.count - 1) {
-                        [[self navTitleBar] removeFromSuperview];
-                        [self.view addSubview:[self navTitleBar]];
-                        
-                        [SVProgressHUD showSuccessWithStatus:@"All photos checked!"];
-                        PHPLog(@"IMAGES: %lu", (unsigned long)_todayMedia.count);
-                        NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:NO];
-                        _todayMedia = [NSMutableArray arrayWithArray:[_todayMedia.copy sortedArrayUsingDescriptors:@[sort]]];
-                        [self.collectionView reloadData];
-                        
-                        if (_todayMedia.count > 0) {
-                            UIApplication *application = [UIApplication sharedApplication];
-                            if (_todayMedia.count > 0) {
-                                application.statusBarStyle = UIStatusBarStyleLightContent;
-                                [[self settingsButton] setTintColor:[UIColor whiteColor]];
-                                [self.collectionView setBackgroundColor:[UIColor blackColor]];
-                            } else {
-                                application.statusBarStyle = UIStatusBarStyleDefault;
-                                [[self settingsButton] setTintColor:kPHContrastTextColor];
-                            }
-                            [self setNeedsStatusBarAppearanceUpdate];
+    PHFetchOptions *options = [[PHFetchOptions alloc] init];
+    [options setIncludeHiddenAssets:NO];
+    [options setIncludeAllBurstAssets:NO];
+    [options setIncludeAssetSourceTypes:PHAssetSourceTypeUserLibrary];
+    _images = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
+    for (int i = 0; i < _images.count; i++) {
+        PHAsset *asset = _images[i];
+        [SVProgressHUD showProgress:(CGFloat)i / (CGFloat)_images.count status:[NSString stringWithFormat:@"Checking image %i of %lu", i, (unsigned long)_images.count]];
+        NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:asset.creationDate];
+        NSDateComponents *todayDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self gmtFormatter] dateFromString:[[self gmtFormatter] stringFromDate:_today]]];
+        if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
+            [todayAssets addObject:asset];
+        }
+    }
+    
+    if (todayAssets.count > 0) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            [SVProgressHUD showProgress:0 status:[NSString stringWithFormat:@"Getting image 0 of %lu", (unsigned long)todayAssets.count]];
+        
+            PHImageRequestOptions *reqOptions = [[PHImageRequestOptions alloc] init];
+            reqOptions.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+            reqOptions.networkAccessAllowed = YES;
+            reqOptions.resizeMode = PHImageRequestOptionsResizeModeFast;
+            reqOptions.version = PHImageRequestOptionsVersionOriginal;
+            for (int j = 0; j < todayAssets.count; j++) {
+                PHAsset *curAsset = todayAssets[j];
+                [[self imageManager] requestImageForAsset:curAsset targetSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 280) contentMode:PHImageContentModeAspectFill options:reqOptions resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                    [SVProgressHUD showProgress:(CGFloat)j / (CGFloat)todayAssets.count status:[NSString stringWithFormat:@"Getting image %i of %lu", j, (unsigned long)todayAssets.count]];
+                    //PHPLog(@"DICTIONARY: %@", info);
+                    //PHPLog(@"PHAsset creationDate: %@", asset.creationDate);
+                    NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:curAsset.creationDate];
+                    NSDateComponents *todayDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self gmtFormatter] dateFromString:[[self gmtFormatter] stringFromDate:_today]]];
+                    if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
+                        if (result) {
+                            [_todayMedia addObject:@{@"media" : result, @"date" : curAsset.creationDate, @"year" : @(creationDateComps.year)}];
                         }
                     }
-                });
-            }];
-        }
-    });
+                    
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        if (j == _images.count - 1) {
+                            [[self navTitleBar] removeFromSuperview];
+                            [self.view addSubview:[self navTitleBar]];
+                            
+                            [SVProgressHUD showSuccessWithStatus:@"Done!"];
+                            PHPLog(@"IMAGES: %lu", (unsigned long)_todayMedia.count);
+                            NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:NO];
+                            _todayMedia = [NSMutableArray arrayWithArray:[_todayMedia.copy sortedArrayUsingDescriptors:@[sort]]];
+                            [self.collectionView reloadData];
+                            
+                            if (_todayMedia.count > 0) {
+                                UIApplication *application = [UIApplication sharedApplication];
+                                if (_todayMedia.count > 0) {
+                                    application.statusBarStyle = UIStatusBarStyleLightContent;
+                                    [[self settingsButton] setTintColor:[UIColor whiteColor]];
+                                    [self.collectionView setBackgroundColor:[UIColor blackColor]];
+                                } else {
+                                    application.statusBarStyle = UIStatusBarStyleDefault;
+                                    [[self settingsButton] setTintColor:kPHContrastTextColor];
+                                }
+                                [self setNeedsStatusBarAppearanceUpdate];
+                            }
+                        }
+                    });
+                }];
+            }
+        });
+    } else {
+        [SVProgressHUD showSuccessWithStatus:@"Done!"];
+        [[self navTitleBar] removeFromSuperview];
+        [self.view addSubview:[self navTitleBar]];
+        UIApplication *application = [UIApplication sharedApplication];
+        application.statusBarStyle = UIStatusBarStyleDefault;
+        [[self settingsButton] setTintColor:kPHContrastTextColor];
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
 }
 
 -(UIImage*)currentScreenImage {
