@@ -175,9 +175,9 @@
         [SVProgressHUD showProgress:(CGFloat)i / (CGFloat)_images.count status:[NSString stringWithFormat:@"Checking image %i of %lu", i, (unsigned long)_images.count]];
         NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:asset.creationDate];
         NSDateComponents *todayDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[self gmtFormatter] dateFromString:[[self gmtFormatter] stringFromDate:_today]]];
-        if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
+        //if (todayDateComps.month == creationDateComps.month && todayDateComps.day == creationDateComps.day && todayDateComps.year != creationDateComps.year) {
             [todayAssets addObject:asset];
-        }
+        //}
     }
     
     if (todayAssets.count > 0) {
