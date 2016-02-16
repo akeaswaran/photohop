@@ -27,7 +27,7 @@
     #define PHPLog NSLog
 #endif
 
-@interface MemoriesViewController () <UICollectionViewDataSource, UICollectionViewDelegate,DZNEmptyDataSetDelegate, DZNEmptyDataSetSource, NYTPhotosViewControllerDelegate> {
+@interface MemoriesViewController () <UICollectionViewDataSource, UICollectionViewDelegate,DZNEmptyDataSetDelegate, DZNEmptyDataSetSource> {
     UILabel *titleLabel;
 }
 @property (strong, nonatomic) NSDate *today;
@@ -195,15 +195,12 @@
                     [SVProgressHUD showProgress:(CGFloat)j / (CGFloat)todayAssets.count status:[NSString stringWithFormat:@"Getting image %i of %lu", j, (unsigned long)todayAssets.count]];
                     NSDateComponents *creationDateComps = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:curAsset.creationDate];
                     if (result) {
-                       // [_todayMedia addObject:@{@"asset" : curAsset, @"media" : result, @"date" : curAsset.creationDate, @"year" : @(creationDateComps.year)}];
                         [_todayMedia addObject:[PhotoMemory memoryWithDictionary:@{@"asset" : curAsset, @"media" : result, @"date" : curAsset.creationDate, @"year" : @(creationDateComps.year)}]];
                     }
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
                         if (j == todayAssets.count - 1) {
                             [SVProgressHUD showSuccessWithStatus:@"Done!"];
-                            [[self navTitleBar] removeFromSuperview];
-                            [self.view addSubview:[self navTitleBar]];
                             
                             PHPLog(@"IMAGES: %lu", (unsigned long)_todayMedia.count);
                             NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"year" ascending:NO];
@@ -211,13 +208,12 @@
                             [self.collectionView reloadData];
                             
                             if (_todayMedia.count > 0) {
-                                UIApplication *application = [UIApplication sharedApplication];
                                 if (_todayMedia.count > 0) {
-                                    application.statusBarStyle = UIStatusBarStyleLightContent;
+                                    [[self navTitleBar] removeFromSuperview];
+                                    [self.view addSubview:[self navTitleBar]];
                                     [[self settingsButton] setTintColor:[UIColor whiteColor]];
                                     [self.collectionView setBackgroundColor:[UIColor blackColor]];
                                 } else {
-                                    application.statusBarStyle = UIStatusBarStyleDefault;
                                     [[self settingsButton] setTintColor:kPHContrastTextColor];
                                 }
                                 [self setNeedsStatusBarAppearanceUpdate];
@@ -229,12 +225,16 @@
         });
     } else {
         [SVProgressHUD showSuccessWithStatus:@"Done!"];
-        [[self navTitleBar] removeFromSuperview];
-        [self.view addSubview:[self navTitleBar]];
-        UIApplication *application = [UIApplication sharedApplication];
-        application.statusBarStyle = UIStatusBarStyleDefault;
         [[self settingsButton] setTintColor:kPHContrastTextColor];
         [self setNeedsStatusBarAppearanceUpdate];
+    }
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle {
+    if (_todayMedia.count > 0) {
+        return UIStatusBarStyleLightContent;
+    } else {
+        return UIStatusBarStyleDefault;
     }
 }
 
@@ -327,7 +327,7 @@
 
 - (UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView
 {
-    return kPHBaseColor;//[UIColor hx_colorWithHexString:@"090909"];
+    return kPHBaseColor;
 }
 
 - (CGFloat)verticalOffsetForEmptyDataSet:(UIScrollView *)scrollView
@@ -363,15 +363,10 @@
     }
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
-
 -(void)shareMemory:(UILongPressGestureRecognizer *)longPress  {
     PhotoViewCell *cell = (PhotoViewCell*)longPress.view;
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     if (self.presentedViewController == nil) {
-        //NSDictionary *infoDict = _todayMedia[indexPath.item];
         PhotoMemory *memory = _todayMedia[indexPath.item];
         NSString *message = [NSString stringWithFormat:@"My memory from %@ today!",[self formatDateString:memory.year]];
         UIImage *image = memory.media;
@@ -386,7 +381,6 @@
 
 -(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
     PhotoViewCell *photoCell = (PhotoViewCell*)cell;
-    //NSDictionary *infoDict = _todayMedia[indexPath.item];
     PhotoMemory *memory = _todayMedia[indexPath.item];
     photoCell.titleLabel.text = [self formatDateString:memory.year];
     photoCell.descriptionLabel.text = @"";
@@ -415,32 +409,24 @@
     if (collectionView.contentOffset.y != offset) {
         [collectionView setContentOffset:CGPointMake(0, offset) animated:YES];
     } else {
-        //navigate to image full view
-        //NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:@[[PhotoMemory memoryWithDictionary:_todayMedia[indexPath.item]]]];
-         NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:@[_todayMedia[indexPath.item]]];
-        [photosViewController setDelegate:self];
-        UIApplication *application = [UIApplication sharedApplication];
-        application.statusBarStyle = UIStatusBarStyleDefault;
+        NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:@[_todayMedia[indexPath.item]]];
         [self presentViewController:photosViewController animated:YES completion:nil];
     }
 }
 
-- (void)photosViewControllerWillDismiss:(NYTPhotosViewController *)photosViewController; {
-    UIApplication *application = [UIApplication sharedApplication];
-    application.statusBarStyle = UIStatusBarStyleLightContent;
-}
-
 - (BOOL)photosViewController:(NYTPhotosViewController *)photosViewController handleActionButtonTappedForPhoto:(id <NYTPhoto>)photo {
     
-    PhotoMemory *memory = (PhotoMemory*)photo;
-    NSString *message = [NSString stringWithFormat:@"My memory from %@ today!",[self formatDateString:memory.year]];
-    UIImage *image = memory.media;
-    
-    NSArray *shareItems = @[message, image];
-    
-    UIActivityViewController *avc = [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
-    
-    [photosViewController presentViewController:avc animated:YES completion:nil];
+    if (self.presentedViewController == nil) {
+        PhotoMemory *memory = (PhotoMemory*)photo;
+        NSString *message = [NSString stringWithFormat:@"My memory from %@ today!",[self formatDateString:memory.year]];
+        UIImage *image = memory.media;
+        
+        NSArray *shareItems = @[message, image];
+        
+        UIActivityViewController *avc = [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
+        
+        [self presentViewController:avc animated:YES completion:nil];
+    }
     
     return YES;
 }

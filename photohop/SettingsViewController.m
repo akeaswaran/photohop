@@ -17,6 +17,7 @@
 
 @interface SettingsViewController () <UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate> {
     BOOL todayMediaExists;
+    MemoriesViewController *memVC;
 }
 @property (strong, nonatomic) UIImage *backgroundImage;
 @property (nonatomic) UIImageView *imageView;
@@ -64,7 +65,11 @@
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
+    if (memVC && memVC.todayMedia.count > 0) {
+        return UIStatusBarStyleLightContent;
+    } else {
+        return UIStatusBarStyleDefault;
+    }
 }
 
 -(void)dismissVC {
@@ -74,7 +79,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MemoriesViewController *memVC = (MemoriesViewController*)self.navigationController.presentingViewController;
+    memVC = (MemoriesViewController*)self.navigationController.presentingViewController;
     todayMediaExists = (memVC.todayMedia.count > 0);
     
     _imageView = [[UIImageView alloc] initWithImage:_backgroundImage];
