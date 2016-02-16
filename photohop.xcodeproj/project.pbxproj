@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		4F27F8971B102C4F8C2AF148 /* Pods_photohop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973E3E2B1EE2D1D10F52471C /* Pods_photohop.framework */; };
 		750790671C7250F1006AB7D4 /* PhotoMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 750790661C7250F1006AB7D4 /* PhotoMemory.m */; };
-		7507908A1C72AD04006AB7D4 /* photohopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750790891C72AD04006AB7D4 /* photohopUITests.swift */; };
-		750790921C72AD14006AB7D4 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750790911C72AD14006AB7D4 /* SnapshotHelper.swift */; };
 		752C9F421C6CF0CC0060DE99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F411C6CF0CC0060DE99 /* main.m */; };
 		752C9F451C6CF0CC0060DE99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F441C6CF0CC0060DE99 /* AppDelegate.m */; };
 		752C9F481C6CF0CC0060DE99 /* MemoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C9F471C6CF0CC0060DE99 /* MemoriesViewController.m */; };
@@ -47,9 +45,6 @@
 		750790651C7250F1006AB7D4 /* PhotoMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoMemory.h; sourceTree = "<group>"; };
 		750790661C7250F1006AB7D4 /* PhotoMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoMemory.m; sourceTree = "<group>"; };
 		750790871C72AD04006AB7D4 /* photohopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photohopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		750790891C72AD04006AB7D4 /* photohopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photohopUITests.swift; sourceTree = "<group>"; };
-		7507908B1C72AD04006AB7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		750790911C72AD14006AB7D4 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		752C9F3D1C6CF0CC0060DE99 /* photohop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photohop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752C9F411C6CF0CC0060DE99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		752C9F431C6CF0CC0060DE99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,21 +104,10 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		750790881C72AD04006AB7D4 /* photohopUITests */ = {
-			isa = PBXGroup;
-			children = (
-				750790891C72AD04006AB7D4 /* photohopUITests.swift */,
-				750790911C72AD14006AB7D4 /* SnapshotHelper.swift */,
-				7507908B1C72AD04006AB7D4 /* Info.plist */,
-			);
-			path = photohopUITests;
-			sourceTree = "<group>";
-		};
 		752C9F341C6CF0CC0060DE99 = {
 			isa = PBXGroup;
 			children = (
 				752C9F3F1C6CF0CC0060DE99 /* photohop */,
-				750790881C72AD04006AB7D4 /* photohopUITests */,
 				752C9F3E1C6CF0CC0060DE99 /* Products */,
 				5238F659B3B902769B8CA080 /* Pods */,
 				A66BE9E4EB40700245F13443 /* Frameworks */,
@@ -361,8 +345,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7507908A1C72AD04006AB7D4 /* photohopUITests.swift in Sources */,
-				750790921C72AD14006AB7D4 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +534,7 @@
 				750790901C72AD04006AB7D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		752C9F381C6CF0CC0060DE99 /* Build configuration list for PBXProject "photohop" */ = {
 			isa = XCConfigurationList;
