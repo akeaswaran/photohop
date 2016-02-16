@@ -31,20 +31,9 @@
 		756CCB311C6F0A2000E9A4B8 /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 756CCB301C6F0A2000E9A4B8 /* close@3x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7507908C1C72AD04006AB7D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 752C9F351C6CF0CC0060DE99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 752C9F3C1C6CF0CC0060DE99;
-			remoteInfo = photohop;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		750790651C7250F1006AB7D4 /* PhotoMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoMemory.h; sourceTree = "<group>"; };
 		750790661C7250F1006AB7D4 /* PhotoMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoMemory.m; sourceTree = "<group>"; };
-		750790871C72AD04006AB7D4 /* photohopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photohopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		752C9F3D1C6CF0CC0060DE99 /* photohop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photohop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752C9F411C6CF0CC0060DE99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		752C9F431C6CF0CC0060DE99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,13 +66,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		750790841C72AD04006AB7D4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		752C9F3A1C6CF0CC0060DE99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				752C9F3D1C6CF0CC0060DE99 /* photohop.app */,
-				750790871C72AD04006AB7D4 /* photohopUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,24 +165,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		750790861C72AD04006AB7D4 /* photohopUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7507908E1C72AD04006AB7D4 /* Build configuration list for PBXNativeTarget "photohopUITests" */;
-			buildPhases = (
-				750790831C72AD04006AB7D4 /* Sources */,
-				750790841C72AD04006AB7D4 /* Frameworks */,
-				750790851C72AD04006AB7D4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7507908D1C72AD04006AB7D4 /* PBXTargetDependency */,
-			);
-			name = photohopUITests;
-			productName = photohopUITests;
-			productReference = 750790871C72AD04006AB7D4 /* photohopUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		752C9F3C1C6CF0CC0060DE99 /* photohop */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 752C9F541C6CF0CD0060DE99 /* Build configuration list for PBXNativeTarget "photohop" */;
@@ -232,10 +195,6 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Akshay Easwaran";
 				TargetAttributes = {
-					750790861C72AD04006AB7D4 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 752C9F3C1C6CF0CC0060DE99;
-					};
 					752C9F3C1C6CF0CC0060DE99 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -255,19 +214,11 @@
 			projectRoot = "";
 			targets = (
 				752C9F3C1C6CF0CC0060DE99 /* photohop */,
-				750790861C72AD04006AB7D4 /* photohopUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		750790851C72AD04006AB7D4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		752C9F3B1C6CF0CC0060DE99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,13 +292,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		750790831C72AD04006AB7D4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		752C9F391C6CF0CC0060DE99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,14 +307,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		7507908D1C72AD04006AB7D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 752C9F3C1C6CF0CC0060DE99 /* photohop */;
-			targetProxy = 7507908C1C72AD04006AB7D4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		752C9F4E1C6CF0CD0060DE99 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -383,33 +319,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7507908F1C72AD04006AB7D4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = photohopUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.akeaswaran.photohopUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_TARGET_NAME = photohop;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		750790901C72AD04006AB7D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = photohopUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.akeaswaran.photohopUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = photohop;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 		752C9F521C6CF0CD0060DE99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -499,7 +408,7 @@
 			baseConfigurationReference = 84036DB74B9CCD80A19E2494 /* Pods-photohop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 100008;
+				CURRENT_PROJECT_VERSION = 100009;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = photohop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -514,7 +423,7 @@
 			baseConfigurationReference = A1359DF6F5E845F532FCBA17 /* Pods-photohop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 100008;
+				CURRENT_PROJECT_VERSION = 100009;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = photohop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -527,15 +436,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7507908E1C72AD04006AB7D4 /* Build configuration list for PBXNativeTarget "photohopUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7507908F1C72AD04006AB7D4 /* Debug */,
-				750790901C72AD04006AB7D4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		752C9F381C6CF0CC0060DE99 /* Build configuration list for PBXProject "photohop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
