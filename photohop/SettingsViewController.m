@@ -81,6 +81,7 @@
     [super viewDidLoad];
     memVC = (MemoriesViewController*)self.navigationController.presentingViewController;
     todayMediaExists = (memVC.todayMedia.count > 0);
+    [self setNeedsStatusBarAppearanceUpdate];
     
     _imageView = [[UIImageView alloc] initWithImage:_backgroundImage];
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
