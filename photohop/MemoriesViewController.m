@@ -27,8 +27,9 @@
     #define PHPLog NSLog
 #endif
 
-@interface MemoriesViewController () <UICollectionViewDataSource, UICollectionViewDelegate,DZNEmptyDataSetDelegate, DZNEmptyDataSetSource> {
+@interface MemoriesViewController () <UICollectionViewDataSource, UICollectionViewDelegate,DZNEmptyDataSetDelegate, DZNEmptyDataSetSource, NYTPhotosViewControllerDelegate> {
     UILabel *titleLabel;
+    NSInteger currentPhotoIndex;
 }
 @property (strong, nonatomic) NSDate *today;
 @property (strong, nonatomic) PHFetchResult *images;
@@ -410,8 +411,17 @@
         [collectionView setContentOffset:CGPointMake(0, offset) animated:YES];
     } else {
         NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:_todayMedia initialPhoto:_todayMedia[indexPath.item]];
+        [photosViewController setDelegate:self];
         [self presentViewController:photosViewController animated:YES completion:nil];
     }
+}
+
+- (void)photosViewController:(NYTPhotosViewController *)photosViewController didNavigateToPhoto:(id <NYTPhoto>)photo atIndex:(NSUInteger)photoIndex {
+    currentPhotoIndex = photoIndex;
+}
+
+-(void)photosViewControllerDidDismiss:(NYTPhotosViewController *)photosViewController {
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:currentPhotoIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
 }
 
 - (BOOL)photosViewController:(NYTPhotosViewController *)photosViewController handleActionButtonTappedForPhoto:(id <NYTPhoto>)photo {
