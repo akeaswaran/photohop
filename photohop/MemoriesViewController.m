@@ -409,7 +409,7 @@
     if (collectionView.contentOffset.y != offset) {
         [collectionView setContentOffset:CGPointMake(0, offset) animated:YES];
     } else {
-        NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:@[_todayMedia[indexPath.item]]];
+        NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:_todayMedia initialPhoto:_todayMedia[indexPath.item]];
         [self presentViewController:photosViewController animated:YES completion:nil];
     }
 }
